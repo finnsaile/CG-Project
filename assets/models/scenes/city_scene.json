@@ -1,0 +1,4864 @@
+{
+	"assetfiles": [
+		{"id": "jeep", "file": "assets/models/vehicles/jeep.gltf", "format":"GLTF"}
+	],
+	"models": [
+		{"id": "jem0",  "VD": "VDphong",  "model": "Cube.057", "node": "jeep", "meshId": 0, "asset": "jeep", "format":"ASSET"},
+		{"id": "jem1",  "VD": "VDphong",  "model": "Cube.057", "node": "jeep", "meshId": 1, "asset": "jeep", "format":"ASSET"},
+		{"id": "jem2",  "VD": "VDphong",  "model": "Cube.057", "node": "jeep", "meshId": 2, "asset": "jeep", "format":"ASSET"},
+
+		{"id": "jewfr0",  "VD": "VDphong",  "model": "Cylinder.054", "node": "wheels.016", "meshId": 0, "asset": "jeep", "format":"ASSET"},
+		{"id": "jewfl0",  "VD": "VDphong",  "model": "Cylinder.056", "node": "wheels.017", "meshId": 0, "asset": "jeep", "format":"ASSET"},
+		{"id": "jewbr0",  "VD": "VDphong",  "model": "Cylinder.075", "node": "wheels.042", "meshId": 0, "asset": "jeep", "format":"ASSET"},
+		{"id": "jewbl0",  "VD": "VDphong",  "model": "Cylinder.076", "node": "wheels.043", "meshId": 0, "asset": "jeep", "format":"ASSET"},
+
+		{"id": "skybox", "VD": "VDskybox", "model": "assets/models/SkyBoxCube.obj", "format":"OBJ"},
+		{"id": "axis", "VD": "VDphong", "model": "assets/models/axis.obj", "format":"OBJ"},
+		{"id": "arrow", "VD": "VDphong", "model": "assets/models/Arrow.obj", "format":"OBJ"},
+		{"id": "trophy", "VD": "VDphong", "model": "assets/models/Trophy.obj", "format":"OBJ"},
+
+		{"id": "roadTileStraightSimple", "VD": "VDphong", "model": "assets/models/world/city/road_tile_2x2_005.mgcg", "format":"MGCG"},
+		{"id": "roadTileCornerSimple", "VD": "VDphong", "model": "assets/models/world/city/road_tile_2x2_003.mgcg", "format":"MGCG"},
+		{"id": "roadTileFourWay", "VD": "VDphong", "model": "assets/models/world/city/road_tile_2x2_004.mgcg", "format":"MGCG"},
+		{"id": "roadTileThreeWay", "VD": "VDphong", "model": "assets/models/world/city/road_tile_2x2_001.mgcg", "format":"MGCG"},
+		{"id": "roadTileStraightOneExit", "VD": "VDphong", "model": "assets/models/world/city/road_tile_2x2_002.mgcg", "format":"MGCG"},
+		{"id": "roadTileStraightHalf", "VD": "VDphong", "model": "assets/models/world/city/road_tile_bridge_1x1_006.mgcg", "format":"MGCG"},
+
+		{"id": "parkTileSmallLake", "VD": "VDphong", "model": "assets/models/world/city/park_009.mgcg", "format":"MGCG"},
+		{"id": "parkTileLargeLake", "VD": "VDphong", "model": "assets/models/world/city/park_004.mgcg", "format":"MGCG"},
+		{"id": "parkTileFountain", "VD": "VDphong", "model": "assets/models/world/city/park_002.mgcg", "format":"MGCG"},
+		{"id": "parkTileArches", "VD": "VDphong", "model": "assets/models/world/city/park_001.mgcg", "format":"MGCG"},
+		{"id": "parkTileLargeLakeBridge", "VD": "VDphong", "model": "assets/models/world/city/park_010.mgcg", "format":"MGCG"},
+
+		{"id": "entertainmentTileTennis", "VD": "VDphong", "model": "assets/models/world/city/landscape_entertainments_007.mgcg", "format":"MGCG"},
+		{"id": "entertainmentTileSkateboardLarge", "VD": "VDphong", "model": "assets/models/world/city/landscape_entertainments_009.mgcg", "format":"MGCG"},
+		{"id": "entertainmentTileBasketball", "VD": "VDphong", "model": "assets/models/world/city/landscape_entertainments_010.mgcg", "format":"MGCG"},
+
+		{"id": "riverTileFullWater", "VD": "VDphong", "model": "assets/models/world/city/tile_river_2x2_001.mgcg", "format":"MGCG"},
+		{"id": "riverTileCorner", "VD": "VDphong", "model": "assets/models/world/city/road_tile_river_2x2_011.mgcg", "format":"MGCG"},
+		{"id": "riverTileReversCorner", "VD": "VDphong", "model": "assets/models/world/city/road_tile_river_2x2_009.mgcg", "format":"MGCG"},
+		{"id": "riverTileStraight", "VD": "VDphong", "model": "assets/models/world/city/road_tile_river_2x2_008.mgcg", "format":"MGCG"},
+
+		{"id": "parkingLotTileHedge", "VD": "VDphong", "model": "assets/models/world/city/parking_tile_2x2_001.mgcg", "format":"MGCG"},
+
+		{"id": "groundTileGreen", "VD": "VDphong", "model": "assets/models/world/city/tile_for_home_2x2_001.mgcg", "format":"MGCG"},
+		{"id": "groundTileGrey", "VD": "VDphong", "model": "assets/models/world/city/tile_for_home_2x2_005.mgcg", "format":"MGCG"},
+		{"id": "groundTileGreySingle", "VD": "VDphong", "model": "assets/models/world/city/tile_for_home_1x1_007.mgcg", "format":"MGCG"},
+		{"id": "groundTileGreenBorder", "VD": "VDphong", "model": "assets/models/world/city/tile_for_home_2x2_002.mgcg", "format":"MGCG"},
+		{"id": "groundTileGreenBorderPath", "VD": "VDphong", "model": "assets/models/world/city/tile_for_home_2x2_003.mgcg", "format":"MGCG"},
+
+		{"id": "bridgeTileCage", "VD": "VDphong", "model": "assets/models/world/city/road_tile_bridge_2x2_002.mgcg", "format":"MGCG"},
+
+
+		{"id": "houseDwellingStoreLightTurquoise", "VD": "VDphong", "model": "assets/models/world/city/dwelling&store_004.mgcg", "format":"MGCG"},
+		{"id": "houseDwellingStorePinkGrey", "VD": "VDphong", "model": "assets/models/world/city/dwelling&store_005.mgcg", "format":"MGCG"},
+		{"id": "houseDwellingPinkBlack", "VD": "VDphong", "model": "assets/models/world/city/dwelling&store_003.mgcg", "format":"MGCG"},
+		{"id": "houseDwellingLightTurquoise", "VD": "VDphong", "model": "assets/models/world/city/dwelling&store_008.mgcg", "format":"MGCG"},
+		{"id": "houseDwellingGreyYellow", "VD": "VDphong", "model": "assets/models/world/city/dwelling&store_006.mgcg", "format":"MGCG"},
+
+		{"id": "houseDwellingLargePinkYellow", "VD": "VDphong", "model": "assets/models/world/city/dwelling_002.mgcg", "format":"MGCG"},
+		{"id": "houseDwellingLargeYellow", "VD": "VDphong", "model": "assets/models/world/city/dwelling_005.mgcg", "format":"MGCG"},
+		{"id": "houseDwellingLargeBlackPink", "VD": "VDphong", "model": "assets/models/world/city/dwelling_006.mgcg", "format":"MGCG"},
+		{"id": "houseDwellingLargeRedBlack", "VD": "VDphong", "model": "assets/models/world/city/dwelling_007.mgcg", "format":"MGCG"},
+		{"id": "houseDwellingLargePinkYellowVariant", "VD": "VDphong", "model": "assets/models/world/city/dwelling_009.mgcg", "format":"MGCG"},
+		{"id": "houseDwellingLargeBluePink", "VD": "VDphong", "model": "assets/models/world/city/dwelling_010.mgcg", "format":"MGCG"},
+		{"id": "houseDwellingFlatYellowPink", "VD": "VDphong", "model": "assets/models/world/city/dwelling_001.mgcg", "format":"MGCG"},
+		{"id": "houseDwellingFlatPink", "VD": "VDphong", "model": "assets/models/world/city/dwelling_004.mgcg", "format":"MGCG"},
+		{"id": "houseDwellingFlatPinkYellowRed", "VD": "VDphong", "model": "assets/models/world/city/dwelling_012.mgcg", "format":"MGCG"},
+
+		{"id": "houseApartmentTallRedWhite", "VD": "VDphong", "model": "assets/models/world/city/apartment_1_001.mgcg", "format":"MGCG"},
+		{"id": "houseApartmentTallPinkWhite", "VD": "VDphong", "model": "assets/models/world/city/apartment_1_002.mgcg", "format":"MGCG"},
+		{"id": "houseApartmentTallPinkYellow", "VD": "VDphong", "model": "assets/models/world/city/apartment_1_003.mgcg", "format":"MGCG"},
+		{"id": "houseApartmentTallPinkGreyBlue", "VD": "VDphong", "model": "assets/models/world/city/apartment_1_004.mgcg", "format":"MGCG"},
+
+		{"id": "houseApartmentPillarYellowGrey", "VD": "VDphong", "model": "assets/models/world/city/apartment_001.mgcg", "format":"MGCG"},
+		{"id": "houseApartmentLongPillarPinkBlue", "VD": "VDphong", "model": "assets/models/world/city/apartment_002.mgcg", "format":"MGCG"},
+		{"id": "houseApartmentPillarYellowBlue", "VD": "VDphong", "model": "assets/models/world/city/apartment_003.mgcg", "format":"MGCG"},
+		{"id": "houseApartmentPinkYellow", "VD": "VDphong", "model": "assets/models/world/city/apartment_004.mgcg", "format":"MGCG"},
+		{"id": "houseApartmentPillarGreyBlue", "VD": "VDphong", "model": "assets/models/world/city/apartment_005.mgcg", "format":"MGCG"},
+		{"id": "houseApartmentBrownYellow", "VD": "VDphong", "model": "assets/models/world/city/apartment_006.mgcg", "format":"MGCG"},
+		{"id": "houseApartmentPinkGreen", "VD": "VDphong", "model": "assets/models/world/city/apartment_007.mgcg", "format":"MGCG"},
+		{"id": "houseApartmentPillarGreyYellow", "VD": "VDphong", "model": "assets/models/world/city/apartment_008.mgcg", "format":"MGCG"},
+		{"id": "houseApartmentPinkBlue", "VD": "VDphong", "model": "assets/models/world/city/apartment_009.mgcg", "format":"MGCG"},
+		{"id": "houseApartmentGreyWhite", "VD": "VDphong", "model": "assets/models/world/city/apartment_010.mgcg", "format":"MGCG"},
+		{"id": "houseApartmentPink", "VD": "VDphong", "model": "assets/models/world/city/apartment_011.mgcg", "format":"MGCG"},
+		{"id": "houseApartmentPillarWhiteYellow", "VD": "VDphong", "model": "assets/models/world/city/apartment_012.mgcg", "format":"MGCG"},
+
+		{"id": "houseOilTanks", "VD": "VDphong", "model": "assets/models/world/city/house_004.mgcg", "format":"MGCG"},
+		{"id": "houseOilBurnFurnace", "VD": "VDphong", "model": "assets/models/world/city/house_001.mgcg", "format":"MGCG"},
+		{"id": "boatContainerRedBlack", "VD": "VDphong", "model": "assets/models/world/city/transport_water_011_Mesh.1853.mgcg", "format":"MGCG"},
+		{"id": "boatContainerBlue", "VD": "VDphong", "model": "assets/models/world/city/transport_water_005_transport_water_005.002.mgcg", "format":"MGCG"},
+		{"id": "boatYachtLargeWhite", "VD": "VDphong", "model": "assets/models/world/city/transport_water_004_transport_water_004.001.mgcg", "format":"MGCG"},
+		{"id": "boatSpeedBoatWhite", "VD": "VDphong", "model": "assets/models/world/city/transport_water_003_transport_water_003.001.mgcg", "format":"MGCG"},
+		{"id": "boatTugBoat", "VD": "VDphong", "model": "assets/models/world/city/transport_water_012_Mesh.1854.mgcg", "format":"MGCG"},
+
+		{"id": "houseManufactureRedBigFurnace", "VD": "VDphong", "model": "assets/models/world/city/manufacture_001.mgcg", "format":"MGCG"},
+		{"id": "houseManufactureRedDoubleGarage", "VD": "VDphong", "model": "assets/models/world/city/manufacture_002.mgcg", "format":"MGCG"},
+		{"id": "houseManufactureRedTall", "VD": "VDphong", "model": "assets/models/world/city/manufacture_003.mgcg", "format":"MGCG"},
+		{"id": "houseManufactureRedDoubleFurnaceExternal", "VD": "VDphong", "model": "assets/models/world/city/manufacture_004.mgcg", "format":"MGCG"},
+		{"id": "houseManufactureRedLiving", "VD": "VDphong", "model": "assets/models/world/city/manufacture_005.mgcg", "format":"MGCG"},
+		{"id": "houseManufactureRedEars", "VD": "VDphong", "model": "assets/models/world/city/manufacture_006.mgcg", "format":"MGCG"},
+		{"id": "houseManufactureRedLShape", "VD": "VDphong", "model": "assets/models/world/city/manufacture_007.mgcg", "format":"MGCG"},
+		{"id": "houseManufactureRedFourFurnaceTall", "VD": "VDphong", "model": "assets/models/world/city/manufacture_009.mgcg", "format":"MGCG"},
+		{"id": "houseManufactureRedGraphity", "VD": "VDphong", "model": "assets/models/world/city/manufacture_010.mgcg", "format":"MGCG"},
+		{"id": "houseManufactureYellowBlock", "VD": "VDphong", "model": "assets/models/world/city/manufacture_011.mgcg", "format":"MGCG"},
+		{"id": "houseManufactureRedPinkBlock", "VD": "VDphong", "model": "assets/models/world/city/manufacture_013.mgcg", "format":"MGCG"},
+		{"id": "houseManufactureRedYellow", "VD": "VDphong", "model": "assets/models/world/city/manufacture_014.mgcg", "format":"MGCG"},
+		{"id": "houseManufactureRedYellowPinkBlock", "VD": "VDphong", "model": "assets/models/world/city/manufacture_015.mgcg", "format":"MGCG"},
+		{"id": "houseManufacturePinkYellowEars", "VD": "VDphong", "model": "assets/models/world/city/manufacture_015.mgcg", "format":"MGCG"},
+
+		{"id": "trainTileRailSwap", "VD": "VDphong", "model": "assets/models/world/city/tile_railroad_2x2_003.mgcg", "format":"MGCG"},
+		{"id": "trainTileRailEnd", "VD": "VDphong", "model": "assets/models/world/city/tile_railroad_1x1_006.mgcg", "format":"MGCG"},
+		{"id": "trainTileRailStraightSingle", "VD": "VDphong", "model": "assets/models/world/city/tile_railroad_1x1_001.mgcg", "format":"MGCG"},
+		{"id": "trainTileRailStraightDouble", "VD": "VDphong", "model": "assets/models/world/city/tile_railroad_1x1_002.mgcg", "format":"MGCG"},
+		{"id": "trainTileRailCorner", "VD": "VDphong", "model": "assets/models/world/city/tile_railroad_2x2_002.mgcg", "format":"MGCG"},
+		{"id": "trainTileRailCross", "VD": "VDphong", "model": "assets/models/world/city/tile_railroad_1x1_003.mgcg", "format":"MGCG"},
+
+		{"id": "containerHuge1", "VD": "VDphong", "model": "assets/models/world/city/container_004.mgcg", "format":"MGCG"},
+		{"id": "containerHuge2", "VD": "VDphong", "model": "assets/models/world/city/container_002.mgcg", "format":"MGCG"},
+		{"id": "containerHuge3", "VD": "VDphong", "model": "assets/models/world/city/container_005.mgcg", "format":"MGCG"},
+		{"id": "containerHuge4", "VD": "VDphong", "model": "assets/models/world/city/container_006.mgcg", "format":"MGCG"},
+
+		{"id": "trainBlue", "VD": "VDphong", "model": "assets/models/world/city/transport_railroad_001_Mesh.2653.mgcg", "format":"MGCG"},
+		{"id": "trainWhite", "VD": "VDphong", "model": "assets/models/world/city/transport_railroad_002_Mesh.2649.mgcg", "format":"MGCG"},
+		{"id": "trainWagonOil", "VD": "VDphong", "model": "assets/models/world/city/transport_railroad_003_Mesh.2647.mgcg", "format":"MGCG"},
+		{"id": "trainWagonSand", "VD": "VDphong", "model": "assets/models/world/city/transport_railroad_004_Mesh.2646.mgcg", "format":"MGCG"},
+		{"id": "trainWagonEmpty", "VD": "VDphong", "model": "assets/models/world/city/transport_railroad_005_Mesh.2650.mgcg", "format":"MGCG"},
+
+
+		{"id": "plantTreeTall", "VD": "VDphong", "model": "assets/models/world/city/plant_011.mgcg", "format":"MGCG"},
+
+		{"id": "railing", "VD": "VDphong", "model": "assets/models/world/city/railing_001.mgcg", "format":"MGCG"},
+		{"id": "railingCorner", "VD": "VDphong", "model": "assets/models/world/city/railing_002.mgcg", "format":"MGCG"},
+		{"id": "railingSingle", "VD": "VDphong", "model": "assets/models/world/city/railing_003.mgcg", "format":"MGCG"},
+
+		{"id": "carBasicBlack", "VD": "VDphong", "model": "assets/models/world/parking_lot/transport_cool_003_transport_cool_003.001.mgcg", "format":"MGCG"},
+
+		{"id": "vehicleCoolConvertableWhite", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_cool_001_transport_cool_001.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleCoolRedYellow", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_cool_002_transport_cool_002.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleCoolBlack", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_cool_003_transport_cool_003.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleCoolPink", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_cool_004_transport_cool_004.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleCoolTurquoise", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_cool_005_transport_cool_005.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleCoolBlackLimo", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_cool_006_transport_cool_006.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleCoolTruckTurquoise", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_cool_007_transport_cool_007.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleCoolBrown", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_cool_008_transport_cool_008.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleCoolYellow", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_cool_009_transport_cool_009.001.mgcg", "format":"MGCG"},
+
+		{"id": "vehicleBusYellow", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_bus_002_transport_bus_002.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleBusBlue", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_bus_007_transport_bus_007.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleBusCamper", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_bus_008_transport_bus_008.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleBusCoffee", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_bus_010_transport_bus_010.001.mgcg", "format":"MGCG"},
+
+		{"id": "vehicleSportOrange", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_sport_001_transport_sport_001.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleSportOrangeConvertable", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_sport_005_transport_sport_005.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleSportBlack", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_sport_007_transport_sport_007.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleSportOrangeBulky", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_sport_009_transport_sport_009.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleSportGreen", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_sport_010_transport_sport_010.001.mgcg", "format":"MGCG"},
+
+		{"id": "vehiclePurposePrisonBus", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_purpose_001_transport_purpose_001.001.mgcg", "format":"MGCG"},
+		{"id": "vehiclePurposePoliceCar", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_purpose_002_transport_purpose_002.001.mgcg", "format":"MGCG"},
+		{"id": "vehiclePurposeTaxi", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_purpose_003_transport_purpose_003.001.mgcg", "format":"MGCG"},
+		{"id": "vehiclePurposeArmoredTruck", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_purpose_005_transport_purpose_005.001.mgcg", "format":"MGCG"},
+		{"id": "vehiclePurposeFireFighter", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_purpose_006_transport_purpose_006.001.mgcg", "format":"MGCG"},
+		{"id": "vehiclePurposeAmbulance", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_purpose_007_transport_purpose_007.001.mgcg", "format":"MGCG"},
+
+		{"id": "vehicleJeepBrown", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_jeep_001_transport_jeep_001.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleJeepGreen", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_jeep_002_transport_jeep_002.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleJeepBlue", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_jeep_003_transport_jeep_003.001.mgcg", "format":"MGCG"},
+
+		{"id": "vehicleOldGrey", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_old_001_transport_old_001.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleOldBeige", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_old_002_transport_old_002.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleOldRed", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_old_004_transport_old_004.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleOldPink", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_old_006_transport_old_006.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleOldTurquoise", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_old_007_transport_old_007.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleOldPinkTall", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_old_008_transport_old_008.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleOldBrown", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_old_009_transport_old_009.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleOldTurquoiseTall", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_old_010_transport_old_010.001.mgcg", "format":"MGCG"},
+		{"id": "vehicleOldGreyTall", "VD": "VDphong", "model": "assets/models/world/city/vehicles/transport_old_013_transport_old_013.001.mgcg", "format":"MGCG"}
+
+
+	],
+	"textures": [
+		{"id": "ColorAtlasCG", "texture": "assets/textures/ColorAtlasCG.png", "format": "C"},
+		{"id": "ColorAtlasAxis", "texture": "assets/textures/ColorAtlasAxis.png", "format": "C"},
+		{"id": "skybox", "texture": "assets/textures/skybox.hdr", "format": "C"},
+		{"id": "ColorAtlasCustom", "texture": "assets/textures/ColorAtlasCustom.png", "format": "C"},
+		{"id": "hud_1920", "texture": "assets/textures/GameHUD_1920.png", "format": "C"},
+		{"id": "hud_1600", "texture": "assets/textures/GameHUD_1600.png", "format": "C"},
+		{"id": "hud_1120", "texture": "assets/textures/GameHUD_1120.png", "format": "C"}
+	],
+	"instances": [
+		{"technique": "PhongShader", "elements": [
+			{"id": "jem0",  "model": "jem0", "scale": [0.55, 0.55, 0.55], "translate": [0, 0.53, 0], "texture": ["ColorAtlasCustom"]},
+			{"id": "jem1",  "model": "jem1", "scale": [0.55, 0.55, 0.55], "translate": [0, 0.53, 0], "texture": ["ColorAtlasCustom"]},
+			{"id": "jem2",  "model": "jem2", "scale": [0.55, 0.55, 0.55], "translate": [0, 0.53, 0], "texture": ["ColorAtlasCustom"]},
+			{"id": "jewfr0",  "model": "jewfr0", "scale": [0.55, 0.55, 0.55], "translate": [-0.63, 0.17, 1.18], "texture": ["ColorAtlasCustom"]},
+			{"id": "jewfl0",  "model": "jewfl0", "scale": [0.55, 0.55, 0.55], "translate": [0.63, 0.17, 1.18], "texture": ["ColorAtlasCustom"]},
+			{"id": "jewbr0",  "model": "jewbr0", "scale": [0.55, 0.55, 0.55], "translate": [-0.63, 0.17, -0.707], "texture": ["ColorAtlasCustom"]},
+			{"id": "jewbl0",  "model": "jewbl0", "scale": [0.55, 0.55, 0.55], "translate": [0.63, 0.17, -0.707], "texture": ["ColorAtlasCustom"]},
+
+			{"id": "arrow",  "model": "arrow", "scale": [2.0, 2.0, 2.0], "translate": [3, -0, -3], "texture": ["ColorAtlasCustom"]},
+			{"id": "trophy",  "model": "trophy", "scale": [0.3, 0.3, 0.3], "translate": [0, -0, 0], "texture": ["ColorAtlasCustom"]},
+			{"id": "axis",  "model": "axis", "texture": ["ColorAtlasAxis"],
+				"eulerAngles": [0, -90, 0],
+				"translate": [0, 10, 0]
+			},
+			{"id": "t0x1",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, 20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x1",  "model": "roadTileCornerSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, 20],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-1x1",  "model": "roadTileFourWay",   "texture": ["ColorAtlasCG"],
+				"translate": [-20, 0, 20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x1",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, 20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-3x1",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [-60, 0, 20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-4x1",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [-80, 0, 20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-5x1",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [-100, 0, 20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x0",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, 0],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x-1",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, -20],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x-2",  "model": "roadTileFourWay",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, -40],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x-3",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, -60],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x-4",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, -80],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x-2",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, -40],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x-2",  "model": "roadTileThreeWay",   "texture": ["ColorAtlasCG"],
+				"translate": [60, 0, -40],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x-2_w",  "model": "riverTileFullWater",   "texture": ["ColorAtlasCG"],
+				"translate": [60, -1.47, -40],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x3_w",  "model": "riverTileFullWater",   "texture": ["ColorAtlasCG"],
+				"translate": [60, -1.47, 60],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x3",  "model": "bridgeTileCage",   "texture": ["ColorAtlasCG"],
+				"translate": [60, 0, 60],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x-2",  "model": "roadTileStraightOneExit",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, -40],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x-2",  "model": "roadTileCornerSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [100, 0, -40],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x-3",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [100, 0, -60],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x-4",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [100, 0, -80],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x-5",  "model": "roadTileCornerSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [100, 0, -100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x-5",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, -100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x-5",  "model": "roadTileStraightOneExit",   "texture": ["ColorAtlasCG"],
+				"translate": [60, 0, -100],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x-5",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, -100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x-5",  "model": "roadTileCornerSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, -100],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x-2",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, -40],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-1x-2",  "model": "roadTileCornerSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [-20, 0, -40],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-1x-1",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [-20, 0, -20],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-1x0",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [-20, 0, 0],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-1x2",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [-20, 0, 40],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-1x3",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [-20, 0, 60],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-1x4",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [-20, 0, 80],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-1x5",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [-20, 0, 100],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x0",  "model": "parkTileLargeLake",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, 0],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x-1",  "model": "parkTileSmallLake",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, -20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x0_w",  "model": "riverTileFullWater",   "texture": ["ColorAtlasCG"],
+				"translate": [60, -1.47, 0],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x0",  "model": "bridgeTileCage",   "texture": ["ColorAtlasCG"],
+				"translate": [60, 0, 0],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x0",  "model": "riverTileFullWater",   "texture": ["ColorAtlasCG"],
+				"translate": [80, -1.47, 0],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x1_w",  "model": "riverTileFullWater",   "texture": ["ColorAtlasCG"],
+				"translate": [60, -1.47, 20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x1",  "model": "bridgeTileCage",   "texture": ["ColorAtlasCG"],
+				"translate": [60, 0, 20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x1",  "model": "riverTileFullWater",   "texture": ["ColorAtlasCG"],
+				"translate": [80, -1.47, 20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x-1",  "model": "riverTileCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, -20],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x2",  "model": "riverTileCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [100, 0, 40],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x-1",  "model": "riverTileCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [100, 0, -20],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x2",  "model": "riverTileCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, 40],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x-1",  "model": "bridgeTileCage",   "texture": ["ColorAtlasCG"],
+				"translate": [60, 0, -20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x-1_w",  "model": "riverTileFullWater",   "texture": ["ColorAtlasCG"],
+				"translate": [60, -1.47, -20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x-1",  "model": "riverTileStraight",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, -20],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x0",  "model": "riverTileStraight",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, 0],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x1",  "model": "riverTileStraight",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, 20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x2_w",  "model": "riverTileFullWater",   "texture": ["ColorAtlasCG"],
+				"translate": [60, -1.47, 40],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x2",  "model": "bridgeTileCage",   "texture": ["ColorAtlasCG"],
+				"translate": [60, 0, 40],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x2",  "model": "riverTileStraight",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, 40],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x0",  "model": "riverTileReversCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [100, 0, 0],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x1",  "model": "riverTileReversCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [100, 0, 20],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x-3",  "model": "parkingLotTileHedge",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, -60],
+				"eulerAngles": [0, 0, 0],
+				"scale": [-1.25, 1.25, 1.25]
+			},
+			{"id": "t3x-4",  "model": "parkTileSmallLake",   "texture": ["ColorAtlasCG"],
+				"translate": [60, 0, -80],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x-3",  "model": "groundTileGreenBorder",   "texture": ["ColorAtlasCG"],
+				"translate": [60, 0, -60],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x-4",  "model": "entertainmentTileSkateboardLarge",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, -80],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x-3",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, -60],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x-4",  "model": "entertainmentTileTennis",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, -80],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x-3_h1",  "model": "houseDwellingStoreLightTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [63.5, 0, -55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x-3_h2",  "model": "houseDwellingStoreLightTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [63.5, 0, -65],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x-3_h3",  "model": "houseDwellingPinkBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [55, 0, -56.5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x-3_h1",  "model": "houseDwellingLightTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [37, 0, -55],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x-3_h2",  "model": "houseDwellingGreyYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [45, 0, -55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x-3_h3",  "model": "houseDwellingLightTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [37, 0, -65],
+				"eulerAngles": [0, -90, 0],
+				"scale": [-1.25, 1.25, 1.25]
+			},
+			{"id": "t2x-3_h4",  "model": "houseDwellingGreyYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [45, 0, -65],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25,-1.25]
+			},
+			{"id": "t3x-3_p1",  "model": "plantTreeTall",   "texture": ["ColorAtlasCG"],
+				"translate": [57, 0, -63],
+				"eulerAngles": [0, 15, 0],
+				"scale": [1.25, 1.25,-1.25]
+			},
+			{"id": "t3x-3_p2",  "model": "plantTreeTall",   "texture": ["ColorAtlasCG"],
+				"translate": [54, 0, -67],
+				"eulerAngles": [0, 76, 0],
+				"scale": [1.25, 1.25,-1.25]
+			},
+			{"id": "t3x-3_p3",  "model": "plantTreeTall",   "texture": ["ColorAtlasCG"],
+				"translate": [57, 0, -65.5],
+				"eulerAngles": [0, -23, 0],
+				"scale": [1.25, 1.25,-1.25]
+			},
+			{"id": "t3x-3_p4",  "model": "plantTreeTall",   "texture": ["ColorAtlasCG"],
+				"translate": [53, 0, -64],
+				"eulerAngles": [0, 35, 0],
+				"scale": [1.25, 1.25,-1.25]
+			},
+			{"id": "t6x-2",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, -40],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x-2_h1",  "model": "houseDwellingLargeRedBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, -40],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x-3",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, -60],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x-2/3_h1",  "model": "houseDwellingLargePinkYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, -50],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x-4",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, -80],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x-3_h1",  "model": "houseDwellingLargeBlackPink",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, -60],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x-3/4_h1",  "model": "houseDwellingLargeBluePink",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, -70],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x-4_h1",  "model": "houseDwellingLargePinkYellowVariant",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, -80],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x-4/5_h1",  "model": "houseDwellingLargeBlackPink",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, -90],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x-5",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, -100],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x-5_h1",  "model": "houseDwellingLargeRedBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, -100],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x-6",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, -120],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x-6_h1",  "model": "houseDwellingFlatPinkYellowRed",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, -117.5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x0",  "model": "riverTileStraight",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, 0],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x1",  "model": "riverTileStraight",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, 20],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x-1",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, -20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x-1_h1",  "model": "houseOilTanks",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, -20],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t6x2",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, 40],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x2_h1",  "model": "houseManufactureRedYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, 40],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x3",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, 60],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x3_h1",  "model": "houseManufactureRedDoubleFurnaceExternal",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, 60],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x1_b1",  "model": "boatContainerRedBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [100, -1.47, 20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x0_b1",  "model": "boatYachtLargeWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [80, -1.47, 0],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "t5x-1_b1",  "model": "boatSpeedBoatWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [90, -1.47, -20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.5, 1.5, 1.5]
+			},
+			{"id": "t5x-1_b2",  "model": "boatTugBoat",   "texture": ["ColorAtlasCG"],
+				"translate": [100, -1.47, -20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.5, 1.5, 1.5]
+			},
+			{"id": "t4x3",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, 60],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x3",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [100, 0, 60],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x3_h1",  "model": "houseOilBurnFurnace",   "texture": ["ColorAtlasCG"],
+				"translate": [100, 0, 60],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t4x3_h1",  "model": "houseManufactureRedFourFurnaceTall",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, 60],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x3",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, 60],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x3_h1",  "model": "houseManufactureRedLShape",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, 60],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x3",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, 60],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x3_h1",  "model": "houseManufactureRedPinkBlock",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, 60],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x2",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, 40],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x2_h1",  "model": "houseManufactureRedTall",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, 40],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x0_b1",  "model": "boatContainerBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [40, -1.47, 0],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x-6",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [100, 0, -120],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x-6_h1",  "model": "houseDwellingFlatYellowPink",   "texture": ["ColorAtlasCG"],
+				"translate": [100, 0, -120],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x-6",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, -120],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x-6_h1",  "model": "houseDwellingFlatPink",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, -120],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x-6",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, -120],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x-6_h1",  "model": "houseDwellingFlatPinkYellowRed",   "texture": ["ColorAtlasCG"],
+				"translate": [42.5, 0, -117.5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x-6",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, -120],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x-6_h1",  "model": "houseDwellingFlatPinkYellowRed",   "texture": ["ColorAtlasCG"],
+				"translate": [17.5, 0, -117.5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1/2x-6_h1",  "model": "houseDwellingStorePinkGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [30, 0, -117.5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x-6",  "model": "parkingLotTileHedge",   "texture": ["ColorAtlasCG"],
+				"translate": [60, 0, -120],
+				"eulerAngles": [0, 0, 0],
+				"scale": [-1.25, 1.25, 1.25]
+			},
+			{"id": "t0x-3",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, -60],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x-3_h1",  "model": "houseApartmentTallPinkGreyBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, -60],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t0x-4",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, -80],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x-4_h1",  "model": "houseApartmentTallPinkYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, -75],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t0x-5",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, -100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x-4/5_h1",  "model": "houseApartmentTallPinkWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, -90],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t0x-5_h1",  "model": "houseApartmentTallPinkYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, -105],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t0x-6",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, -120],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x-6_h1",  "model": "houseApartmentTallRedWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, -120],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-1x-3",  "model": "parkTileFountain",   "texture": ["ColorAtlasCG"],
+				"translate": [-20, 0, -60],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-1x-4",  "model": "parkTileLargeLakeBridge",   "texture": ["ColorAtlasCG"],
+				"translate": [-20, 0, -80],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-1x-5",  "model": "parkTileSmallLake",   "texture": ["ColorAtlasCG"],
+				"translate": [-20, 0, -100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-1x-6",  "model": "parkTileLargeLake",   "texture": ["ColorAtlasCG"],
+				"translate": [-20, 0, -120],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x-3",  "model": "parkTileLargeLakeBridge",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, -60],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x-4",  "model": "parkTileArches",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, -80],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x-5",  "model": "parkTileSmallLake",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, -100],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x-6",  "model": "parkTileArches",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, -120],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x-2",  "model": "parkTileArches",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, -40],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x0",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, 0],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-6x1",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [-120, 0, 20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-6x1_h1",  "model": "houseApartmentGreyWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [-115, 0, 16],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-6x1_h2",  "model": "houseApartmentPillarGreyYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-115, 0, 24],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-6x1_h3",  "model": "houseApartmentPillarGreyBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-125, 0, 16],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-6x1_h4",  "model": "houseApartmentLongPillarPinkBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-125, 0, 24],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x-1",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, -20],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x-1_h1",  "model": "houseApartmentPillarYellowGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [-35, 0, -24],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x-1_h2",  "model": "houseApartmentBrownYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-35, 0, -16],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x-1_h3",  "model": "houseApartmentPinkBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-45, 0, -24],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x-1_h4",  "model": "houseApartmentPillarWhiteYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-45, 0, -16],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x0_h1",  "model": "houseApartmentPink",   "texture": ["ColorAtlasCG"],
+				"translate": [-35, 0, -4],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x0_h2",  "model": "houseApartmentPillarGreyYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-35, 0, 4],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x0_h3",  "model": "houseApartmentPinkYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-45, 0, -4],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x0_h4",  "model": "houseApartmentPinkGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [-45, 0, 4],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-3x0",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [-60, 0, 0],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-3x0_h1",  "model": "houseApartmentPinkGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [-64, 0, 5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-3x0_h2",  "model": "houseApartmentPillarWhiteYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-56, 0, 5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-3x0_h3",  "model": "houseApartmentPinkBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-64, 0, -5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-3x0_h4",  "model": "houseApartmentPillarGreyYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-56, 0, -5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-4x0",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [-80, 0, 0],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-4x0_h1",  "model": "houseApartmentPinkYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-84, 0, 5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-4x0_h2",  "model": "houseApartmentPillarGreyBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-76, 0, 5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-4x0_h3",  "model": "houseApartmentPillarYellowGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [-84, 0, -5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-4x0_h4",  "model": "houseApartmentBrownYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-76, 0, -5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-5x0",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [-100, 0, 0],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-5x0_h1",  "model": "houseApartmentGreyWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [-104, 0, 5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-5x0_h2",  "model": "houseApartmentPillarYellowBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-96, 0, 5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-5x0_h3",  "model": "houseApartmentPillarGreyBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-104, 0, -5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-5x0_h4",  "model": "houseApartmentGreyWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [-96, 0, -5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-6x0",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [-120, 0, 0],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-6x0_h1",  "model": "houseApartmentPinkGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [-124, 0, 5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-6x0_h2",  "model": "houseApartmentGreyWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [-116, 0, 5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-6x0_h3",  "model": "houseApartmentLongPillarPinkBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-124, 0, -5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-6x0_h4",  "model": "houseApartmentBrownYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-116, 0, -5],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-6x2",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [-120, 0, 40],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-6x2_h1",  "model": "houseApartmentPillarYellowGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [-124, 0, 35],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-6x2_h2",  "model": "houseApartmentPillarYellowBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-116, 0, 35],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-6x2_h3",  "model": "houseApartmentPink",   "texture": ["ColorAtlasCG"],
+				"translate": [-124, 0, 45],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-6x2_h4",  "model": "houseApartmentPillarWhiteYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-116, 0, 45],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-5x2",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [-100, 0, 40],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-5x2_h1",  "model": "houseApartmentLongPillarPinkBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-104, 0, 35],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-5x2_h2",  "model": "houseApartmentPink",   "texture": ["ColorAtlasCG"],
+				"translate": [-96, 0, 35],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-5x2_h3",  "model": "houseApartmentPinkYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-104, 0, 45],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-5x2_h4",  "model": "houseApartmentPinkBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-96, 0, 45],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-4x2",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [-80, 0, 40],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-4x2_h1",  "model": "houseApartmentPillarYellowGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [-84, 0, 35],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-4x2_h2",  "model": "houseApartmentBrownYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-76, 0, 35],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-4x2_h3",  "model": "houseApartmentPillarGreyBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-84, 0, 45],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-4x2_h4",  "model": "houseApartmentPinkGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [-76, 0, 45],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-3x2",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [-60, 0, 40],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-3x2_h1",  "model": "houseApartmentPillarGreyBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-64, 0, 35],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-3x2_h2",  "model": "houseApartmentLongPillarPinkBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-56, 0, 35],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-3x2_h3",  "model": "houseApartmentPinkBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-64, 0, 45],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-3x2_h4",  "model": "houseApartmentPink",   "texture": ["ColorAtlasCG"],
+				"translate": [-56, 0, 45],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x2",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, 40],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x2_h1",  "model": "houseApartmentPinkBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-35, 0, 36],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x2_h2",  "model": "houseApartmentPink",   "texture": ["ColorAtlasCG"],
+				"translate": [-35, 0, 44],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x2_h3",  "model": "houseApartmentPinkGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [-45, 0, 36],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x2_h4",  "model": "houseApartmentPinkYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-45, 0, 44],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x3",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, 60],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x3_h1",  "model": "houseApartmentPillarGreyYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-35, 0, 56],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x3_h2",  "model": "houseApartmentPinkBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-35, 0, 64],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x3_h3",  "model": "houseApartmentPillarGreyBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-45, 0, 56],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x3_h4",  "model": "houseApartmentPillarYellowBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-45, 0, 64],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x4",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, 80],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x4_h1",  "model": "houseApartmentPink",   "texture": ["ColorAtlasCG"],
+				"translate": [-35, 0, 76],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x4_h2",  "model": "houseApartmentPillarGreyBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-35, 0, 84],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x4_h3",  "model": "houseApartmentPillarGreyYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-45, 0, 76],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x4_h4",  "model": "houseApartmentPillarYellowBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-45, 0, 84],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x5",  "model": "groundTileGreenBorderPath",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, 100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x5_h1",  "model": "houseApartmentPillarWhiteYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-35, 0, 96],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x5_h2",  "model": "houseApartmentLongPillarPinkBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-35, 0, 104],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x5_h3",  "model": "houseApartmentBrownYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-45, 0, 96],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t-2x5_h4",  "model": "houseApartmentPinkYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-45, 0, 104],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1, 1, 1]
+			},
+			{"id": "t0x4",  "model": "trainTileRailSwap",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, 80],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x2_t1",  "model": "trainTileRailEnd",   "texture": ["ColorAtlasCG"],
+				"translate": [-5, 0, 35],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x2_t2",  "model": "trainTileRailEnd",   "texture": ["ColorAtlasCG"],
+				"translate": [5, 0, 35],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x2_t3",  "model": "trainTileRailStraightSingle",   "texture": ["ColorAtlasCG"],
+				"translate": [-5, 0, 45],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x2_t4",  "model": "trainTileRailStraightSingle",   "texture": ["ColorAtlasCG"],
+				"translate": [5, 0, 45],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x3_t1",  "model": "trainTileRailStraightSingle",   "texture": ["ColorAtlasCG"],
+				"translate": [-5, 0, 55],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x3_t2",  "model": "trainTileRailStraightSingle",   "texture": ["ColorAtlasCG"],
+				"translate": [5, 0, 55],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x3_t3",  "model": "trainTileRailStraightSingle",   "texture": ["ColorAtlasCG"],
+				"translate": [-5, 0, 65],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x3_t4",  "model": "trainTileRailStraightSingle",   "texture": ["ColorAtlasCG"],
+				"translate": [5, 0, 65],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x5_t1",  "model": "trainTileRailStraightDouble",   "texture": ["ColorAtlasCG"],
+				"translate": [-5, 0, 95],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x5_t2",  "model": "trainTileRailStraightSingle",   "texture": ["ColorAtlasCG"],
+				"translate": [5, 0, 95],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x5_t3",  "model": "trainTileRailStraightDouble",   "texture": ["ColorAtlasCG"],
+				"translate": [-5, 0, 105],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x5_t4",  "model": "trainTileRailEnd",   "texture": ["ColorAtlasCG"],
+				"translate": [5, 0, 105],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, -1.25]
+			},
+			{"id": "t0x6",  "model": "trainTileRailCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, 120],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x6_t1",  "model": "groundTileGreySingle",   "texture": ["ColorAtlasCG"],
+				"translate": [15, 0, 115],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x6_t2",  "model": "groundTileGreySingle",   "texture": ["ColorAtlasCG"],
+				"translate": [25, 0, 115],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x6_t3",  "model": "trainTileRailStraightDouble",   "texture": ["ColorAtlasCG"],
+				"translate": [15, 0, 125],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x6_t4",  "model": "trainTileRailStraightDouble",   "texture": ["ColorAtlasCG"],
+				"translate": [25, 0, 125],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, -1.25]
+			},
+			{"id": "t2x6_t1",  "model": "groundTileGreySingle",   "texture": ["ColorAtlasCG"],
+				"translate": [35, 0, 115],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x6_t2",  "model": "groundTileGreySingle",   "texture": ["ColorAtlasCG"],
+				"translate": [45, 0, 115],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x6_t3",  "model": "trainTileRailStraightDouble",   "texture": ["ColorAtlasCG"],
+				"translate": [35, 0, 125],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x6_t4",  "model": "trainTileRailStraightDouble",   "texture": ["ColorAtlasCG"],
+				"translate": [45, 0, 125],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, -1.25]
+			},
+			{"id": "t3x4",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [60, 0, 80],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x5",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [60, 0, 100],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x6_t1",  "model": "roadTileStraightHalf",   "texture": ["ColorAtlasCG"],
+				"translate": [60, 0, 115],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x6_t2",  "model": "trainTileRailStraightDouble",   "texture": ["ColorAtlasCG"],
+				"translate": [55, 0, 125],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x6_t3",  "model": "trainTileRailStraightDouble",   "texture": ["ColorAtlasCG"],
+				"translate": [65, 0, 125],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x7",  "model": "roadTileCornerSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [60, 0, 140],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x7",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, 140],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x7",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, 140],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x7",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, 140],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-1x7",  "model": "roadTileCornerSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [-20, 0, 140],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-1x6",  "model": "roadTileStraightSimple",   "texture": ["ColorAtlasCG"],
+				"translate": [-20, 0, 120],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x6_t1",  "model": "groundTileGreySingle",   "texture": ["ColorAtlasCG"],
+				"translate": [75, 0, 115],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x6_t2",  "model": "groundTileGreySingle",   "texture": ["ColorAtlasCG"],
+				"translate": [85, 0, 115],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x6_t3",  "model": "trainTileRailStraightDouble",   "texture": ["ColorAtlasCG"],
+				"translate": [75, 0, 125],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x6_t4",  "model": "trainTileRailStraightDouble",   "texture": ["ColorAtlasCG"],
+				"translate": [85, 0, 125],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, -1.25]
+			},
+			{"id": "t5x6_t1",  "model": "groundTileGreySingle",   "texture": ["ColorAtlasCG"],
+				"translate": [95, 0, 115],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x6_t2",  "model": "groundTileGreySingle",   "texture": ["ColorAtlasCG"],
+				"translate": [105, 0, 115],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x6_t3",  "model": "trainTileRailStraightDouble",   "texture": ["ColorAtlasCG"],
+				"translate": [95, 0, 125],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x6_t4",  "model": "trainTileRailStraightDouble",   "texture": ["ColorAtlasCG"],
+				"translate": [105, 0, 125],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, -1.25]
+			},
+			{"id": "t6x6_c1",  "model": "containerHuge1",   "texture": ["ColorAtlasCG"],
+				"translate": [115, 0, 115],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x6_c1",  "model": "containerHuge2",   "texture": ["ColorAtlasCG"],
+				"translate": [95, 0, 115],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x6_c1",  "model": "containerHuge3",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, 115],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x6_t1",  "model": "groundTileGreySingle",   "texture": ["ColorAtlasCG"],
+				"translate": [115, 0, 115],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x6_t2",  "model": "groundTileGreySingle",   "texture": ["ColorAtlasCG"],
+				"translate": [125, 0, 115],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x6/7",  "model": "trainTileRailCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, 130],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x7_t1",  "model": "groundTileGreySingle",   "texture": ["ColorAtlasCG"],
+				"translate": [115, 0, 145],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x7_t2",  "model": "trainTileRailStraightDouble",   "texture": ["ColorAtlasCG"],
+				"translate": [125, 0, 145],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x4",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, 80],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x4",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, 80],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x5",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, 100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x5",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, 100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x4",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, 80],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x4_h1",  "model": "houseManufactureRedEars",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, 80],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x5",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, 100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x5_h1",  "model": "houseManufactureRedDoubleGarage",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, 100],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x5",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [100, 0, 100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x5_h1",  "model": "houseManufactureRedFourFurnaceTall",   "texture": ["ColorAtlasCG"],
+				"translate": [100, 0, 100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x5",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, 100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t6x5_h1",  "model": "houseManufactureRedYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [120, 0, 100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t7x5",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [140, 0, 100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t7x5_h1",  "model": "houseManufactureRedTall",   "texture": ["ColorAtlasCG"],
+				"translate": [140, 0, 100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t7x6",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [140, 0, 120],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t7x6_h1",  "model": "houseManufactureRedYellowPinkBlock",   "texture": ["ColorAtlasCG"],
+				"translate": [140, 0, 120],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t7x7",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [140, 0, 140],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t7x7_h1",  "model": "houseManufactureRedLiving",   "texture": ["ColorAtlasCG"],
+				"translate": [140, 0, 140],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x7",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [100, 0, 140],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t5x7_h1",  "model": "houseManufactureRedTall",   "texture": ["ColorAtlasCG"],
+				"translate": [100, 0, 140],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x7",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, 140],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x7_h1",  "model": "houseManufactureYellowBlock",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, 140],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x8",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, 160],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t4x8_h1",  "model": "houseManufactureRedYellowPinkBlock",   "texture": ["ColorAtlasCG"],
+				"translate": [80, 0, 160],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x8",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [60, 0, 160],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t3x8_h1",  "model": "houseManufactureRedGraphity",   "texture": ["ColorAtlasCG"],
+				"translate": [60, 0, 160],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x8",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, 160],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x8_h1",  "model": "houseManufactureRedPinkBlock",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, 160],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x8",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, 160],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x8_h1",  "model": "houseManufacturePinkYellowEars",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, 160],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x8",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, 160],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t0x8_h1",  "model": "houseManufactureRedDoubleGarage",   "texture": ["ColorAtlasCG"],
+				"translate": [0, 0, 160],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-1x8",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [-20, 0, 160],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-1x8_h1",  "model": "houseManufactureRedLiving",   "texture": ["ColorAtlasCG"],
+				"translate": [-20, 0, 160],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x4_con",  "model": "containerHuge1",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, 80],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x4_con",  "model": "containerHuge2",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, 80],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x4/5_con",  "model": "containerHuge3",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, 90],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x4/5_con",  "model": "containerHuge4",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, 90],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x5_con",  "model": "containerHuge3",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, 100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x5_con",  "model": "containerHuge4",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, 100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t1x5/6_con",  "model": "containerHuge1",   "texture": ["ColorAtlasCG"],
+				"translate": [20, 0, 110],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t2x5/6_con",  "model": "containerHuge2",   "texture": ["ColorAtlasCG"],
+				"translate": [40, 0, 110],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x7",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, 140],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x7_h1",  "model": "houseManufactureRedLiving",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, 140],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x6",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, 120],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x6_h1",  "model": "houseManufactureRedEars",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, 120],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x8",  "model": "groundTileGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, 160],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "t-2x8_h1",  "model": "houseManufactureRedLShape",   "texture": ["ColorAtlasCG"],
+				"translate": [-40, 0, 160],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "train1_front",  "model": "trainBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [3, 0, 65],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "train1_middle1",  "model": "trainWagonOil",   "texture": ["ColorAtlasCG"],
+				"translate": [3, 0, 51.7],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "train1_middle2",  "model": "trainWagonOil",   "texture": ["ColorAtlasCG"],
+				"translate": [3, 0, 38.7],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "train2_front",  "model": "trainWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [-7, 0, 100],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "train2_middle1",  "model": "trainWagonSand",   "texture": ["ColorAtlasCG"],
+				"translate": [-7, 0, 86.7],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "train2_middle2",  "model": "trainWagonEmpty",   "texture": ["ColorAtlasCG"],
+				"translate": [-7, 0, 73.4],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "train2_middle3",  "model": "trainWagonSand",   "texture": ["ColorAtlasCG"],
+				"translate": [-7, 0, 60.1],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "train3_front",  "model": "trainWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [100, 0, 123],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "train3_middle1",  "model": "trainWagonSand",   "texture": ["ColorAtlasCG"],
+				"translate": [86.7, 0, 123],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "train3_middle2",  "model": "trainWagonEmpty",   "texture": ["ColorAtlasCG"],
+				"translate": [73.4, 0, 123],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "train3_middle3",  "model": "trainWagonOil",   "texture": ["ColorAtlasCG"],
+				"translate": [60.1, 0, 123],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "train3_middle4",  "model": "trainWagonOil",   "texture": ["ColorAtlasCG"],
+				"translate": [47.2, 0, 123],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "train3_middle5",  "model": "trainWagonEmpty",   "texture": ["ColorAtlasCG"],
+				"translate": [34.5, 0, 123],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "r-5x1_s1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-107.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-5x1_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-102.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-5x1_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-97.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-5x1_s4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-92.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-5x1_n1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-107.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-5x1_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-102.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-5x1_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-97.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-5x1_n4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-92.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-4x1_s1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-87.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-4x1_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-82.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-4x1_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-77.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-4x1_s4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-72.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-4x1_n1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-87.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-4x1_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-82.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-4x1_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-77.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-4x1_n4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-72.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-3x1_s1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-67.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-3x1_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-62.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-3x1_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-57.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-3x1_s4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-52.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-3x1_n1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-67.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-3x1_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-62.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-3x1_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-57.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-3x1_n4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-52.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-2x1_s1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-47.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-2x1_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-42.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-2x1_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-37.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-2x1_s4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-32.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-2x1_n1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-47.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-2x1_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-42.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-2x1_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-37.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-2x1_n4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-32.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x1_s1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-7.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x1_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-2.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x1_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [2.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x1_s4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [7.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x1_n1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-7.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x1_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-2.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x1_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [2.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x1_n4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [7.5, 0, 12.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x1_s1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [17.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x1_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x1_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [22.5, 0, 27.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x1_s4_s",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [25, 0, 27.55],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x-2_n1_s",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-25, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x-2_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-22.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x-2_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-17.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x-2_n4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x-2_s1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-7.5, 0, -32.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x-2_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-2.5, 0, -32.4],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x-2_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [2.5, 0, -32.4],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x-2_s4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [7.5, 0, -32.4],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x-2_n1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-7.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x-2_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-2.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x-2_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [2.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x-2_n4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [7.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x-2_s1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [32.5, 0, -32.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x-2_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [37.5, 0, -32.4],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x-2_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [42.5, 0, -32.4],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x-2_s4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [47.5, 0, -32.4],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x-2_n1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [32.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x-2_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [37.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x-2_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [42.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x-2_n4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [47.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-2_n1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-2_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [57.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-2_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [62.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-2_n4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r4x-2_s1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [72.5, 0, -32.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r4x-2_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [77.5, 0, -32.4],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r4x-2_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [82.5, 0, -32.4],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r4x-2_s4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [87.5, 0, -32.4],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r4x-2_n1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [72.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r4x-2_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [77.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r4x-2_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [82.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r4x-2_n4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [87.5, 0, -47.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-2_s1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [92.5, 0, -32.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-2_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [97.5, 0, -32.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-2_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [102.5, 0, -32.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-2_s4_s",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [105, 0, -32.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x-5_s1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [32.5, 0, -92.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x-5_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [37.5, 0, -92.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x-5_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [42.5, 0, -92.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x-5_s4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [47.5, 0, -92.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x-5_n1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [32.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x-5_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [37.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x-5_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [42.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x-5_n4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [47.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-5_n1_s",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [15, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-5_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [17.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-5_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [22.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-5_n4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-5_s1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.5, 0, -92.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-5_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [57.5, 0, -92.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-5_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [62.5, 0, -92.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-5_s4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.5, 0, -92.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-5_n1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-5_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [57.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-5_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [62.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-5_n4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r4x-5_s1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [72.5, 0, -92.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r4x-5_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [77.5, 0, -92.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r4x-5_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [82.5, 0, -92.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r4x-5_s4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [87.5, 0, -92.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r4x-5_n1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [72.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r4x-5_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [77.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r4x-5_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [82.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r4x-5_n4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [87.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-5_n1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [92.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-5_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [97.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-5_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [102.5, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-5_n4_s",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [105, 0, -107.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x7_s1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-7.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x7_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-2.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x7_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [2.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x7_s4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [7.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x7_n1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-7.5, 0, 132.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x7_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-2.5, 0, 132.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x7_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [2.5, 0, 132.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r0x7_n4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [7.5, 0, 132.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x7_s1_s",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-25, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x7_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-22.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x7_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-17.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x7_s4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x7_s1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x7_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [17.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x7_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [22.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x7_s4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x7_n1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.5, 0, 132.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x7_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [17.5, 0, 132.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x7_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [22.5, 0, 132.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x7_n4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.5, 0, 132.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x7_s1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [32.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x7_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [37.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x7_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [42.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x7_s4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [47.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x7_n1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [32.5, 0, 132.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x7_n2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [37.5, 0, 132.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x7_n3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [42.5, 0, 132.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r2x7_n4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [47.5, 0, 132.45],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x7_s1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x7_s2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [57.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x7_s3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [62.5, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x7_s4_s",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [65, 0, 147.55],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x-1_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, -27.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x-1_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, -22.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x-1_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, -17.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x-1_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, -12.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x-1_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, -27.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x-1_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, -22.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x-1_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, -17.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x-1_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, -12.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x-2_w1_s",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, -45],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x-2_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, -42.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x-2_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, -37.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x-2_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, -32.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x0_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, -7.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x0_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, -2.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x0_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 2.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x0_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 7.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x0_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, -7.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x0_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, -2.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x0_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 2.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x0_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 7.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x2_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 32.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x2_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 37.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x2_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 42.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x2_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 47.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x2_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 32.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x2_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 37.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x2_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 42.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x2_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 47.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x3_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 52.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x3_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 57.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x3_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 62.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x3_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 67.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x3_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 52.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x3_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 57.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x3_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 62.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x3_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 67.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x4_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 72.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x4_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 77.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x4_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 82.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x4_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 87.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x4_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 72.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x4_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 77.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x4_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 82.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x4_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 87.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x5_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 92.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x5_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 97.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x5_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 102.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x5_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 107.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x5_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 92.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x5_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 97.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x5_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 102.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x5_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 107.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x6_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 112.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x6_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 117.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x6_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 122.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x6_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 127.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x6_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 112.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x6_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 117.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x6_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 122.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x6_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-12.45, 0, 127.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x7_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 132.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x7_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 137.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x7_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 142.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x7_w4_s",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-27.55, 0, 145],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-4_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -87.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-4_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -82.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-4_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -77.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-4_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -72.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-4_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, -87.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-4_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, -82.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-4_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, -77.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-4_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, -72.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-5_w1_s",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -105],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-5_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -102.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-5_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -97.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-5_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -92.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-3_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -67.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-3_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -62.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-3_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -57.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-3_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -52.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-3_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, -67.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-3_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, -62.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-3_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, -57.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-3_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, -52.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-1_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -27.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-1_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -22.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-1_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -17.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-1_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -12.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-1_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, -27.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-1_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, -22.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-1_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, -17.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x-1_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, -12.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x0_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -7.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x0_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, -2.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x0_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, 2.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x0_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [12.45, 0, 7.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x0_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, -7.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x0_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, -2.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x0_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, 2.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x0_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, 7.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x1_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, 12.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x1_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, 17.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x1_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, 22.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r1x1_e4_s",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [27.55, 0, 25],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-4_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [92.45, 0, -87.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-4_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [92.45, 0, -82.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-4_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [92.45, 0, -77.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-4_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [92.45, 0, -72.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-4_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [107.55, 0, -87.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-4_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [107.55, 0, -82.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-4_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [107.55, 0, -77.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-4_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [107.55, 0, -72.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-5_e1_s",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [107.55, 0, -105],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-5_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [107.55, 0, -102.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-5_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [107.55, 0, -97.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-5_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [107.55, 0, -92.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-3_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [92.45, 0, -67.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-3_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [92.45, 0, -62.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-3_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [92.45, 0, -57.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-3_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [92.45, 0, -52.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-3_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [107.55, 0, -67.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-3_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [107.55, 0, -62.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-3_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [107.55, 0, -57.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-3_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [107.55, 0, -52.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-2_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [107.55, 0, -47.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-2_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [107.55, 0, -42.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-2_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [107.55, 0, -37.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r5x-2_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [107.55, 0, -35],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-1_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, -27.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-1_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, -22.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-1_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, -17.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-1_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, -12.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-1_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, -27.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-1_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, -22.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-1_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, -17.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x-1_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, -12.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x0_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, -7.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x0_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, -2.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x0_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 2.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x0_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 7.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x0_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, -7.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x0_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, -2.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x0_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 2.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x0_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 7.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x1_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 12.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x1_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 17.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x1_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 22.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x1_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 27.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x1_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 12.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x1_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 17.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x1_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 22.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x1_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 27.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x2_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 32.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x2_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 37.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x2_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 42.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x2_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 47.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x2_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 32.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x2_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 37.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x2_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 42.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x2_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 47.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x3_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 52.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x3_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 57.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x3_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 62.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x3_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 67.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x3_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 52.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x3_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 57.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x3_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 62.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x3_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 67.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x4_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 72.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x4_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 77.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x4_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 82.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x4_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 87.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x4_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 72.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x4_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 77.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x4_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 82.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x4_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 87.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x5_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 92.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x5_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 97.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x5_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 102.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x5_w4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 107.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x5_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 92.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x5_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 97.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x5_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 102.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x5_e4",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 107.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x6_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 112.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x6_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [52.45, 0, 117.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x6_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 112.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x6_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 117.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x7_e1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 132.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x7_e2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 137.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x7_e3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 142.5],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r3x7_e4_s",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [67.55, 0, 145],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-5x1_w1",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-110, 0, 15],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-5x1_w2",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-110, 0, 20],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-5x1_w3",  "model": "railing",   "texture": ["ColorAtlasCG"],
+				"translate": [-110, 0, 25],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.75, 1.75, 1.75]
+			},
+			{"id": "r-1x1_nw",  "model": "railingCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [-28.78, 0, 11.22],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.84, 1.84, 1.84]
+			},
+			{"id": "r-1x1_ne",  "model": "railingCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [-11.22, 0, 11.22],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.84, 1.84, 1.84]
+			},
+			{"id": "r-1x1_sw",  "model": "railingCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [-28.78, 0, 28.78],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.84, 1.84, 1.84]
+			},
+			{"id": "r-1x1_se",  "model": "railingCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [-11.22, 0, 28.78],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.84, 1.84, 1.84]
+			},
+			{"id": "r1x1_nw",  "model": "railingCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [11.22, 0, 11.22],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.84, 1.84, 1.84]
+			},
+			{"id": "r-1x-2_se",  "model": "railingCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [-11.22, 0, -31.22],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.84, 1.84, 1.84]
+			},
+			{"id": "r1x-2_nw",  "model": "railingCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [11.22, 0, -48.78],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.84, 1.84, 1.84]
+			},
+			{"id": "r1x-2_ne",  "model": "railingCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [28.78, 0, -48.78],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.84, 1.84, 1.84]
+			},
+			{"id": "r1x-2_sw",  "model": "railingCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [11.22, 0, -31.22],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.84, 1.84, 1.84]
+			},
+			{"id": "r1x-2_se",  "model": "railingCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [28.78, 0, -31.22],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.84, 1.84, 1.84]
+			},
+			{"id": "r3x-2_sw",  "model": "railingCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [51.22, 0, -31.22],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.84, 1.84, 1.84]
+			},
+			{"id": "r3x-2_se",  "model": "railingCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [68.78, 0, -31.22],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.84, 1.84, 1.84]
+			},
+			{"id": "r5x-2_nw",  "model": "railingCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [91.22, 0, -48.78],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.84, 1.84, 1.84]
+			},
+			{"id": "r5x-5_sw",  "model": "railingCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [91.22, 0, -91.22],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.84, 1.84, 1.84]
+			},
+			{"id": "r1x-5_se",  "model": "railingCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [28.78, 0, -91.22],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.84, 1.84, 1.84]
+			},
+			{"id": "r-1x7_ne",  "model": "railingCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [-11.22, 0, 131.22],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.84, 1.84, 1.84]
+			},
+			{"id": "r3x7_nw",  "model": "railingCorner",   "texture": ["ColorAtlasCG"],
+				"translate": [51.22, 0, 131.22],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.84, 1.84, 1.84]
+			},
+
+
+
+
+			{"id": "v-5x1_1",  "model": "vehiclePurposePoliceCar",   "texture": ["ColorAtlasCG"],
+				"translate": [-101.71, -0.15, 25.732],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-5x1_2",  "model": "vehicleOldGreyTall",   "texture": ["ColorAtlasCG"],
+				"translate": [-93.876, -0.15, 25.8583],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-4x1_1",  "model": "vehicleOldRed",   "texture": ["ColorAtlasCG"],
+				"translate": [-87.4411, -0.15, 25.7229],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-4x1_2",  "model": "vehicleBusCoffee",   "texture": ["ColorAtlasCG"],
+				"translate": [-79.716, -0.15, 22.3513],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-4x1_3",  "model": "vehicleCoolBrown",   "texture": ["ColorAtlasCG"],
+				"translate": [-71.1622, -0.15, 25.6893],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.1, 1.1, 1.1]
+			},
+			{"id": "v-3x1_1",  "model": "vehiclePurposeFireFighter",   "texture": ["ColorAtlasCG"],
+				"translate": [-60.7434, -0.15, 22.5174],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-2x1_1",  "model": "vehicleCoolYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-47.582, -0.15, 25.8485],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.1, 1.1, 1.1]
+			},
+			{"id": "v-2x1_2",  "model": "vehiclePurposeAmbulance",   "texture": ["ColorAtlasCG"],
+				"translate": [-41.8816, -0.15, 25.7589],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-2x1_3",  "model": "vehicleBusCamper",   "texture": ["ColorAtlasCG"],
+				"translate": [-33.545, -0.15, 21.8134],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x1_1",  "model": "vehicleOldTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [-25.1111, -0.15, 21.6964],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x2_1",  "model": "vehicleSportGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [-22.0645, -0.15, 31.1721],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v-1x2_2",  "model": "vehicleSportOrangeBulky",   "texture": ["ColorAtlasCG"],
+				"translate": [-22.1832, -0.15, 36.6987],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v-1x2_3",  "model": "vehicleSportOrangeConvertable",   "texture": ["ColorAtlasCG"],
+				"translate": [-25.3226, -0.15, 44.9264],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v-1x2_4",  "model": "vehicleOldGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [-22.4913, -0.15, 51.8643],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v-1x3_1",  "model": "vehiclePurposeTaxi",   "texture": ["ColorAtlasCG"],
+				"translate": [-25.4407, -0.15, 58.7186],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x3_2",  "model": "vehicleOldGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [-22.3065, -0.15, 66.4919],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x4_1",  "model": "vehicleCoolConvertableWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [-25.4575, -0.15, 74.3519],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x4_2",  "model": "vehicleSportOrange",   "texture": ["ColorAtlasCG"],
+				"translate": [-22.4137, -0.15, 83.4713],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v-1x4_3",  "model": "vehicleJeepBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-22.4882, -0.15, 89.3756],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v-1x5_1",  "model": "vehicleSportBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [-22.4783, -0.15, 97.0098],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v-1x5_2",  "model": "vehicleOldGreyTall",   "texture": ["ColorAtlasCG"],
+				"translate": [-22.1945, -0.15, 102.771],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x5_3",  "model": "vehicleCoolBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [-25.2183, -0.15, 109.989],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x6_1",  "model": "vehicleOldGreyTall",   "texture": ["ColorAtlasCG"],
+				"translate": [-22.3118, -0.15, 117.993],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x6_2",  "model": "vehiclePurposePoliceCar",   "texture": ["ColorAtlasCG"],
+				"translate": [-25.6166, -0.15, 127.307],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x7_1",  "model": "vehicleCoolBrown",   "texture": ["ColorAtlasCG"],
+				"translate": [-22.3472, -0.15, 137.706],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.1, 1.1, 1.1]
+			},
+			{"id": "v-1x7_2",  "model": "vehicleJeepGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [-14.0961, -0.15, 142.054],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v0x7_1",  "model": "vehicleCoolTruckTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [-3.09134, -0.15, 145.037],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v0x7_2",  "model": "vehicleOldPinkTall",   "texture": ["ColorAtlasCG"],
+				"translate": [2.12396, -0.15, 145.421],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x7_1",  "model": "vehicleOldTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [11.9115, -0.15, 141.91],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x7_2",  "model": "vehicleBusYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [20.2021, -0.15, 145.584],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v2x7_1",  "model": "vehicleBusCoffee",   "texture": ["ColorAtlasCG"],
+				"translate": [30.6393, -0.15, 145.803],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v2x7_2",  "model": "vehicleOldRed",   "texture": ["ColorAtlasCG"],
+				"translate": [38.9865, -0.15, 142.295],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v2x7_3",  "model": "vehicleJeepGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [46.3946, -0.15, 145.7],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v3x7_1",  "model": "vehicleOldRed",   "texture": ["ColorAtlasCG"],
+				"translate": [51.2938, -0.15, 145.716],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x7_2",  "model": "vehicleBusCoffee",   "texture": ["ColorAtlasCG"],
+				"translate": [61.7429, -0.15, 140.956],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x7_3",  "model": "vehicleCoolConvertableWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [51.36, -0.15, 134.544],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v2x7_4",  "model": "vehiclePurposeAmbulance",   "texture": ["ColorAtlasCG"],
+				"translate": [42.8245, -0.15, 134.563],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v2x7_5",  "model": "vehicleSportBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [35.096, -0.15, 138.226],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v1x7_3",  "model": "vehicleOldGreyTall",   "texture": ["ColorAtlasCG"],
+				"translate": [29.9856, -0.15, 138.219],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x7_4",  "model": "vehicleOldTurquoiseTall",   "texture": ["ColorAtlasCG"],
+				"translate": [24.4785, -0.15, 138.053],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x7_5",  "model": "vehicleOldBrown",   "texture": ["ColorAtlasCG"],
+				"translate": [17.2217, -0.15, 134.497],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v0x7_3",  "model": "vehiclePurposePrisonBus",   "texture": ["ColorAtlasCG"],
+				"translate": [7.00467, -0.15, 138.039],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v0x7_4",  "model": "vehicleCoolYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-2.50501, -0.15, 134.19],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.1, 1.1, 1.1]
+			},
+			{"id": "v0x7_5",  "model": "vehicleBusCoffee",   "texture": ["ColorAtlasCG"],
+				"translate": [-9.09581, -0.15, 134.268],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x6_3",  "model": "vehicleOldPink",   "texture": ["ColorAtlasCG"],
+				"translate": [-18.2361, -0.15, 126.731],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x6_4",  "model": "vehiclePurposePoliceCar",   "texture": ["ColorAtlasCG"],
+				"translate": [-14.7126, -0.15, 117.053],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x5_4",  "model": "vehiclePurposeFireFighter",   "texture": ["ColorAtlasCG"],
+				"translate": [-14.6445, -0.15, 107.055],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x5_5",  "model": "vehicleCoolPink",   "texture": ["ColorAtlasCG"],
+				"translate": [-17.7149, -0.15, 97.5764],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x4_4",  "model": "vehicleBusCamper",   "texture": ["ColorAtlasCG"],
+				"translate": [-14.2345, -0.15, 86.674],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x4_5",  "model": "vehicleCoolYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-14.4115, -0.15, 78.3725],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.1, 1.1, 1.1]
+			},
+			{"id": "v-1x4_6",  "model": "vehicleOldBrown",   "texture": ["ColorAtlasCG"],
+				"translate": [-17.8746, -0.15, 79.0994],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x3_3",  "model": "vehiclePurposePoliceCar",   "texture": ["ColorAtlasCG"],
+				"translate": [-14.7342, -0.15, 67.9356],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x3_4",  "model": "vehicleBusBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-17.9272, -0.15, 55.0748],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x2_5",  "model": "vehicleOldPinkTall",   "texture": ["ColorAtlasCG"],
+				"translate": [-17.8745, -0.15, 48.99],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x2_6",  "model": "vehicleJeepGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [-14.7691, -0.15, 41.6555],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v-1x2_7",  "model": "vehicleBusYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-17.8658, -0.15, 32.2493],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x1_2",  "model": "vehicleCoolTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [-14.4957, -0.15, 21.7468],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x1_3",  "model": "vehicleCoolTruckTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [-26.792, -0.15, 17.8113],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-2x1_4",  "model": "vehiclePurposePrisonBus",   "texture": ["ColorAtlasCG"],
+				"translate": [-34.8348, -0.15, 17.8418],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-2x1_5",  "model": "vehicleOldTurquoiseTall",   "texture": ["ColorAtlasCG"],
+				"translate": [-40.0448, -0.15, 14.8209],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-2x1_6",  "model": "vehicleCoolTruckTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [-48.0958, -0.15, 17.8305],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-2x1_7",  "model": "vehicleSportBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [-47.3985, -0.15, 14.5779],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-3x1_2",  "model": "vehicleSportOrange",   "texture": ["ColorAtlasCG"],
+				"translate": [-57.2637, -0.15, 14.571],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v-3x1_3",  "model": "vehiclePurposePoliceCar",   "texture": ["ColorAtlasCG"],
+				"translate": [-64.443, -0.15, 17.9755],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-4x1_4",  "model": "vehicleJeepBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-71.3142, -0.15, 14.3378],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v-4x1_5",  "model": "vehicleOldGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [-77.8994, -0.15, 14.4726],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-4x1_6",  "model": "vehiclePurposePoliceCar",   "texture": ["ColorAtlasCG"],
+				"translate": [-87.2984, -0.15, 17.7719],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-5x1_3",  "model": "vehicleCoolYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-96.356, -0.15, 14.647],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.1, 1.1, 1.1]
+			},
+			{"id": "v-5x1_4",  "model": "vehicleSportOrange",   "texture": ["ColorAtlasCG"],
+				"translate": [-96.7547, -0.15, 18.4786],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v0x1_1",  "model": "vehicleCoolRedYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-8.79496, -0.15, 25.2763],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v0x1_2",  "model": "vehicleCoolConvertableWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [-2.14576, -0.15, 22.0178],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v0x1_3",  "model": "vehiclePurposeAmbulance",   "texture": ["ColorAtlasCG"],
+				"translate": [6.00697, -0.15, 25.2405],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x1_1",  "model": "vehiclePurposeTaxi",   "texture": ["ColorAtlasCG"],
+				"translate": [19.1944, -0.15, 22.1195],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x1_2",  "model": "vehicleCoolTruckTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [25.4756, -0.15, 16.3618],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x0_1",  "model": "vehicleSportOrangeConvertable",   "texture": ["ColorAtlasCG"],
+				"translate": [21.5837, -0.15, 8.36198],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v1x0_2",  "model": "vehicleSportBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [24.8489, -0.15, 1.16642],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v1x0_3",  "model": "vehicleSportOrangeConvertable",   "texture": ["ColorAtlasCG"],
+				"translate": [25.4149, -0.15, -4.51749],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v1x-1_1",  "model": "vehicleCoolTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [22.2526, -0.15, -12.8497],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-1_2",  "model": "vehicleOldBeige",   "texture": ["ColorAtlasCG"],
+				"translate": [22.1827, -0.15, -17.9993],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-1_3",  "model": "vehicleCoolBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [25.3404, -0.15, -27.0168],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-2_1",  "model": "vehicleCoolBrown",   "texture": ["ColorAtlasCG"],
+				"translate": [25.6029, -0.15, -32.4074],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.1, 1.1, 1.1]
+			},
+			{"id": "v1x-2_2",  "model": "vehiclePurposePoliceCar",   "texture": ["ColorAtlasCG"],
+				"translate": [25.548, -0.15, -37.477],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-2_3",  "model": "vehiclePurposePrisonBus",   "texture": ["ColorAtlasCG"],
+				"translate": [21.8532, -0.15, -42.5214],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-2_4",  "model": "vehicleCoolRedYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [10.4457, -0.15, -41.4288],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v0x-2_1",  "model": "vehicleCoolTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [2.15203, -0.15, -44.9991],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v0x-2_2",  "model": "vehicleOldTurquoiseTall",   "texture": ["ColorAtlasCG"],
+				"translate": [-2.79591, -0.15, -44.9394],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x-2_1",  "model": "vehicleJeepBrown",   "texture": ["ColorAtlasCG"],
+				"translate": [-10.4606, -0.15, -42.4045],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v-1x-2_2",  "model": "vehicleJeepGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [-16.227, -0.15, -42.422],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v-1x-2_3",  "model": "vehicleOldBrown",   "texture": ["ColorAtlasCG"],
+				"translate": [-22.3829, -0.15, -45.5598],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x-2_4",  "model": "vehicleCoolRedYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-22.1115, -0.15, -37.0036],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x-2_5",  "model": "vehiclePurposeTaxi",   "texture": ["ColorAtlasCG"],
+				"translate": [-25.8723, -0.15, -30.3424],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x-1_1",  "model": "vehiclePurposePoliceCar",   "texture": ["ColorAtlasCG"],
+				"translate": [-21.6614, -0.15, -24.2145],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x-1_2",  "model": "vehicleOldBrown",   "texture": ["ColorAtlasCG"],
+				"translate": [-21.7044, -0.15, -19.0131],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x-1_3",  "model": "vehiclePurposeArmoredTruck",   "texture": ["ColorAtlasCG"],
+				"translate": [-25.0755, -0.15, -11.7575],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x0_1",  "model": "vehicleOldTurquoiseTall",   "texture": ["ColorAtlasCG"],
+				"translate": [-22.1177, -0.15, -4.36662],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x0_2",  "model": "vehicleOldBeige",   "texture": ["ColorAtlasCG"],
+				"translate": [-25.2406, -0.15, 4.60172],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x1_4",  "model": "vehiclePurposeAmbulance",   "texture": ["ColorAtlasCG"],
+				"translate": [-21.5393, -0.15, 12.3145],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x0_3",  "model": "vehicleSportOrangeConvertable",   "texture": ["ColorAtlasCG"],
+				"translate": [-17.7982, -0.15, 9.77613],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v-1x0_4",  "model": "vehicleOldTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [-18.0673, -0.15, 3.40251],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x0_5",  "model": "vehiclePurposePoliceCar",   "texture": ["ColorAtlasCG"],
+				"translate": [-14.288, -0.15, -2.57225],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x0_7",  "model": "vehicleJeepBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [-18.1358, -0.15, -8.98324],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v-1x-1_4",  "model": "vehicleOldTurquoiseTall",   "texture": ["ColorAtlasCG"],
+				"translate": [-14.9018, -0.15, -15.9039],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v-1x-1_5",  "model": "vehicleJeepBrown",   "texture": ["ColorAtlasCG"],
+				"translate": [-18.3084, -0.15, -22.2587],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v-1x-1_6",  "model": "vehicleCoolRedYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-14.5308, -0.15, -28.9824],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v0x-2_3",  "model": "vehicleBusYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [-7.18608, -0.15, -37.8663],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v0x-2_4",  "model": "vehicleOldGreyTall",   "texture": ["ColorAtlasCG"],
+				"translate": [2.522805, -0.15, -34.2361],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v0x-2_5",  "model": "vehicleCoolTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [11.6938, -0.15, -37.8024],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-2_5",  "model": "vehicleOldPinkTall",   "texture": ["ColorAtlasCG"],
+				"translate": [17.6687, -0.15, -31.0456],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-1_4",  "model": "vehicleCoolBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [14.9029, -0.15, -28.555],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-1_5",  "model": "vehicleOldTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [14.254, -0.15, -22.259],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-1_6",  "model": "vehicleCoolTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [17.6594, -0.15, -23.0365],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-1_7",  "model": "vehiclePurposePrisonBus",   "texture": ["ColorAtlasCG"],
+				"translate": [17.7212, -0.15, -15.3469],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-1_8",  "model": "vehicleSportBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [14.6556, -0.15, -13.0003],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v1x0_4",  "model": "vehicleSportOrangeConvertable",   "texture": ["ColorAtlasCG"],
+				"translate": [17.9912, -0.15, -6.64986],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v1x0_5",  "model": "vehicleCoolTruckTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [17.781, -0.15, -0.330858],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x0_6",  "model": "vehiclePurposeFireFighter",   "texture": ["ColorAtlasCG"],
+				"translate": [14.5589, -0.15, 0.317856],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x0_7",  "model": "vehicleCoolRedYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [14.6601, -0.15, 7.56707],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x1_3",  "model": "vehicleJeepBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [17.9052, -0.15, 12.3082],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v1x1_4",  "model": "vehicleCoolTruckTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [12.2559, -0.15, 14.3829],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v0x1_4",  "model": "vehicleOldRed",   "texture": ["ColorAtlasCG"],
+				"translate": [1.60765, -0.15, 17.5545],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v0x1_5",  "model": "vehicleOldGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [-2.94377, -0.15, 17.7602],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v0x1_6",  "model": "vehiclePurposeTaxi",   "texture": ["ColorAtlasCG"],
+				"translate": [-8.70149, -0.15, 14.6581],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v0x1_7",  "model": "vehicleJeepGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [-9.68162, -0.15, 17.7349],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v1x-3_1",  "model": "vehicleJeepBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [21.8749, -0.15, -52.4653],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-3_2",  "model": "vehiclePurposeAmbulance",   "texture": ["ColorAtlasCG"],
+				"translate": [21.8463, -0.15, -62.5622],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-4_1",  "model": "vehicleBusCoffee",   "texture": ["ColorAtlasCG"],
+				"translate": [25.3415, -0.15, -71.529],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-4_2",  "model": "vehicleOldPink",   "texture": ["ColorAtlasCG"],
+				"translate": [25.2548, -0.15, -77.9762],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-4_3",  "model": "vehicleOldTurquoiseTall",   "texture": ["ColorAtlasCG"],
+				"translate": [21.7471, -0.15, -86.0004],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-5_1",  "model": "vehiclePurposeArmoredTruck",   "texture": ["ColorAtlasCG"],
+				"translate": [27.2462, -0.15, -94.3931],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v2x-5_1",  "model": "vehicleBusYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [38.8577, -0.15, -97.8799],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v2x-5_2",  "model": "vehicleCoolConvertableWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [48.83, -0.15, -94.5061],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x-5_1",  "model": "vehicleCoolYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [56.6709, -0.15, -97.9879],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.1, 1.1, 1.1]
+			},
+			{"id": "v3x-5_2",  "model": "vehicleSportGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [65.3157, -0.15, -94.4805],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v4x-5_1",  "model": "vehiclePurposeAmbulance",   "texture": ["ColorAtlasCG"],
+				"translate": [75.4969, -0.15, -94.7173],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v4x-5_2",  "model": "vehicleCoolBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [83.4084, -0.15, -97.595],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-5_1",  "model": "vehiclePurposeArmoredTruck",   "texture": ["ColorAtlasCG"],
+				"translate": [91.8473, -0.15, -94.1893],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-4_1",  "model": "vehicleSportOrangeConvertable",   "texture": ["ColorAtlasCG"],
+				"translate": [97.5181, -0.15, -86.7712],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v5x-4_2",  "model": "vehicleOldTurquoiseTall",   "texture": ["ColorAtlasCG"],
+				"translate": [94.8116, -0.15, -77.9613],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-4_3",  "model": "vehicleCoolRedYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [94.621, -0.15, -73.3863],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v5x-3_1",  "model": "vehicleOldRed",   "texture": ["ColorAtlasCG"],
+				"translate": [97.8502, -0.15, -65.7202],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-3_2",  "model": "vehicleCoolTruckTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [94.3926, -0.15, -57.8758],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-3_3",  "model": "vehicleSportOrange",   "texture": ["ColorAtlasCG"],
+				"translate": [94.3676, -0.15, -51.3747],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v5x-2_1",  "model": "vehicleCoolBrown",   "texture": ["ColorAtlasCG"],
+				"translate": [96.938, -0.15, -42.1294],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.1, 1.1, 1.1]
+			},
+			{"id": "v5x-2_2",  "model": "vehicleSportOrangeConvertable",   "texture": ["ColorAtlasCG"],
+				"translate": [90.2906, -0.15, -42.3132],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v4x-2_1",  "model": "vehicleCoolPink",   "texture": ["ColorAtlasCG"],
+				"translate": [81.8728, -0.15, -45.6022],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v4x-2_2",  "model": "vehiclePurposeTaxi",   "texture": ["ColorAtlasCG"],
+				"translate": [75.0167, -0.15, -41.9376],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x-2_1",  "model": "vehiclePurposeArmoredTruck",   "texture": ["ColorAtlasCG"],
+				"translate": [67.3593, -0.15, -41.9775],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x-2_2",  "model": "vehicleCoolYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [56.1886, -0.15, -45.5106],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.1, 1.1, 1.1]
+			},
+			{"id": "v3x-2_3",  "model": "vehicleCoolBrown",   "texture": ["ColorAtlasCG"],
+				"translate": [50.3244, -0.15, -42.0151],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.1, 1.1, 1.1]
+			},
+			{"id": "v2x-2_1",  "model": "vehiclePurposePoliceCar",   "texture": ["ColorAtlasCG"],
+				"translate": [46.9445, -0.15, -45.1608],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v2x-2_2",  "model": "vehicleJeepGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [44.0918, -0.15, -42.0166],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v2x-2_3",  "model": "vehicleSportOrange",   "texture": ["ColorAtlasCG"],
+				"translate": [38.0791, -0.15, -42.2803],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v2x-2_4",  "model": "vehicleJeepBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [36.1784, -0.15, -45.7492],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v2x-2_5",  "model": "vehicleJeepGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [30.8841, -0.15, -45.9026],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v2x-2_6",  "model": "vehiclePurposeAmbulance",   "texture": ["ColorAtlasCG"],
+				"translate": [32.253, -0.15, -41.5896],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v2x-2_7",  "model": "vehicleSportOrangeBulky",   "texture": ["ColorAtlasCG"],
+				"translate": [32.2646, -0.15, -34.7197],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v2x-2_8",  "model": "vehiclePurposeArmoredTruck",   "texture": ["ColorAtlasCG"],
+				"translate": [33.1426, -0.15, -37.5533],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v2x-2_9",  "model": "vehiclePurposeAmbulance",   "texture": ["ColorAtlasCG"],
+				"translate": [43.446, -0.15, -37.3942],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v2x-2_10",  "model": "vehicleOldBeige",   "texture": ["ColorAtlasCG"],
+				"translate": [47.1133, -0.15, -34.8906],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x-2_4",  "model": "vehiclePurposeArmoredTruck",   "texture": ["ColorAtlasCG"],
+				"translate": [53.4109, -0.15, -38.0464],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x-2_5",  "model": "vehicleOldRed",   "texture": ["ColorAtlasCG"],
+				"translate": [59.9591, -0.15, -34.7247],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x-2_6",  "model": "vehiclePurposeTaxi",   "texture": ["ColorAtlasCG"],
+				"translate": [64.0115, -0.15, -38.1606],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v4x-2_3",  "model": "vehicleSportBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [70.2407, -0.15, -34.3678],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v4x-2_4",  "model": "vehiclePurposeArmoredTruck",   "texture": ["ColorAtlasCG"],
+				"translate": [73.6247, -0.15, -37.6821],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v4x-2_5",  "model": "vehiclePurposePoliceCar",   "texture": ["ColorAtlasCG"],
+				"translate": [81.467, -0.15, -37.7458],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v4x-2_6",  "model": "vehicleOldTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [83.4855, -0.15, -34.4425],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v4x-2_7",  "model": "vehicleCoolConvertableWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [88.0365, -0.15, -38.0493],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-2_3",  "model": "vehicleBusCoffee",   "texture": ["ColorAtlasCG"],
+				"translate": [92.1831, -0.15, -34.8025],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-2_4",  "model": "vehicleJeepBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [94.4064, -0.15, -38.4339],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v5x-2_5",  "model": "vehicleCoolBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [98.8638, -0.15, -34.4542],
+				"eulerAngles": [0, 90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-2_6",  "model": "vehicleOldPink",   "texture": ["ColorAtlasCG"],
+				"translate": [105.411, -0.15, -36.0227],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-2_7",  "model": "vehicleJeepBrown",   "texture": ["ColorAtlasCG"],
+				"translate": [102.299, -0.15, -43.8394],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v5x-2_8",  "model": "vehicleBusYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [105.725, -0.15, -47.2961],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-3_4",  "model": "vehicleCoolTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [101.986, -0.15, -52.554],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-3_5",  "model": "vehiclePurposeArmoredTruck",   "texture": ["ColorAtlasCG"],
+				"translate": [105.901, -0.15, -56.6061],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-3_6",  "model": "vehiclePurposeAmbulance",   "texture": ["ColorAtlasCG"],
+				"translate": [102.022, -0.15, -62.7811],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-3_7",  "model": "vehicleCoolBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [102.221, -0.15, -67.3936],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-4_4",  "model": "vehiclePurposeArmoredTruck",   "texture": ["ColorAtlasCG"],
+				"translate": [105.513, -0.15, -73.9216],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-4_5",  "model": "vehicleOldTurquoiseTall",   "texture": ["ColorAtlasCG"],
+				"translate": [102.203, -0.15, -78.0462],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-4_6",  "model": "vehicleCoolBlackLimo",   "texture": ["ColorAtlasCG"],
+				"translate": [105.164, -0.15, -84.413],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-4_7",  "model": "vehicleSportOrangeConvertable",   "texture": ["ColorAtlasCG"],
+				"translate": [101.786, -0.15, -88.006],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v5x-5_2",  "model": "vehicleOldGreyTall",   "texture": ["ColorAtlasCG"],
+				"translate": [102.13, -0.15, -93.7324],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-5_3",  "model": "vehicleJeepBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [105.076, -0.15, -96.2471],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v5x-5_4",  "model": "vehicleOldTurquoiseTall",   "texture": ["ColorAtlasCG"],
+				"translate": [105.206, -0.15, -102.399],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-5_5",  "model": "vehicleOldGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [97.6091, -0.15, -105.291],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v5x-5_6",  "model": "vehicleSportOrangeBulky",   "texture": ["ColorAtlasCG"],
+				"translate": [94.931, -0.15, -101.602],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v4x-5_3",  "model": "vehicleOldBeige",   "texture": ["ColorAtlasCG"],
+				"translate": [87.9821, -0.15, -101.709],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v4x-5_4",  "model": "vehiclePurposeTaxi",   "texture": ["ColorAtlasCG"],
+				"translate": [87.3168, -0.15, -105.579],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v4x-5_5",  "model": "vehicleOldGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [82.9027, -0.15, -102.069],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v4x-5_6",  "model": "vehicleCoolRedYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [75.6246, -0.15, -105.672],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x-5_3",  "model": "vehicleBusYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [69.6974, -0.15, -102.004],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x-5_4",  "model": "vehicleCoolYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [62.5246, -0.15, -102.263],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.1, 1.1, 1.1]
+			},
+			{"id": "v3x-5_5",  "model": "vehicleCoolTruckTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [60.7632, -0.15, -106.121],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x-5_6",  "model": "vehicleCoolConvertableWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [54.9473, -0.15, -105.598],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v2x-5_3",  "model": "vehiclePurposeFireFighter",   "texture": ["ColorAtlasCG"],
+				"translate": [40.907, -0.15, -101.863],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v2x-5_4",  "model": "vehicleCoolTruckTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [36.3521, -0.15, -105.351],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-5_2",  "model": "vehicleOldTurquoiseTall",   "texture": ["ColorAtlasCG"],
+				"translate": [29.0911, -0.15, -102.158],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-5_3",  "model": "vehiclePurposePoliceCar",   "texture": ["ColorAtlasCG"],
+				"translate": [21.1539, -0.15, -105.47],
+				"eulerAngles": [0, -90, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-5_4",  "model": "vehicleCoolConvertableWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [17.6408, -0.15, -99.4744],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-5_5",  "model": "vehicleCoolBlackLimo",   "texture": ["ColorAtlasCG"],
+				"translate": [14.5886, -0.15, -93.6719],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-4_4",  "model": "vehicleSportBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [17.7147, -0.15, -86.0545],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v1x-4_5",  "model": "vehicleOldGrey",   "texture": ["ColorAtlasCG"],
+				"translate": [18.03, -0.15, -81.7772],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-4_6",  "model": "vehicleCoolBlackLimo",   "texture": ["ColorAtlasCG"],
+				"translate": [14.6498, -0.15, -73.5016],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-3_3",  "model": "vehicleCoolConvertableWhite",   "texture": ["ColorAtlasCG"],
+				"translate": [17.5802, -0.15, -67.7064],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-3_4",  "model": "vehiclePurposeAmbulance",   "texture": ["ColorAtlasCG"],
+				"translate": [14.601, -0.15, -60.0855],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-3_5",  "model": "vehicleCoolPink",   "texture": ["ColorAtlasCG"],
+				"translate": [18.1056, -0.15, -57.671],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-3_6",  "model": "vehicleCoolTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [17.7127, -0.15, -51.6648],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v1x-2_6",  "model": "vehiclePurposePoliceCar",   "texture": ["ColorAtlasCG"],
+				"translate": [14.6235, -0.15, -49.8096],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x-1_1",  "model": "vehicleCoolPink",   "texture": ["ColorAtlasCG"],
+				"translate": [54.3539, -0.15, -26.2247],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x-1_2",  "model": "vehicleOldBrown",   "texture": ["ColorAtlasCG"],
+				"translate": [57.9905, -0.15, -17.3432],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x0_1",  "model": "vehicleCoolBlackLimo",   "texture": ["ColorAtlasCG"],
+				"translate": [54.9824, -0.15, -8.05309],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x0_2",  "model": "vehicleOldGreyTall",   "texture": ["ColorAtlasCG"],
+				"translate": [58.1891, -0.15, 1.16833],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x1_1",  "model": "vehiclePurposePrisonBus",   "texture": ["ColorAtlasCG"],
+				"translate": [54.7506, -0.15, 11.4651],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x1_2",  "model": "vehicleOldBeige",   "texture": ["ColorAtlasCG"],
+				"translate": [57.7149, -0.15, 20.6134],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x1_3",  "model": "vehicleCoolTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [53.6768, -0.15, 28.6006],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x2_1",  "model": "vehicleOldPinkTall",   "texture": ["ColorAtlasCG"],
+				"translate": [58.1401, -0.15, 38.9341],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x2_2",  "model": "vehicleJeepGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [58.1188, -0.15, 44.2822],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v3x2_3",  "model": "vehicleCoolBlackLimo",   "texture": ["ColorAtlasCG"],
+				"translate": [54.5065, -0.15, 41.935],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x3_1",  "model": "vehicleOldPinkTall",   "texture": ["ColorAtlasCG"],
+				"translate": [57.985, -0.15, 56.8877],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x3_2",  "model": "vehicleCoolTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [54.0236, -0.15, 67.9561],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x4_1",  "model": "vehicleSportBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [57.8581, -0.15, 77.8039],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v3x5_1",  "model": "vehicleCoolBrown",   "texture": ["ColorAtlasCG"],
+				"translate": [54.2336, -0.15, 90.9469],
+				"eulerAngles": [0, 0, 0],
+				"scale": [1.1, 1.1, 1.1]
+			},
+			{"id": "v3x5_2",  "model": "vehicleSportBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [65.4486, -0.15, 92.6378],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v3x4_2",  "model": "vehiclePurposePoliceCar",   "texture": ["ColorAtlasCG"],
+				"translate": [61.9222, -0.15, 88.678],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x4_3",  "model": "vehicleOldGreyTall",   "texture": ["ColorAtlasCG"],
+				"translate": [65.303, -0.15, 82.8558],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x4_4",  "model": "vehicleBusCamper",   "texture": ["ColorAtlasCG"],
+				"translate": [65.1242, -0.15, 74.7452],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x4_5",  "model": "vehicleCoolRedYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [61.9301, -0.15, 79.071],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x4_6",  "model": "vehicleSportOrange",   "texture": ["ColorAtlasCG"],
+				"translate": [62.1503, -0.15, 72.2685],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v3x3_3",  "model": "vehicleOldPink",   "texture": ["ColorAtlasCG"],
+				"translate": [65.6526, -0.15, 64.0216],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x3_4",  "model": "vehicleSportGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [61.9069, -0.15, 60.8503],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v3x3_5",  "model": "vehicleOldBeige",   "texture": ["ColorAtlasCG"],
+				"translate": [62.2766, -0.15, 54.3482],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x2_4",  "model": "vehicleOldBrown",   "texture": ["ColorAtlasCG"],
+				"translate": [65.7564, -0.15, 48.9613],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x2_5",  "model": "vehicleSportGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [61.9536, -0.15, 36.0776],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v3x1_4",  "model": "vehicleJeepBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [65.242, -0.15, 28.0979],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v3x1_5",  "model": "vehicleOldPink",   "texture": ["ColorAtlasCG"],
+				"translate": [62.5832, -0.15, 27],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x1_6",  "model": "vehicleSportOrangeConvertable",   "texture": ["ColorAtlasCG"],
+				"translate": [62.3958, -0.15, 18.2514],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v3x1_7",  "model": "vehicleJeepGreen",   "texture": ["ColorAtlasCG"],
+				"translate": [64.8624, -0.15, 15.999],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v3x1_8",  "model": "vehicleCoolBrown",   "texture": ["ColorAtlasCG"],
+				"translate": [62.0131, -0.15, 12.2511],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.1, 1.1, 1.1]
+			},
+			{"id": "v3x0_3",  "model": "vehicleCoolRedYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [62.2208, -0.15, 7.28251],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x0_4",  "model": "vehicleCoolBrown",   "texture": ["ColorAtlasCG"],
+				"translate": [65.2665, -0.15, 6.48701],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.1, 1.1, 1.1]
+			},
+			{"id": "v3x0_5",  "model": "vehicleCoolRedYellow",   "texture": ["ColorAtlasCG"],
+				"translate": [61.4497, -0.15, 0.726901],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x0_6",  "model": "vehicleBusCoffee",   "texture": ["ColorAtlasCG"],
+				"translate": [65.5415, -0.15, -3.82692],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x0_7",  "model": "vehiclePurposePrisonBus",   "texture": ["ColorAtlasCG"],
+				"translate": [62.1961, -0.15, -7.5],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x-1_3",  "model": "vehicleJeepBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [62.212, -0.15, -13.7051],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v3x-1_4",  "model": "vehicleBusBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [65.7982, -0.15, -11.1706],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x-1_5",  "model": "vehicleCoolTurquoise",   "texture": ["ColorAtlasCG"],
+				"translate": [65.9138, -0.15, -17.2797],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x-1_6",  "model": "vehiclePurposeTaxi",   "texture": ["ColorAtlasCG"],
+				"translate": [62.5355, -0.15, -19.8588],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x-1_7",  "model": "vehicleJeepBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [62.6524, -0.15, -25.1936],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.05, 1.05, 1.05]
+			},
+			{"id": "v3x-1_8",  "model": "vehicleCoolBlack",   "texture": ["ColorAtlasCG"],
+				"translate": [65.6737, -0.15, -23.7664],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x-1_9",  "model": "vehicleBusBlue",   "texture": ["ColorAtlasCG"],
+				"translate": [65.6218, -0.15, -29.6812],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			},
+			{"id": "v3x-1_10",  "model": "vehicleOldRed",   "texture": ["ColorAtlasCG"],
+				"translate": [62.4358, -0.15, -29.6563],
+				"eulerAngles": [0, 180, 0],
+				"scale": [1.25, 1.25, 1.25]
+			}
+
+		]
+		},
+		{"technique": "SkyBox", "elements": [
+			{"id": "skybox",  "model": "skybox", "texture": ["skybox"]}
+		]},
+		{"technique": "PBR", "elements": [
+		]}
+	]
+}

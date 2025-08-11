@@ -1,0 +1,529 @@
+{
+  "assetfiles": [
+    {"id": "mobil", "file": "assets/models/vehicles/mobil.gltf", "format":"GLTF"}
+  ],
+  "models": [
+    {"id": "mom0",  "VD": "VDphong",  "model": "Cube.078", "node": "car_base.002", "meshId": 0, "asset": "mobil", "format":"ASSET"},
+    {"id": "mom1",  "VD": "VDphong",  "model": "Cube.078", "node": "car_base.002", "meshId": 1, "asset": "mobil", "format":"ASSET"},
+    {"id": "mom2",  "VD": "VDphong",  "model": "Cube.078", "node": "car_base.002", "meshId": 2, "asset": "mobil", "format":"ASSET"},
+
+    {"id": "mowfr0",  "VD": "VDphong",  "model": "Cylinder.039", "node": "wheel1.003", "meshId": 0, "asset": "mobil", "format":"ASSET"},
+    {"id": "mowfl0",  "VD": "VDphong",  "model": "Cylinder.068", "node": "wheel1.007", "meshId": 0, "asset": "mobil", "format":"ASSET"},
+    {"id": "mowbr0",  "VD": "VDphong",  "model": "Cylinder.055", "node": "wheel2.001", "meshId": 0, "asset": "mobil", "format":"ASSET"},
+    {"id": "mowbl0",  "VD": "VDphong",  "model": "Cylinder.073", "node": "wheel2.003", "meshId": 0, "asset": "mobil", "format":"ASSET"},
+
+    {"id": "parkingLot", "VD": "VDphong", "model": "assets/models/world/parking_lot/parking_tile_2x2_004.mgcg", "format":"MGCG"},
+    {"id": "fenceCorner", "VD": "VDphong", "model": "assets/models/world/parking_lot/fence_dark_004.mgcg", "format":"MGCG"},
+    {"id": "fenceStraightSingle", "VD": "VDphong", "model": "assets/models/world/parking_lot/fence_dark_002.mgcg", "format":"MGCG"},
+    {"id": "fenceStraightDouble", "VD": "VDphong", "model": "assets/models/world/parking_lot/fence_dark_003.mgcg", "format":"MGCG"},
+    {"id": "woodBoxLightCross", "VD": "VDphong", "model": "assets/models/world/parking_lot/box_005.mgcg", "format":"MGCG"},
+    {"id": "woodBoxRedCross", "VD": "VDphong", "model": "assets/models/world/parking_lot/box_004.mgcg", "format":"MGCG"},
+    {"id": "woodBoxLightStripes", "VD": "VDphong", "model": "assets/models/world/parking_lot/box_002.mgcg", "format":"MGCG"},
+    {"id": "pipesHollow", "VD": "VDphong", "model": "assets/models/world/parking_lot/pipes_001.mgcg", "format":"MGCG"},
+    {"id": "plantBoxLong", "VD": "VDphong", "model": "assets/models/world/parking_lot/plant_005.mgcg", "format":"MGCG"},
+    {"id": "railingLong", "VD": "VDphong", "model": "assets/models/world/parking_lot/railing_004.mgcg", "format":"MGCG"},
+    {"id": "taxi", "VD": "VDphong", "model": "assets/models/world/parking_lot/transport_purpose_003_transport_purpose_003.001.mgcg", "format":"MGCG"},
+    {"id": "truckOrange", "VD": "VDphong", "model": "assets/models/world/parking_lot/transport_truck_002_transport_truck_002.001.mgcg", "format":"MGCG"},
+    {"id": "camperLarge", "VD": "VDphong", "model": "assets/models/world/parking_lot/transport_bus_006_transport_bus_006.001.mgcg", "format":"MGCG"},
+    {"id": "jeepGreen", "VD": "VDphong", "model": "assets/models/world/parking_lot/transport_jeep_002_transport_jeep_002.001.mgcg", "format":"MGCG"},
+    {"id": "convertibleGray", "VD": "VDphong", "model": "assets/models/world/parking_lot/transport_cool_001_transport_cool_001.001.mgcg", "format":"MGCG"},
+    {"id": "carBasicRedBrown", "VD": "VDphong", "model": "assets/models/world/parking_lot/transport_cool_002_transport_cool_002.001.mgcg", "format":"MGCG"},
+    {"id": "carBasicBlack", "VD": "VDphong", "model": "assets/models/world/parking_lot/transport_cool_003_transport_cool_003.001.mgcg", "format":"MGCG"},
+    {"id": "pickupTurquoise", "VD": "VDphong", "model": "assets/models/world/parking_lot/transport_cool_007_transport_cool_007.001.mgcg", "format":"MGCG"},
+    {"id": "carMuscleBlack", "VD": "VDphong", "model": "assets/models/world/parking_lot/transport_cool_010_transport_cool_010.001.mgcg", "format":"MGCG"},
+    {"id": "truckRedLarge", "VD": "VDphong", "model": "assets/models/world/parking_lot/transport_truck_003_transport_truck_003.001.mgcg", "format":"MGCG"},
+    {"id": "truckRedLargeTrailer", "VD": "VDphong", "model": "assets/models/world/parking_lot/transport_truck_011_transport_truck_011.001.mgcg", "format":"MGCG"},
+    {"id": "policeCar", "VD": "VDphong", "model": "assets/models/world/parking_lot/transport_purpose_002_transport_purpose_002.001.mgcg", "format":"MGCG"},
+    {"id": "prisonBusBlack", "VD": "VDphong", "model": "assets/models/world/parking_lot/transport_purpose_001_transport_purpose_001.001.mgcg", "format":"MGCG"},
+
+    {"id": "roadTileThreeWay", "VD": "VDphong", "model": "assets/models/world/parking_lot/road_tile_2x2_001.mgcg", "format":"MGCG"},
+    {"id": "roadTileStraightExit", "VD": "VDphong", "model": "assets/models/world/parking_lot/road_tile_2x2_002.mgcg", "format":"MGCG"},
+    {"id": "roadTileStraight", "VD": "VDphong", "model": "assets/models/world/parking_lot/road_tile_2x2_005.mgcg", "format":"MGCG"},
+    {"id": "roadTileCorner", "VD": "VDphong", "model": "assets/models/world/parking_lot/road_tile_2x2_003.mgcg", "format":"MGCG"},
+
+    {"id": "roadTileRiverStraight", "VD": "VDphong", "model": "assets/models/world/parking_lot/road_tile_river_2x2_001.mgcg", "format":"MGCG"},
+    {"id": "roadTileRiverCorner", "VD": "VDphong", "model": "assets/models/world/parking_lot/road_tile_river_2x2_005.mgcg", "format":"MGCG"},
+    {"id": "roadTileRiverBridge", "VD": "VDphong", "model": "assets/models/world/parking_lot/road_tile_bridge_2x2_006.mgcg", "format":"MGCG"},
+
+    {"id": "barrierRedWhite", "VD": "VDphong", "model": "assets/models/world/parking_lot/barrier_001.mgcg", "format":"MGCG"},
+    {"id": "lampPostTripple", "VD": "VDphong", "model": "assets/models/world/parking_lot/lamppost_002.mgcg", "format":"MGCG"},
+
+    {"id": "woodPalletsLarge", "VD": "VDphong", "model": "assets/models/world/parking_lot/pallets_001.mgcg", "format":"MGCG"},
+    {"id": "cableReel", "VD": "VDphong", "model": "assets/models/world/parking_lot/cable_reel_001.mgcg", "format":"MGCG"},
+    {"id": "skybox", "VD": "VDskybox", "model": "assets/models/SkyBoxCube.obj", "format":"OBJ"},
+    {"id": "axis", "VD": "VDphong", "model": "assets/models/axis.obj", "format":"OBJ"},
+    {"id": "arrow", "VD": "VDphong", "model": "assets/models/Arrow.obj", "format":"OBJ"},
+    {"id": "trophy", "VD": "VDphong", "model": "assets/models/Trophy.obj", "format":"OBJ"}
+  ],
+  "textures": [
+    {"id": "ColorAtlasCG", "texture": "assets/textures/ColorAtlasCG.png", "format": "C"},
+    {"id": "ColorAtlasAxis", "texture": "assets/textures/ColorAtlasAxis.png", "format": "C"},
+    {"id": "skybox", "texture": "assets/textures/skybox.hdr", "format": "C"},
+    {"id": "ColorAtlasCustom", "texture": "assets/textures/ColorAtlasCustom.png", "format": "C"},
+    {"id": "hud_1920", "texture": "assets/textures/GameHUD_1920.png", "format": "C"},
+    {"id": "hud_1600", "texture": "assets/textures/GameHUD_1600.png", "format": "C"},
+    {"id": "hud_1120", "texture": "assets/textures/GameHUD_1120.png", "format": "C"}
+  ],
+  "instances": [
+    {"technique": "PhongShader", "elements": [
+      {"id": "mom0",  "model": "mom0", "scale": [0.7, 0.7, 0.7], "translate": [0, 0.5, 0], "texture": ["ColorAtlasCustom"]},
+      {"id": "mom1",  "model": "mom1", "scale": [0.7, 0.7, 0.7], "translate": [0, 0.5, 0], "texture": ["ColorAtlasCustom"]},
+      {"id": "mom2",  "model": "mom2", "scale": [0.7, 0.7, 0.7], "translate": [0, 0.5, 0], "texture": ["ColorAtlasCustom"]},
+      {"id": "mowfr0",  "model": "mowfr0", "scale": [0.45, 0.45, 0.45], "translate": [-0.65, 0.15, 0.95], "texture": ["ColorAtlasCustom"]},
+      {"id": "mowfl0",  "model": "mowfl0", "scale": [0.45, 0.45, 0.45], "translate": [0.65, 0.15, 0.95], "texture": ["ColorAtlasCustom"]},
+      {"id": "mowbr0",  "model": "mowbr0", "scale": [0.45, 0.45, 0.45], "translate": [-0.6, 0.15, -1.2], "texture": ["ColorAtlasCustom"]},
+      {"id": "mowbl0",  "model": "mowbl0", "scale": [0.45, 0.45, 0.45], "translate": [0.6, 0.15, -1.2], "texture": ["ColorAtlasCustom"]},
+
+      {"id": "arrow",  "model": "arrow", "scale": [2.0, 2.0, 2.0], "translate": [3, -0, -3], "texture": ["ColorAtlasCustom"]},
+      {"id": "trophy",  "model": "trophy", "scale": [0.3, 0.3, 0.3], "translate": [0, -0, 0], "texture": ["ColorAtlasCustom"]},
+      {"id": "pl1",  "model": "parkingLot",   "texture": ["ColorAtlasCG"],
+        "eulerAngles": [0, -90, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "pl2",  "model": "parkingLot",   "texture": ["ColorAtlasCG"],
+        "translate": [-19, 0, 0],
+        "eulerAngles": [0, -90, 0],
+        "scale": [1.2, 1.2, -1.2]
+      },
+      {"id": "rtc1",  "model": "roadTileCorner",   "texture": ["ColorAtlasCG"],
+        "translate": [-38, 0, 19],
+        "eulerAngles": [0, 180, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtc2",  "model": "roadTileCorner",   "texture": ["ColorAtlasCG"],
+        "translate": [19, 0, 19],
+        "eulerAngles": [0, -90, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtc3",  "model": "roadTileCorner",   "texture": ["ColorAtlasCG"],
+        "translate": [19, 0, -19],
+        "eulerAngles": [0, 0, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtc4",  "model": "roadTileCorner",   "texture": ["ColorAtlasCG"],
+        "translate": [-38, 0, -19],
+        "eulerAngles": [0, 90, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtse1",  "model": "roadTileStraightExit",   "texture": ["ColorAtlasCG"],
+        "translate": [-19, 0, 19],
+        "eulerAngles": [0, 180, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rttw1",  "model": "roadTileThreeWay",   "texture": ["ColorAtlasCG"],
+        "translate": [0, -0.01, 19],
+        "eulerAngles": [0, 0, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rts2",  "model": "roadTileStraight",   "texture": ["ColorAtlasCG"],
+        "translate": [19, 0, 0],
+        "eulerAngles": [0, -90, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rts3",  "model": "roadTileStraight",   "texture": ["ColorAtlasCG"],
+        "translate": [0, 0, -19],
+        "eulerAngles": [0, 0, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rttw2",  "model": "roadTileThreeWay",   "texture": ["ColorAtlasCG"],
+        "translate": [-19, -0.01, -19],
+        "eulerAngles": [0, 180, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rts5",  "model": "roadTileStraight",   "texture": ["ColorAtlasCG"],
+        "translate": [-38, 0, 0],
+        "eulerAngles": [0, 90, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrs1",  "model": "roadTileRiverStraight",   "texture": ["ColorAtlasCG"],
+        "translate": [-38, 0, 38],
+        "eulerAngles": [0, 90, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrs2",  "model": "roadTileRiverStraight",   "texture": ["ColorAtlasCG"],
+        "translate": [-19, 0, 38],
+        "eulerAngles": [0, 90, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrb1",  "model": "roadTileRiverBridge",   "texture": ["ColorAtlasCG"],
+        "translate": [0, 0, 38],
+        "eulerAngles": [0, 0, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrs4",  "model": "roadTileRiverStraight",   "texture": ["ColorAtlasCG"],
+        "translate": [19, 0, 38],
+        "eulerAngles": [0, 90, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrs5",  "model": "roadTileRiverStraight",   "texture": ["ColorAtlasCG"],
+        "translate": [-38, 0, -38],
+        "eulerAngles": [0, -90, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrb2",  "model": "roadTileRiverBridge",   "texture": ["ColorAtlasCG"],
+        "translate": [-19, 0, -38],
+        "eulerAngles": [0, 180, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrs7",  "model": "roadTileRiverStraight",   "texture": ["ColorAtlasCG"],
+        "translate": [0, 0, -38],
+        "eulerAngles": [0, -90, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrs8",  "model": "roadTileRiverStraight",   "texture": ["ColorAtlasCG"],
+        "translate": [19, 0, -38],
+        "eulerAngles": [0, -90, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrs9",  "model": "roadTileRiverStraight",   "texture": ["ColorAtlasCG"],
+        "translate": [38, 0, 19],
+        "eulerAngles": [0, 180, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrs10",  "model": "roadTileRiverStraight",   "texture": ["ColorAtlasCG"],
+        "translate": [38, 0, 0],
+        "eulerAngles": [0, 180, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrs11",  "model": "roadTileRiverStraight",   "texture": ["ColorAtlasCG"],
+        "translate": [38, 0, -19],
+        "eulerAngles": [0, 180, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrs12",  "model": "roadTileRiverStraight",   "texture": ["ColorAtlasCG"],
+        "translate": [-57, 0, 19],
+        "eulerAngles": [0, 0, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrs13",  "model": "roadTileRiverStraight",   "texture": ["ColorAtlasCG"],
+        "translate": [-57, 0, 0],
+        "eulerAngles": [0, 0, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrs14",  "model": "roadTileRiverStraight",   "texture": ["ColorAtlasCG"],
+        "translate": [-57, 0, -19],
+        "eulerAngles": [0, 0, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrc1",  "model": "roadTileRiverCorner",   "texture": ["ColorAtlasCG"],
+        "translate": [-57, 0, 38],
+        "eulerAngles": [0, -90, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrc2",  "model": "roadTileRiverCorner",   "texture": ["ColorAtlasCG"],
+        "translate": [-57, 0, -38],
+        "eulerAngles": [0, 180, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrc3",  "model": "roadTileRiverCorner",   "texture": ["ColorAtlasCG"],
+        "translate": [38, 0, 38],
+        "eulerAngles": [0, 0, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rtrc4",  "model": "roadTileRiverCorner",   "texture": ["ColorAtlasCG"],
+        "translate": [38, 0, -38],
+        "eulerAngles": [0, 90, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "fsd1",
+        "model": "fenceStraightDouble",   "texture": ["ColorAtlasCG"],
+        "translate": [6.7, 0, 9.5],
+        "eulerAngles": [0, 180, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fsd2",
+        "model": "fenceStraightDouble",   "texture": ["ColorAtlasCG"],
+        "translate": [9.5, 0, 6.7],
+        "eulerAngles": [0, -90, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fsd3",
+        "model": "fenceStraightDouble",   "texture": ["ColorAtlasCG"],
+        "translate": [-9.5, 0, 6.7],
+        "eulerAngles": [0, 90, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fsd4",
+        "model": "fenceStraightDouble",   "texture": ["ColorAtlasCG"],
+        "translate": [-6.7, 0, 9.5],
+        "eulerAngles": [0, 180, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fsd5",
+        "model": "fenceStraightDouble",   "texture": ["ColorAtlasCG"],
+        "translate": [9.5, 0, -6.7],
+        "eulerAngles": [0, -90, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fsd6",
+        "model": "fenceStraightDouble",   "texture": ["ColorAtlasCG"],
+        "translate": [6.7, 0, -9.5],
+        "eulerAngles": [0, 0, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fss1",  "model": "fenceStraightSingle",   "texture": ["ColorAtlasCG"],
+        "translate": [9.5, 0, 2],
+        "eulerAngles": [0, -90, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fss2",  "model": "fenceStraightSingle",   "texture": ["ColorAtlasCG"],
+        "translate": [9.5, 0, -2],
+        "eulerAngles": [0, -90, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fss3",  "model": "fenceStraightSingle",   "texture": ["ColorAtlasCG"],
+        "translate": [2, 0, 9.5],
+        "eulerAngles": [0, 180, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fss4",  "model": "fenceStraightSingle",   "texture": ["ColorAtlasCG"],
+        "translate": [-2, 0, 9.5],
+        "eulerAngles": [0, 180, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fss5",  "model": "fenceStraightSingle",   "texture": ["ColorAtlasCG"],
+        "translate": [2, 0, -9.5],
+        "eulerAngles": [0, 0, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fss6",  "model": "fenceStraightSingle",   "texture": ["ColorAtlasCG"],
+        "translate": [-2, 0, -9.5],
+        "eulerAngles": [0, 0, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fsd11",  "model": "fenceStraightDouble",   "texture": ["ColorAtlasCG"],
+        "translate": [-9.5, 0, 1.1],
+        "eulerAngles": [0, 90, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fsd12",
+        "model": "fenceStraightDouble",   "texture": ["ColorAtlasCG"],
+        "translate": [-6.7, 0, -9.5],
+        "eulerAngles": [0, 0, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fsd13",
+        "model": "fenceStraightDouble",   "texture": ["ColorAtlasCG"],
+        "translate": [-12.3, 0, -9.5],
+        "eulerAngles": [0, 0, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fss7",  "model": "fenceStraightSingle",   "texture": ["ColorAtlasCG"],
+        "translate": [-17, 0, -9.5],
+        "eulerAngles": [0, 0, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fss8",  "model": "fenceStraightSingle",   "texture": ["ColorAtlasCG"],
+        "translate": [-21, 0, -9.5],
+        "eulerAngles": [0, 0, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fsd7",
+        "model": "fenceStraightDouble",   "texture": ["ColorAtlasCG"],
+        "translate": [-25.7, 0, -9.5],
+        "eulerAngles": [0, 0, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fsd8",
+        "model": "fenceStraightDouble",   "texture": ["ColorAtlasCG"],
+        "translate": [-28.5, 0, -6.7],
+        "eulerAngles": [0, 90, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fss9",  "model": "fenceStraightSingle",   "texture": ["ColorAtlasCG"],
+        "translate": [-28.5, 0, 2],
+        "eulerAngles": [0, 90, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fss10",  "model": "fenceStraightSingle",   "texture": ["ColorAtlasCG"],
+        "translate": [-28.5, 0, -2],
+        "eulerAngles": [0, 90, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fsd9",
+        "model": "fenceStraightDouble",   "texture": ["ColorAtlasCG"],
+        "translate": [-25.7, 0, 9.5],
+        "eulerAngles": [0, 180, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fsd10",
+        "model": "fenceStraightDouble",   "texture": ["ColorAtlasCG"],
+        "translate": [-28.5, 0, 6.7],
+        "eulerAngles": [0, 90, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fss11",  "model": "fenceStraightSingle",   "texture": ["ColorAtlasCG"],
+        "translate": [-17, -100, 9.5],
+        "eulerAngles": [0, 180, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fss12",  "model": "fenceStraightSingle",   "texture": ["ColorAtlasCG"],
+        "translate": [-21, -100, 9.5],
+        "eulerAngles": [0, 180, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "fsd14",
+        "model": "fenceStraightDouble",   "texture": ["ColorAtlasCG"],
+        "translate": [-21, 0, 9.5],
+        "eulerAngles": [0, 180, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "wblc1",  "model": "woodBoxLightCross",   "texture": ["ColorAtlasCG"],
+        "translate": [-9.5, -0.12, -2.15],
+        "eulerAngles": [0, 90, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "pbl1",  "model": "plantBoxLong",   "texture": ["ColorAtlasCG"],
+        "translate": [-9.5, -0.12, -8],
+        "eulerAngles": [0, 90, 0],
+        "scale": [1.5, 1.5, 1.5]
+      },
+      {"id": "rl1",  "model": "railingLong",   "texture": ["ColorAtlasCG"],
+        "translate": [7.6, -0.12, 0],
+        "eulerAngles": [0, 0, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rl2",  "model": "railingLong",   "texture": ["ColorAtlasCG"],
+        "translate": [4.1, -0.12, 0],
+        "eulerAngles": [0, 0, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rl3",  "model": "railingLong",   "texture": ["ColorAtlasCG"],
+        "translate": [0.6, -0.12, 0],
+        "eulerAngles": [0, 0, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "rl4",  "model": "railingLong",   "texture": ["ColorAtlasCG"],
+        "translate": [-2.9, -0.12, 0],
+        "eulerAngles": [0, 0, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "tax1",  "model": "taxi",   "texture": ["ColorAtlasCG"],
+        "translate": [6, -0.12, 7],
+        "eulerAngles": [0, 0, 0],
+        "scale": [1.1, 1.1, 1.1]
+      },
+      {"id": "wpl1",  "model": "woodPalletsLarge",   "texture": ["ColorAtlasCG"],
+        "translate": [1.5, -0.12, 3],
+        "eulerAngles": [0, 40, 0],
+        "scale": [1.1, 1.1, 1.1]
+      },
+      {"id": "to1",  "model": "truckOrange",   "texture": ["ColorAtlasCG"],
+        "translate": [-2, -0.12, 6],
+        "eulerAngles": [0, 40, 0],
+        "scale": [1, 1, 1]
+      },
+      {"id": "cl1",  "model": "camperLarge",   "texture": ["ColorAtlasCG"],
+        "translate": [-8.2, -0.12, 6],
+        "eulerAngles": [0, 180, 0],
+        "scale": [1, 1, 1]
+      },
+      {"id": "jg1",  "model": "jeepGreen",   "texture": ["ColorAtlasCG"],
+        "translate": [-6, -0.12, 7.5],
+        "eulerAngles": [0, 180, 0],
+        "scale": [1, 1, 1]
+      },
+      {"id": "pt1",  "model": "pickupTurquoise",   "texture": ["ColorAtlasCG"],
+        "translate": [-3.5, -0.12, -2.5],
+        "eulerAngles": [0, -45, 0],
+        "scale": [1.1, 1.1, 1.1]
+      },
+      {"id": "cmb1",  "model": "carMuscleBlack",   "texture": ["ColorAtlasCG"],
+        "translate": [8.4, -0.12, -7],
+        "eulerAngles": [0, 180, 0],
+        "scale": [1.1, 1.1, 1.1]
+      },
+      {"id": "cbrb1",  "model": "carBasicRedBrown",   "texture": ["ColorAtlasCG"],
+        "translate": [6, -0.12, -7.5],
+        "eulerAngles": [0, 0, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "cg1",  "model": "convertibleGray",   "texture": ["ColorAtlasCG"],
+        "translate": [1.2, -0.12, -7.3],
+        "eulerAngles": [0, 0, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "cbb1",  "model": "carBasicBlack",   "texture": ["ColorAtlasCG"],
+        "translate": [-8, -0.12, -7],
+        "eulerAngles": [0, 180, 0],
+        "scale": [1.2, 1.2, 1.2]
+      },
+      {"id": "trlt1",  "model": "truckRedLargeTrailer",   "texture": ["ColorAtlasCG"],
+        "translate": [-21, -0.12, -2.2],
+        "eulerAngles": [0, 250, 0],
+        "scale": [1, 1, 1]
+      },
+      {"id": "trl1",  "model": "truckRedLarge",   "texture": ["ColorAtlasCG"],
+        "translate": [-22, -0.12, -3.5],
+        "eulerAngles": [0, 220, 0],
+        "scale": [1, 1, 1]
+      },
+      {"id": "wbrc1",  "model": "woodBoxRedCross",   "texture": ["ColorAtlasCG"],
+        "translate": [-19, -0.12, -7],
+        "eulerAngles": [0, 45, 0],
+        "scale": [1, 1, 1]
+      },
+      {"id": "wbrc2",  "model": "woodBoxRedCross",   "texture": ["ColorAtlasCG"],
+        "translate": [-19.8, -0.12, -8.2],
+        "eulerAngles": [0, 60, 0],
+        "scale": [1, 1, 1]
+      },
+      {"id": "wbrc3",  "model": "woodBoxRedCross",   "texture": ["ColorAtlasCG"],
+        "translate": [-19.5, 1.1, -7.5],
+        "eulerAngles": [0, 75, 0],
+        "scale": [1, 1, 1]
+      },
+      {"id": "ph1",  "model": "pipesHollow",   "texture": ["ColorAtlasCG"],
+        "translate": [-13, -0.12, -2.5],
+        "eulerAngles": [0, 160, 0],
+        "scale": [0.8, 0.8, 0.8]
+      },
+      {"id": "pbb1",  "model": "prisonBusBlack",   "texture": ["ColorAtlasCG"],
+        "translate": [-20, -0.12, 3.5],
+        "eulerAngles": [0, -30, 0],
+        "scale": [1, 1, 1]
+      },
+      {"id": "wbls1",  "model": "woodBoxLightStripes",   "texture": ["ColorAtlasCG"],
+        "translate": [-22.2, -0.12, -1.7],
+        "eulerAngles": [0, 45, 0],
+        "scale": [0.7, 0.7, 0.7]
+      },
+      {"id": "pbb2",  "model": "prisonBusBlack",   "texture": ["ColorAtlasCG"],
+        "translate": [-26, -0.12, 2],
+        "eulerAngles": [0, 25, 0],
+        "scale": [1, 1, 1]
+      },
+      {"id": "cr1",  "model": "cableReel",   "texture": ["ColorAtlasCG"],
+        "translate": [-26.7, -0.12, 7.7],
+        "eulerAngles": [0, -45, 0],
+        "scale": [0.5, 0.5, 0.5]
+      },
+      {"id": "pc1",  "model": "policeCar",   "texture": ["ColorAtlasCG"],
+        "translate": [-13, -0.12, 7],
+        "eulerAngles": [0, 0, 0],
+        "scale": [1.1, 1.1, 1.1]
+      },
+      {"id": "brw1",
+        "model": "barrierRedWhite",   "texture": ["ColorAtlasCG"],
+        "translate": [-15, 0, 9.5],
+        "eulerAngles": [0, 180, 0],
+        "scale": [1, 1, 1]
+      },
+      {"id": "lpt1",
+        "model": "lampPostTripple",   "texture": ["ColorAtlasCG"],
+        "translate": [-11, 0, 9.5],
+        "eulerAngles": [0, 0, 0],
+        "scale": [1, 1, 1]
+      },
+      {"id": "axis",  "model": "axis", "texture": ["ColorAtlasAxis"],
+        "eulerAngles": [0, -90, 0],
+        "translate": [0, 2, 0]
+      }
+    ]},
+    {"technique": "SkyBox", "elements": [
+      {"id": "skybox",  "model": "skybox",   "texture": ["skybox"]}
+    ]},
+    {"technique": "PBR", "elements": [
+    ]}
+  ]
+}

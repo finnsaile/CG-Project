@@ -1,0 +1,40 @@
+{
+  "checkpoints" : [[0.0, 0.0, 0.0]],
+  "levelName" : "Showcase",
+  "levelId" : 2,
+  "levelScene" : "assets/models/scenes/showcase_scene.json",
+  "collisionNames" : [
+  ],
+  "carBodyNames" : ["ghm0", "ghm1", "ghm2"],
+  "carWheelNames" : ["ghwfr0", "ghwfl0", "ghwbr0", "ghwbl0"],
+  "carFrontWheelNames" : [ "ghwfr0", "ghwfl0"],
+  "mainCarPartName" : "ghm0",
+
+  "checkpointName" : "arrow",
+  "finalCheckpointName" : "trophy",
+  "startPos" : [0.0, 0.0, -10.0],
+  "startYaw" : 0.0,
+  "startPitch" : 40.0,
+  "moveSpeed" : 4.0,
+  "moveSpeedBoost" : 8,
+  "wheelBase" : 3,
+  "steeringSpeed" : 100,
+  "maxSteeringAng" : 50,
+  "camTargetDeltaY" : 1,
+  "maxCamDist" : 15,
+  "minCamDist" : 2,
+  "defaultCamDist" : 5,
+  "lowestTime" : 0.0,
+  "pedestals": [
+    {"ped_id": "ped_fenyr", "body_parts":  ["fem0", "fem1", "fem2"],
+    "wheels":  ["fewfr0", "fewfl0", "fewbr0", "fewbl0"]},
+    {"ped_id": "ped_mobil", "body_parts":  ["mom0", "mom1", "mom2"],
+      "wheels":  ["mowfr0", "mowfl0", "mowbr0", "mowbl0"]},
+    {"ped_id": "ped_jeep", "body_parts":  ["jem0", "jem1", "jem2"],
+      "wheels":  ["jewfr0", "jewfl0", "jewbr0", "jewbl0"]},
+    {"ped_id": "ped_lamb", "body_parts":  ["lam0", "lam1", "lam2"],
+      "wheels":  ["lawfr0", "lawfl0", "lawbr0", "lawbl0"]},
+    {"ped_id": "ped_kamaro", "body_parts":  ["kam0", "kam1", "kam2"],
+      "wheels":  ["kawfr0", "kawfl0", "kawbr0", "kawbl0"]}
+  ]
+}

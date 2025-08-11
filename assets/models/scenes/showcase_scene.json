@@ -1,0 +1,189 @@
+{
+  "assetfiles": [
+    {"id": "fenyr", "file": "assets/models/vehicles/fenyr.gltf", "format":"GLTF"},
+    {"id": "mobil", "file": "assets/models/vehicles/mobil.gltf", "format":"GLTF"},
+    {"id": "jeep", "file": "assets/models/vehicles/jeep.gltf", "format":"GLTF"},
+    {"id": "lamb", "file": "assets/models/vehicles/lamb.gltf", "format":"GLTF"},
+    {"id": "kamaro", "file": "assets/models/vehicles/kamaro.gltf", "format":"GLTF"},
+    {"id": "ghini", "file": "assets/models/vehicles/ghini.gltf", "format":"GLTF"}
+
+  ],
+  "models": [
+    {"id": "fem0",  "VD": "VDpbr",  "model": "Cube.070", "node": "fenyr", "meshId": 0, "asset": "fenyr", "format":"ASSET"},
+    {"id": "fem1",  "VD": "VDpbr",  "model": "Cube.070", "node": "fenyr", "meshId": 1, "asset": "fenyr", "format":"ASSET"},
+    {"id": "fem2",  "VD": "VDpbr",  "model": "Cube.070", "node": "fenyr", "meshId": 2, "asset": "fenyr", "format":"ASSET"},
+
+    {"id": "fewfr0",  "VD": "VDpbr",  "model": "Cylinder.059", "node": "wheels.020", "meshId": 0, "asset": "fenyr", "format":"ASSET"},
+    {"id": "fewfl0",  "VD": "VDpbr",  "model": "Cylinder.117", "node": "wheels.021", "meshId": 0, "asset": "fenyr", "format":"ASSET"},
+    {"id": "fewbr0",  "VD": "VDpbr",  "model": "Cylinder.071", "node": "wheels.038", "meshId": 0, "asset": "fenyr", "format":"ASSET"},
+    {"id": "fewbl0",  "VD": "VDpbr",  "model": "Cylinder.072", "node": "wheels.039", "meshId": 0, "asset": "fenyr", "format":"ASSET"},
+
+    {"id": "mom0",  "VD": "VDpbr",  "model": "Cube.078", "node": "car_base.002", "meshId": 0, "asset": "mobil", "format":"ASSET"},
+    {"id": "mom1",  "VD": "VDpbr",  "model": "Cube.078", "node": "car_base.002", "meshId": 1, "asset": "mobil", "format":"ASSET"},
+    {"id": "mom2",  "VD": "VDpbr",  "model": "Cube.078", "node": "car_base.002", "meshId": 2, "asset": "mobil", "format":"ASSET"},
+
+    {"id": "mowfr0",  "VD": "VDpbr",  "model": "Cylinder.039", "node": "wheel1.003", "meshId": 0, "asset": "mobil", "format":"ASSET"},
+    {"id": "mowfl0",  "VD": "VDpbr",  "model": "Cylinder.068", "node": "wheel1.007", "meshId": 0, "asset": "mobil", "format":"ASSET"},
+    {"id": "mowbr0",  "VD": "VDpbr",  "model": "Cylinder.055", "node": "wheel2.001", "meshId": 0, "asset": "mobil", "format":"ASSET"},
+    {"id": "mowbl0",  "VD": "VDpbr",  "model": "Cylinder.073", "node": "wheel2.003", "meshId": 0, "asset": "mobil", "format":"ASSET"},
+
+    {"id": "jem0",  "VD": "VDpbr",  "model": "Cube.057", "node": "jeep", "meshId": 0, "asset": "jeep", "format":"ASSET"},
+    {"id": "jem1",  "VD": "VDpbr",  "model": "Cube.057", "node": "jeep", "meshId": 1, "asset": "jeep", "format":"ASSET"},
+    {"id": "jem2",  "VD": "VDpbr",  "model": "Cube.057", "node": "jeep", "meshId": 2, "asset": "jeep", "format":"ASSET"},
+
+    {"id": "jewfr0",  "VD": "VDpbr",  "model": "Cylinder.054", "node": "wheels.016", "meshId": 0, "asset": "jeep", "format":"ASSET"},
+    {"id": "jewfl0",  "VD": "VDpbr",  "model": "Cylinder.056", "node": "wheels.017", "meshId": 0, "asset": "jeep", "format":"ASSET"},
+    {"id": "jewbr0",  "VD": "VDpbr",  "model": "Cylinder.075", "node": "wheels.042", "meshId": 0, "asset": "jeep", "format":"ASSET"},
+    {"id": "jewbl0",  "VD": "VDpbr",  "model": "Cylinder.076", "node": "wheels.043", "meshId": 0, "asset": "jeep", "format":"ASSET"},
+
+    {"id": "lam0",  "VD": "VDpbr",  "model": "Cube.007", "node": "jeep", "meshId": 0, "asset": "lamb", "format":"ASSET"},
+    {"id": "lam1",  "VD": "VDpbr",  "model": "Cube.007", "node": "jeep", "meshId": 1, "asset": "lamb", "format":"ASSET"},
+    {"id": "lam2",  "VD": "VDpbr",  "model": "Cube.007", "node": "jeep", "meshId": 2, "asset": "lamb", "format":"ASSET"},
+
+    {"id": "lawfr0",  "VD": "VDpbr",  "model": "Cylinder.026", "node": "wheels", "meshId": 0, "asset": "lamb", "format":"ASSET"},
+    {"id": "lawfl0",  "VD": "VDpbr",  "model": "Cylinder.011", "node": "wheels.001", "meshId": 0, "asset": "lamb", "format":"ASSET"},
+    {"id": "lawbr0",  "VD": "VDpbr",  "model": "Cylinder.096", "node": "wheels.056", "meshId": 0, "asset": "lamb", "format":"ASSET"},
+    {"id": "lawbl0",  "VD": "VDpbr",  "model": "Cylinder.097", "node": "wheels.057", "meshId": 0, "asset": "lamb", "format":"ASSET"},
+
+    {"id": "kam0",  "VD": "VDpbr",  "model": "Cube.001", "node": "kamaro", "meshId": 0, "asset": "kamaro", "format":"ASSET"},
+    {"id": "kam1",  "VD": "VDpbr",  "model": "Cube.001", "node": "kamaro", "meshId": 1, "asset": "kamaro", "format":"ASSET"},
+    {"id": "kam2",  "VD": "VDpbr",  "model": "Cube.001", "node": "kamaro", "meshId": 2, "asset": "kamaro", "format":"ASSET"},
+
+    {"id": "kawfr0",  "VD": "VDpbr",  "model": "Cylinder.002", "node": "wheels.002", "meshId": 0, "asset": "kamaro", "format":"ASSET"},
+    {"id": "kawfl0",  "VD": "VDpbr",  "model": "Cylinder.064", "node": "wheels.003", "meshId": 0, "asset": "kamaro", "format":"ASSET"},
+    {"id": "kawbr0",  "VD": "VDpbr",  "model": "Cylinder.098", "node": "wheels.058", "meshId": 0, "asset": "kamaro", "format":"ASSET"},
+    {"id": "kawbl0",  "VD": "VDpbr",  "model": "Cylinder.099", "node": "wheels.059", "meshId": 0, "asset": "kamaro", "format":"ASSET"},
+
+    {"id": "ghm0",  "VD": "VDpbr",  "model": "Cube.029", "node": "ghini", "meshId": 0, "asset": "ghini", "format":"ASSET"},
+    {"id": "ghm1",  "VD": "VDpbr",  "model": "Cube.029", "node": "ghini", "meshId": 1, "asset": "ghini", "format":"ASSET"},
+    {"id": "ghm2",  "VD": "VDpbr",  "model": "Cube.029", "node": "ghini", "meshId": 2, "asset": "ghini", "format":"ASSET"},
+
+    {"id": "ghwfr0",  "VD": "VDpbr",  "model": "Cylinder.032", "node": "wheels.008", "meshId": 0, "asset": "ghini", "format":"ASSET"},
+    {"id": "ghwfl0",  "VD": "VDpbr",  "model": "Cylinder.035", "node": "wheels.009", "meshId": 0, "asset": "ghini", "format":"ASSET"},
+    {"id": "ghwbr0",  "VD": "VDpbr",  "model": "Cylinder.084", "node": "wheels.050", "meshId": 0, "asset": "ghini", "format":"ASSET"},
+    {"id": "ghwbl0",  "VD": "VDpbr",  "model": "Cylinder.086", "node": "wheels.051", "meshId": 0, "asset": "ghini", "format":"ASSET"},
+
+    {"id": "skybox", "VD": "VDskybox", "model": "assets/models/SkyBoxCube.obj", "format":"OBJ"},
+    {"id": "axis", "VD": "VDphong", "model": "assets/models/axis.obj", "format":"OBJ"},
+    {"id": "arrow", "VD": "VDphong", "model": "assets/models/Arrow.obj", "format":"OBJ"},
+    {"id": "trophy", "VD": "VDphong", "model": "assets/models/Trophy.obj", "format":"OBJ"},
+
+    {"id": "ground", "VD": "VDpbr", "model": "assets/models/world/showcase/Ground.gltf", "format":"GLTF"},
+    {"id": "pedestal", "VD": "VDpbr", "model": "assets/models/world/showcase/Podest.gltf", "format":"GLTF"}
+
+  ],
+  "textures": [
+    {"id": "ColorAtlasCG", "texture": "assets/textures/ColorAtlasCG.png", "format": "C"},
+    {"id": "ColorAtlasAxis", "texture": "assets/textures/ColorAtlasAxis.png", "format": "C"},
+    {"id": "skybox", "texture": "assets/textures/moonrise.hdr", "format": "C"},
+    {"id": "ColorAtlasCustom", "texture": "assets/textures/ColorAtlasCustom.png", "format": "C"},
+
+    {"id": "DullMetalMetallic", "texture": "assets/textures/PBR/DullMetal/dull_metal_metallic.png", "format": "D"},
+    {"id": "DullMetalNormal", "texture": "assets/textures/PBR/DullMetal/dull_metal_normal-ogl.png", "format": "D"},
+    {"id": "DullMetalRoughness", "texture": "assets/textures/PBR/DullMetal/dull_metal_roughness.png", "format": "D"},
+
+    {"id": "TitaniumScuffedAlbedo", "texture": "assets/textures/PBR/TitaniumScuffed/Titanium-Scuffed_basecolor.png", "format": "D"},
+    {"id": "TitaniumScuffedMetallic", "texture": "assets/textures/PBR/TitaniumScuffed/Titanium-Scuffed_metallic.png", "format": "D"},
+    {"id": "TitaniumScuffedNormal", "texture": "assets/textures/PBR/TitaniumScuffed/Titanium-Scuffed_normal.png", "format": "D"},
+    {"id": "TitaniumScuffedRoughness", "texture": "assets/textures/PBR/TitaniumScuffed/Titanium-Scuffed_roughness.png", "format": "D"},
+
+    {"id": "MarbelAlbedo", "texture": "assets/textures/PBR/GlossyMarbel/glossy-marble-tile_albedo.png", "format": "D"},
+    {"id": "MarbelMetal", "texture": "assets/textures/PBR/GlossyMarbel/glossy-marble-tile_metallic.png", "format": "D"},
+    {"id": "MarbelNormal", "texture": "assets/textures/PBR/GlossyMarbel/glossy-marble-tile_normal-ogl.png", "format": "D"},
+    {"id": "MarbelRoughness", "texture": "assets/textures/PBR/GlossyMarbel/glossy-marble-tile_roughness.png", "format": "D"},
+
+    {"id": "TileAlbedo", "texture": "assets/textures/PBR/VintageTile/vintage-tile1_albedo.png", "format": "D"},
+    {"id": "TileMetal", "texture": "assets/textures/PBR/VintageTile/vintage-tile1_metallic.png", "format": "D"},
+    {"id": "TileNormal", "texture": "assets/textures/PBR/VintageTile/vintage-tile1_normal-ogl.png", "format": "D"},
+    {"id": "TileRoughness", "texture": "assets/textures/PBR/VintageTile/vintage-tile1_roughness.png", "format": "D"},
+
+    {"id": "PolishedTileAlbedo", "texture": "assets/textures/PBR/PolishedTile/rectangle-polished-tile_albedo.png", "format": "D"},
+    {"id": "PolishedTileMetal", "texture": "assets/textures/PBR/PolishedTile/rectangle-polished-tile_metallic.png", "format": "D"},
+    {"id": "PolishedTileNormal", "texture": "assets/textures/PBR/PolishedTile/rectangle-polished-tile_normal-ogl.png", "format": "D"},
+    {"id": "PolishedTileRoughness", "texture": "assets/textures/PBR/PolishedTile/rectangle-polished-tile_roughness.png", "format": "D"},
+
+    {"id": "hud_1920", "texture": "assets/textures/GameHUD_1920.png", "format": "C"},
+    {"id": "hud_1600", "texture": "assets/textures/GameHUD_1600.png", "format": "C"},
+    {"id": "hud_1120", "texture": "assets/textures/GameHUD_1120.png", "format": "C"}
+  ],
+  "instances": [
+    {"technique": "PhongShader", "elements": [
+      {"id": "arrow",  "model": "arrow", "scale": [2.0, 2.0, 2.0], "translate": [3, -0, -3], "texture": ["ColorAtlasCustom"]},
+      {"id": "trophy",  "model": "trophy", "scale": [0.3, 0.3, 0.3], "translate": [0, -0, 0], "texture": ["ColorAtlasCustom"]},
+      {"id": "axis",  "model": "axis", "texture": ["ColorAtlasAxis"],
+        "eulerAngles": [0, -90, 0],
+        "translate": [0, 2, 0]
+      }
+    ]},
+    {"technique": "SkyBox", "elements": [
+      {"id": "skybox",  "model": "skybox",   "texture": ["skybox"]}
+    ]},
+    {"technique": "PBR", "elements": [
+      {"id":"ground","model":"ground","scale":[20,1,20],"translate":[0.0,0.0,0.0],"texture":["MarbelAlbedo","MarbelNormal","MarbelMetal","MarbelRoughness"]},
+
+      {"id":"ped_fenyr","model":"pedestal","scale":[2,1,2],"translate":[6.18,-0.5,2.01],"texture":["PolishedTileAlbedo","PolishedTileNormal","PolishedTileMetal","PolishedTileRoughness"]},
+
+      {"id":"fem0","model":"fem0","scale":[0.5,0.5,0.5],"translate":[6.18,1.07,2.01],"texture":["ColorAtlasCustom","DullMetalNormal","DullMetalMetallic","DullMetalRoughness"]},
+      {"id":"fem1","model":"fem1","scale":[0.5,0.5,0.5],"translate":[6.18,1.07,2.01],"texture":["ColorAtlasCustom","TitaniumScuffedNormal","TitaniumScuffedMetallic","TitaniumScuffedRoughness"]},
+      {"id":"fem2","model":"fem2","scale":[0.5,0.5,0.5],"translate":[6.18,1.07,2.01],"texture":["ColorAtlasCustom","TitaniumScuffedNormal","TitaniumScuffedMetallic","TitaniumScuffedRoughness"]},
+
+      {"id":"fewfr0","model":"fewfr0","scale":[0.39,0.39,0.39],"translate":[5.55,0.72,3.1],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id":"fewfl0","model":"fewfl0","scale":[0.39,0.39,0.39],"translate":[6.81,0.72,3.1],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id":"fewbr0","model":"fewbr0","scale":[0.39,0.39,0.39],"translate":[5.55,0.72,1.11],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id":"fewbl0","model":"fewbl0","scale":[0.39,0.39,0.39],"translate":[6.81,0.72,1.11],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+
+      {"id":"ped_mobil", "model":"pedestal","scale":[2,1,2],"translate":[-6.18,-0.5,2.01],"texture":["PolishedTileAlbedo","PolishedTileNormal","PolishedTileMetal","PolishedTileRoughness"]},
+
+      {"id": "mom0",  "model": "mom0", "scale": [0.7, 0.7, 0.7], "translate": [-6.1, 1.1, 2.21], "texture": ["ColorAtlasCustom","TitaniumScuffedNormal","TitaniumScuffedMetallic","TitaniumScuffedRoughness"]},
+      {"id": "mom1",  "model": "mom1", "scale": [0.7, 0.7, 0.7], "translate": [-6.1, 1.1, 2.21], "texture": ["ColorAtlasCustom", "TitaniumScuffedNormal", "TitaniumScuffedMetallic", "TitaniumScuffedRoughness"]},
+      {"id": "mom2",  "model": "mom2", "scale": [0.7, 0.7, 0.7], "translate": [-6.1, 1.1, 2.21], "texture": ["ColorAtlasCustom", "TitaniumScuffedNormal", "TitaniumScuffedMetallic", "TitaniumScuffedRoughness"]},
+
+      {"id": "mowfr0",  "model": "mowfr0", "scale": [0.45, 0.45, 0.45], "translate": [-6.75, 0.75, 3.16], "texture": ["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id": "mowfl0",  "model": "mowfl0", "scale": [0.45, 0.45, 0.45], "translate": [-5.45, 0.75, 3.16], "texture": ["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id": "mowbr0",  "model": "mowbr0", "scale": [0.45, 0.45, 0.45], "translate": [-6.6, 0.75, 1.01], "texture": ["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id": "mowbl0",  "model": "mowbl0", "scale": [0.45, 0.45, 0.45], "translate": [-5.5, 0.75, 1.01], "texture": ["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+
+      {"id":"ped_jeep", "model":"pedestal","scale":[2,1,2],"translate":[-3.82,-0.5,-5.26],"texture":["PolishedTileAlbedo","PolishedTileNormal","PolishedTileMetal","PolishedTileRoughness"]},
+
+      {"id": "jem0",  "model": "jem0", "scale": [0.55, 0.55, 0.55], "translate": [-3.82, 1.15, -5.26], "texture":  ["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id": "jem1",  "model": "jem1", "scale": [0.55, 0.55, 0.55], "translate": [-3.82, 1.15, -5.26], "texture": ["ColorAtlasCustom", "TitaniumScuffedNormal", "TitaniumScuffedMetallic", "TitaniumScuffedRoughness"]},
+      {"id": "jem2",  "model": "jem2", "scale": [0.55, 0.55, 0.55], "translate": [-3.82, 1.15, -5.26], "texture": ["ColorAtlasCustom", "TitaniumScuffedNormal", "TitaniumScuffedMetallic", "TitaniumScuffedRoughness"]},
+
+      {"id": "jewfr0",  "model": "jewfr0", "scale": [0.55, 0.55, 0.55], "translate": [-4.45, 0.8, -4.08], "texture": ["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id": "jewfl0",  "model": "jewfl0", "scale": [0.55, 0.55, 0.55], "translate": [-3.19, 0.8, -4.08], "texture": ["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id": "jewbr0",  "model": "jewbr0", "scale": [0.55, 0.55, 0.55], "translate": [-4.45, 0.8, -5.967], "texture": ["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id": "jewbl0",  "model": "jewbl0", "scale": [0.55, 0.55, 0.55], "translate": [-3.19, 0.8, -5.967], "texture": ["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+
+      {"id":"ped_lamb", "model":"pedestal","scale":[2,1,2],"translate":[3.82,-0.5,-5.26],"texture":["PolishedTileAlbedo","PolishedTileNormal","PolishedTileMetal","PolishedTileRoughness"]},
+
+      {"id":"lam0","model":"lam0","scale":[0.7,0.7,0.7],"translate":[3.82,1.48,-5.26],"texture":["ColorAtlasCustom","DullMetalNormal","DullMetalMetallic","DullMetalRoughness"]},
+      {"id":"lam1","model":"lam1","scale":[0.7,0.7,0.7],"translate":[3.82,1.48,-5.26],"texture":["ColorAtlasCustom","TitaniumScuffedNormal","TitaniumScuffedMetallic","TitaniumScuffedRoughness"]},
+      {"id":"lam2","model":"lam2","scale":[0.7,0.7,0.7],"translate":[3.82,1.48,-5.26],"texture":["ColorAtlasCustom","TitaniumScuffedNormal","TitaniumScuffedMetallic","TitaniumScuffedRoughness"]},
+
+      {"id":"lawfr0","model":"lawfr0","scale":[0.54,0.7,0.54],"translate":[3.03,0.83,-4.35],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id":"lawfl0","model":"lawfl0","scale":[0.54,0.7,0.54],"translate":[4.61,0.83,-4.35],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id":"lawbr0","model":"lawbr0","scale":[0.54,0.7,0.54],"translate":[3.03,0.83,-6.5],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id":"lawbl0","model":"lawbl0","scale":[0.54,0.7,0.54],"translate":[4.61,0.83,-6.5],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+
+      {"id":"ped_kamaro", "model":"pedestal","scale":[2,1,2],"translate":[0,-0.5, 6.5],"texture":["PolishedTileAlbedo","PolishedTileNormal","PolishedTileMetal","PolishedTileRoughness"]},
+
+      {"id":"kam0","model":"kam0","scale":[0.7,0.7,0.7],"translate":[0,0.55,6.5],"texture":["ColorAtlasCustom","TitaniumScuffedNormal","TitaniumScuffedMetallic","TitaniumScuffedRoughness"]},
+      {"id":"kam1","model":"kam1","scale":[0.7,0.7,0.7],"translate":[0,0.55,6.5],"texture":["ColorAtlasCustom","TitaniumScuffedNormal","TitaniumScuffedMetallic","TitaniumScuffedRoughness"]},
+      {"id":"kam2","model":"kam2","scale":[0.7,0.7,0.7],"translate":[0,0.55,6.5],"texture":["ColorAtlasCustom","TitaniumScuffedNormal","TitaniumScuffedMetallic","TitaniumScuffedRoughness"]},
+
+      {"id":"kawfr0","model":"mowfr0","scale":[0.4,0.4,0.4],"translate":[-0.55,0.75,7.55],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id":"kawfl0","model":"mowfl0","scale":[0.4,0.4,0.4],"translate":[0.55,0.75,7.55],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id":"kawbr0","model":"mowbr0","scale":[0.4,0.4,0.4],"translate":[-0.55,0.75,5.5],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id":"kawbl0","model":"mowbl0","scale":[0.4,0.4,0.4],"translate":[0.55,0.75,5.5],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+
+      {"id":"ghm0","model":"ghm0","scale":[0.60,0.60,0.60],"translate":[0.00,0.7,0.00],"texture":["ColorAtlasCustom","TitaniumScuffedNormal","TitaniumScuffedMetallic","TitaniumScuffedRoughness"]},
+      {"id":"ghm1","model":"ghm1","scale":[0.60,0.60,0.60],"translate":[0.00,0.7,0.00],"texture":["ColorAtlasCustom","TitaniumScuffedNormal","TitaniumScuffedMetallic","TitaniumScuffedRoughness"]},
+      {"id":"ghm2","model":"ghm2","scale":[0.60,0.60,0.60],"translate":[0.00,0.7,0.00],"texture":["ColorAtlasCustom","TitaniumScuffedNormal","TitaniumScuffedMetallic","TitaniumScuffedRoughness"]},
+
+      {"id":"ghwfr0","model":"ghwfr0","scale":[0.55,0.55,0.55],"translate":[-0.7,0.3,1.38],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id":"ghwfl0","model":"ghwfl0","scale":[0.55,0.55,0.55],"translate":[0.7,0.3,1.38],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id":"ghwbr0","model":"ghwbr0","scale":[0.55,0.55,0.55],"translate":[-0.7,0.3,-1.18],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
+      {"id":"ghwbl0","model":"ghwbl0","scale":[0.55,0.55,0.55],"translate":[0.7,0.3,-1.18],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]}
+    ]}
+  ]
+}
