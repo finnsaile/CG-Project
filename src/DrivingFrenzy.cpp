@@ -3,12 +3,11 @@
 
 #include <json.hpp>
 
+
 #include "modules/WVP.hpp"
-#include "modules/Animations.hpp"
-//
-// box xable reel pipe wheelbarrow
-// transport_truck_003_transport_truck_003.001
-// transport_truck_011_transport_truck_011.001
+
+static float g_uiScale = 1.0f;
+
 // Vertex layouts
 struct Vertex {
     glm::vec3 pos;
@@ -55,80 +54,13 @@ struct OverlayUniformBuffer {
     alignas(4) int hudSizeVariant;
 };
 
-#include <iostream>
-#include <cmath>
-#include <string>
-#include <random>
-#include <nlohmann/json.hpp> // for JSON output
-
-static std::map<std::pair<int, int>, int> tileCounters;
-
-static float snapYaw(float yawDeg) {
-    // Wrap to [0, 360)
-    float y = std::fmod(yawDeg, 360.0f);
-    if (y < 0.0f) y += 360.0f;
-
-    // Snap to 0, 90, 180, 270
-    float snapped = std::round(y / 90.0f) * 90.0f;
-    if (snapped >= 360.0f) snapped = 0.0f; // handle 359.9 -> 360
-
-    // Return in your desired set {0, 90, 180, -90}
-    if (snapped == 270.0f) return -90.0f;
-    return snapped; // 0, 90, or 180
-}
-
-void printTileJsonFromCar(const glm::vec3 &Pos, float Yaw) {
-    // --- Determine tile coordinates ---
-    int tileX = static_cast<int>(std::floor((Pos.x + 10.0f) / 20.0f));
-    int tileZ = static_cast<int>(std::floor((Pos.z + 10.0f) / 20.0f));
-
-    // --- Update per-tile counter ---
-    auto tileKey = std::make_pair(tileX, tileZ);
-    int &counter = tileCounters[tileKey];
-    counter++; // start from 1
-
-    // --- Snap yaw ---
-    float yawDeg = glm::degrees(Yaw);
-    float snappedYaw = snapYaw(yawDeg);
-
-    // --- Random number for model ---
-    static std::random_device rd;
-    static std::mt19937 gen(rd());
-    static std::uniform_int_distribution<> dist(1, 15);
-    int randomNum = dist(gen);
-
-    // --- Build id with counter ---
-    std::string id = "v" + std::to_string(tileX) + "x" + std::to_string(tileZ) + "_" + std::to_string(counter);
-
-    // --- Model with random number ---
-    std::string modelName = "carBasicBlack";
-
-    // --- Print exactly formatted output ---
-    std::cout << "{\"id\": \"" << id << "\",  "
-            << "\"model\": \"" << modelName << "\",   "
-            << "\"texture\": [\"ColorAtlasCG\"],\n"
-            << "\t\"translate\": ["
-            << Pos.x << ", " << -0.15 << ", " << Pos.z << "],\n"
-            << "\t\"eulerAngles\": [0, " << snappedYaw << ", 0],\n"
-            << "\t\"scale\": [1.25, 1.25, 1.25]\n"
-            << "},"
-            << std::endl;
-}
-
-inline glm::mat4 rotateAroundPivot(glm::vec3 pivotWorld,
-                               float radians, glm::vec3 axisWorld)
-{
-    return glm::translate(glm::mat4(1), pivotWorld) *
-           glm::rotate(glm::mat4(1), radians, glm::normalize(axisWorld)) *
-           glm::translate(glm::mat4(1), -pivotWorld);
-}
 
 void DrivingFrenzy::setWindowParameters() {
-    // window size, titile and initial background
+    // window size, title and initial background
     auto [width, height] = HudSizeMap.at(currentHudSize);
     windowWidth = width;
     windowHeight = height;
-    windowTitle = "DrivingFrenzy - Vehicle Simulation";
+    windowTitle = "Driving Frenzy";
     windowResizable = GLFW_FALSE;
 
     // Initial aspect ratio
@@ -144,6 +76,10 @@ void DrivingFrenzy::onWindowResize(int w, int h) {
 
     // updates the textual output
     txt.resizeScreen(w, h);
+
+    const float sx = static_cast<float>(w) / 1600.0f;
+    const float sy = static_cast<float>(h) / 900.0f;
+    g_uiScale = std::min(sx, sy);
 }
 
 void DrivingFrenzy::resizeWindow() {
@@ -297,7 +233,11 @@ void DrivingFrenzy::setCheckpointPos(const unsigned int checkpointIdx) {
 
 // updated main loop to accommodate for scene changing OUTSIDE of draw frame
 void DrivingFrenzy::mainLoop() {
-    // glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    // required to correctly position text box on macOS retina displays
+    framebufferResized = true;
+    int w,h;
+    glfwGetFramebufferSize(window, &w, &h);
+    onWindowResize(w, h);
 
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
@@ -315,7 +255,7 @@ void DrivingFrenzy::mainLoop() {
     vkDeviceWaitIdle(device);
 }
 
-// Here you load and setup all your Vulkan Models and Texutures.
+// Here you load and setup all your Vulkan Models and Textures.
 // Here you also create your Descriptor set layouts and load the shaders for the pipelines
 void DrivingFrenzy::localInit() {
     // Descriptor Layouts [what will be passed to the shaders]
@@ -560,8 +500,11 @@ void DrivingFrenzy::localInit() {
     submitCommandBuffer("main", 0, populateCommandBufferAccess, this);
 
     // Prepares for showing the FPS count
-    // txt.print(1.0f, 1.0f, "FPS:", 1, "CO", false, false, true, TAL_RIGHT, TRH_RIGHT, TRV_BOTTOM,
-    //           {1.0f, 1.0f, 1.0f, 1.0f}, {0.8f, 0.8f, 0.0f, 1.0f});
+     txt.print(1.0f, 1.0f, "FPS:", 1, "CO", false, true, true, TAL_RIGHT, TRH_RIGHT, TRV_BOTTOM,
+               glm::vec4{1.0f, 1.0f, 1.0f, 1.0f},   // Fill
+               glm::vec4{0.8f, 0.8f, 0.0f, 1.0f},   // Stroke
+               glm::vec4{0.0f, 0.0f, 0.0f, 0.0f},   // Shadow
+               g_uiScale, g_uiScale);
 }
 
 // Here you create your pipelines and Descriptor Sets!
@@ -755,6 +698,15 @@ void DrivingFrenzy::updateUniformBuffer(uint32_t currentImage) {
         collisionActive = !collisionActive;
     });
 
+    handleKey(GLFW_KEY_K, [&]() {
+        // if back to menu, reset level and set menu state according to current level
+        framebufferResized = true;
+        int w,h;
+        glfwGetFramebufferSize(window, &w, &h);
+        onWindowResize(w, h);
+    });
+
+
     handleKey(GLFW_KEY_Z, [&]() {
         // if back to menu, reset level and set menu state according to current level
         zoomOut = !zoomOut;
@@ -861,8 +813,8 @@ void DrivingFrenzy::updateUniformBuffer(uint32_t currentImage) {
         float oldTime = currentLevel.lowestTime;
         std::ostringstream oss;
         oss << std::fixed << std::setprecision(2);
-        oss << "X: " << Pos.x << " Y: " << Pos.y << " Z: " << Pos.z << " Yaw: " << glm::degrees(Yaw) << " FPS: " << Fps
-                << "\n";
+        // oss << "X: " << Pos.x << " Y: " << Pos.y << " Z: " << Pos.z << " Yaw: " << glm::degrees(Yaw) << " FPS: " << Fps
+        //         << "\n";
 
         if (oldTime < 0.0f) {
             oss << "Highscore Timer: " << gameTimer.getTime() << "/NaN";
@@ -870,7 +822,13 @@ void DrivingFrenzy::updateUniformBuffer(uint32_t currentImage) {
             oss << "Highscore Timer: " << gameTimer.getTime() << "/" << oldTime;
         }
 
-        txt.print(1.0f, 1.0f, oss.str(), 1, "CO", false, false, true, TAL_RIGHT, TRH_RIGHT, TRV_BOTTOM);
+
+        txt.print(1.0f, -1.0f, oss.str(), 1, "CO", false, false, g_uiScale < 1.01f,
+        TAL_RIGHT, TRH_RIGHT, TRV_TOP,
+        glm::vec4{1.0f, 1.0f, 1.0f, 1.0f},   // Fill (white)
+        glm::vec4{0.0f, 0.0f, 0.0f, 1.0f},   // Stroke (black)
+        glm::vec4{0.0f, 0.0f, 0.0f, 0.0f},   // Shadow (none)
+        1.0, 1.0);               // sx, sy (scale)
 
         elapsedT = 0.0f;
         countedFrames = 0;

@@ -190,9 +190,9 @@ void main() {
     float NdotL = max(dot(Nmap, L), 0.0);
 
     // Minimal neutral ambient (no ambient color in UBO), gated by AO
-    vec3 ambient = 0.15 * albedo;
+    vec3 ambient = 0.3 * albedo;
 
-    const float DIFFUSE_BOOST = 1.5;
+    const float DIFFUSE_BOOST = 2.0;
     const float SPEC_BOOST    = 2.0;
 
     vec3 color = ambient + (DIFFUSE_BOOST * kD * albedo / PI + SPEC_BOOST * spec) * radiance * NdotL;
