@@ -31,7 +31,7 @@ A compact course that demands **precise navigation** and **parking maneuvers** a
 
 | ![Parking Lot – Angle 1](screenshots/parkingLot2.png) | ![Parking Lot – Angle 2](screenshots/parkingLot1.png) |
 |---|---|
-| Overview | Close-up |
+| Close-up | Overview |
 
 ### 2) City
 A large, **hand-crafted city** spanning **suburbs**, **city centre**, **harbour**, and **industrial** districts. Drive across the **entire city**, threading through **dense traffic** and **busy streets**.
@@ -59,7 +59,7 @@ Level **showcasing a PBR shader** with high-resolution materials. Features five 
 | Map         | Estimated Time | Best Time | Checkpoints | Collisions | Instances |
 |-------------|----------------|-----------|-------------|------------|-----------|
 | Parking Lot | 01:10.00       | 00:43.41  | 20          | 54         | 96        |
-| City        | 04:10.00       | 03:40.28  | 137         | 620        | 940       |
+| City        | 04:10.00       | 03:04.28  | 137         | 620        | 940       |
 | Showcase    | —              | —         | —           | —          | 52        |
 
 

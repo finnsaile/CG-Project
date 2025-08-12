@@ -24,7 +24,7 @@
   "maxCamDist" : 15,
   "minCamDist" : 2,
   "defaultCamDist" : 5,
-  "lowestTime" : 0.0,
+  "lowestTime" : -1.0,
   "pedestals": [
     {"ped_id": "ped_fenyr", "body_parts":  ["fem0", "fem1", "fem2"],
     "wheels":  ["fewfr0", "fewfl0", "fewbr0", "fewbl0"]},

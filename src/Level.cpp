@@ -74,6 +74,7 @@ Level::Level(const std::string& filename) : filename(filename) {
 }
 
 void Level::updateLowestTime(float newTime) {
+    if (levelId == Showcase) return;
     // Read the JSON again
     std::ifstream inputFile(filename);
     if (!inputFile.is_open()) {

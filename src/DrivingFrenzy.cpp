@@ -816,19 +816,32 @@ void DrivingFrenzy::updateUniformBuffer(uint32_t currentImage) {
         // oss << "X: " << Pos.x << " Y: " << Pos.y << " Z: " << Pos.z << " Yaw: " << glm::degrees(Yaw) << " FPS: " << Fps
         //         << "\n";
 
-        if (oldTime < 0.0f) {
-            oss << "Highscore Timer: " << gameTimer.getTime() << "/NaN";
-        } else {
-            oss << "Highscore Timer: " << gameTimer.getTime() << "/" << oldTime;
+
+        {
+            auto fmtTime = [](float t) -> std::string {
+                if (t < 0.0f) return "NaN";
+                // centiseconds for two digits after the dot
+                int cs = static_cast<int>(std::floor(t * 100.0f + 0.5f));
+                int mm = cs / 6000;
+                int ss = (cs / 100) % 60;
+                int cc = cs % 100;
+
+                char buf[16];
+                std::snprintf(buf, sizeof(buf), "%02d:%02d.%02d", mm, ss, cc);
+                return std::string(buf);
+            };
+
+            float cur = gameTimer.getTime();
+            std::ostringstream oss;
+            oss << "Highscore Timer: " << fmtTime(cur) << "/" << fmtTime(oldTime);
+
+            txt.print(1.0f, -1.0f, oss.str(), 1, "CO", false, false, g_uiScale < 1.01f,
+                      TAL_RIGHT, TRH_RIGHT, TRV_TOP,
+                      glm::vec4{1.0f, 1.0f, 1.0f, 1.0f},   // Fill (white)
+                      glm::vec4{0.0f, 0.0f, 0.0f, 1.0f},   // Stroke (black)
+                      glm::vec4{0.0f, 0.0f, 0.0f, 0.0f},   // Shadow (none)
+                      g_uiScale, g_uiScale);               // scale with UI
         }
-
-
-        txt.print(1.0f, -1.0f, oss.str(), 1, "CO", false, false, g_uiScale < 1.01f,
-        TAL_RIGHT, TRH_RIGHT, TRV_TOP,
-        glm::vec4{1.0f, 1.0f, 1.0f, 1.0f},   // Fill (white)
-        glm::vec4{0.0f, 0.0f, 0.0f, 1.0f},   // Stroke (black)
-        glm::vec4{0.0f, 0.0f, 0.0f, 0.0f},   // Shadow (none)
-        1.0, 1.0);               // sx, sy (scale)
 
         elapsedT = 0.0f;
         countedFrames = 0;
