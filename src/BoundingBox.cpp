@@ -41,21 +41,22 @@ bool BoundingBox::intersects(const BoundingBox &other) const {
     glm::mat3 R;
     glm::mat3 AbsR;
 
-    // Compute rotation matrix from B to A
+    // compute rotation matrix from this to other
     for (int i = 0; i < 3; i++)
         for (int j = 0; j < 3; j++) {
             R[i][j] = glm::dot(this->axes[i], other.axes[j]);
             AbsR[i][j] = std::abs(R[i][j]) + EPSILON;
         }
 
-    // Vector between centers
+    // vector between centers
     glm::vec3 t = other.center - this->center;
-    // Express t in A's local space
+
+    // express t in local space of "this" BB
     t = glm::vec3(glm::dot(t, this->axes[0]),
                   glm::dot(t, this->axes[1]),
                   glm::dot(t, this->axes[2]));
 
-    // Test axes A0, A1, A2
+    // test axes A0, A1, A2
     for (int i = 0; i < 3; i++) {
         float ra = this->halfExtents[i];
         float rb = other.halfExtents[0] * AbsR[i][0] + other.halfExtents[1] * AbsR[i][1] + other.halfExtents[2] * AbsR[
@@ -63,7 +64,7 @@ bool BoundingBox::intersects(const BoundingBox &other) const {
         if (std::abs(t[i]) > ra + rb) return false;
     }
 
-    // Test axes B0, B1, B2
+    // test axes B0, B1, B2
     for (int i = 0; i < 3; i++) {
         float ra = this->halfExtents[0] * AbsR[0][i] + this->halfExtents[1] * AbsR[1][i] + this->halfExtents[2] * AbsR[
                        2][i];
@@ -71,7 +72,7 @@ bool BoundingBox::intersects(const BoundingBox &other) const {
         if (std::abs(t[0] * R[0][i] + t[1] * R[1][i] + t[2] * R[2][i]) > ra + rb) return false;
     }
 
-    // Test cross products
+    // test cross products
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             float ra = this->halfExtents[(i + 1) % 3] * AbsR[(i + 2) % 3][j] + this->halfExtents[(i + 2) % 3] * AbsR[
@@ -86,6 +87,8 @@ bool BoundingBox::intersects(const BoundingBox &other) const {
     return true;
 }
 
+// extract the vertices from the char representation
+// stride is size per vertex
 std::vector<glm::vec3> BoundingBox::extractPositionsFromBuffer(
     const std::vector<unsigned char> &vertices,
     size_t stride = 32,

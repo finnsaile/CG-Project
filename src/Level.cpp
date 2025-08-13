@@ -2,8 +2,7 @@
 #include <fstream>
 
 
-Level::Level(const std::string& filename) : filename(filename) {
-
+Level::Level(const std::string &filename) : filename(filename) {
     std::ifstream file(filename);
     if (!file.is_open()) {
         throw std::runtime_error("Could not open level file: " + filename);
@@ -34,19 +33,19 @@ Level::Level(const std::string& filename) : filename(filename) {
 
     lowestTime = jsonData.at("lowestTime").get<float>();
     // load collision names and add the main car part and checkpoint model names
-    collisionNames = jsonData.at("collisionNames").get<std::vector<std::string>>();
+    collisionNames = jsonData.at("collisionNames").get<std::vector<std::string> >();
     collisionNames.insert(collisionNames.end(), {mainCarPartName, checkpointName, finalCheckpointName});
 
-    carBodyNames = jsonData.at("carBodyNames").get<std::vector<std::string>>();
-    carWheelNames = jsonData.at("carWheelNames").get<std::vector<std::string>>();
-    carFrontWheelNames = jsonData.at("carFrontWheelNames").get<std::vector<std::string>>();
+    carBodyNames = jsonData.at("carBodyNames").get<std::vector<std::string> >();
+    carWheelNames = jsonData.at("carWheelNames").get<std::vector<std::string> >();
+    carFrontWheelNames = jsonData.at("carFrontWheelNames").get<std::vector<std::string> >();
 
-    auto& posJson = jsonData.at("startPos");
+    auto &posJson = jsonData.at("startPos");
     if (posJson.size() != 3) throw std::runtime_error("Invalid startPos format");
     startPos = glm::vec3(posJson[0].get<float>(), posJson[1].get<float>(), posJson[2].get<float>());
     // load array of checkpoints
     checkpoints.clear();
-    for (const auto& cp : jsonData.at("checkpoints")) {
+    for (const auto &cp: jsonData.at("checkpoints")) {
         if (cp.size() != 3) throw std::runtime_error("Invalid checkpoint format");
         glm::vec3 point(cp[0].get<float>(), cp[1].get<float>(), cp[2].get<float>());
         checkpoints.push_back(point);
@@ -55,18 +54,18 @@ Level::Level(const std::string& filename) : filename(filename) {
     if (levelId != Showcase) return;
 
     pedestals.clear();
-    for (const auto& pd : jsonData.at("pedestals")) {
+    for (const auto &pd: jsonData.at("pedestals")) {
         Pedestal new_pedestal;
         new_pedestal.name = pd.at("ped_id").get<std::string>();
-        auto bodyParts = pd.at("body_parts").get<std::vector<std::string>>();
+        auto bodyParts = pd.at("body_parts").get<std::vector<std::string> >();
 
-        for (const auto& bp : bodyParts) {
+        for (const auto &bp: bodyParts) {
             new_pedestal.car_body_parts.push_back({bp, glm::mat4(1.f)});
         }
 
-        auto wheels = pd.at("wheels").get<std::vector<std::string>>();
+        auto wheels = pd.at("wheels").get<std::vector<std::string> >();
 
-        for (const auto& we: wheels) {
+        for (const auto &we: wheels) {
             new_pedestal.car_wheels.push_back({we, glm::mat4(1.f)});
         }
         pedestals.push_back(new_pedestal);
@@ -75,7 +74,7 @@ Level::Level(const std::string& filename) : filename(filename) {
 
 void Level::updateLowestTime(float newTime) {
     if (levelId == Showcase) return;
-    // Read the JSON again
+    // read the JSON again
     std::ifstream inputFile(filename);
     if (!inputFile.is_open()) {
         throw std::runtime_error("Could not open level file for reading: " + filename);
@@ -85,12 +84,12 @@ void Level::updateLowestTime(float newTime) {
     inputFile >> jsonData;
     inputFile.close();
 
-    // Update if newTime is better
+    // update if newTime is better
     float oldTime = jsonData["lowestTime"].get<float>();
     if (newTime < oldTime || oldTime < 0.0f) {
         jsonData["lowestTime"] = newTime;
 
-        // Write back to file
+        // write back to file
         std::ofstream outputFile(filename);
         if (!outputFile.is_open()) {
             throw std::runtime_error("Could not open level file for writing: " + filename);
@@ -99,7 +98,6 @@ void Level::updateLowestTime(float newTime) {
         outputFile << std::setw(4) << jsonData << std::endl;
         outputFile.close();
 
-        // Optionally also update your in-memory value
         lowestTime = newTime;
     }
 }

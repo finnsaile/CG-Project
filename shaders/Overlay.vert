@@ -3,7 +3,7 @@
 
 layout(binding = 0) uniform OverlayBufferObject {
 	float visible;
-	int level; // must match fragment shader
+	int level;
 } oubo;
 
 layout(location = 0) in vec2 inPosition;

@@ -31,6 +31,9 @@ void GameTimer::reset() {
 
 double GameTimer::getTime() const {
     double now = glfwGetTime();
-    return !hasStarted ? 0.f : (isPaused ? pauseStartTime - startTime - pausedTime
-                    : now - startTime - pausedTime);
+    return !hasStarted
+               ? 0.f
+               : (isPaused
+                      ? pauseStartTime - startTime - pausedTime
+                      : now - startTime - pausedTime);
 }

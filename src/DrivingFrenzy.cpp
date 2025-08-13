@@ -88,7 +88,7 @@ void DrivingFrenzy::resizeWindow() {
     int monitorX, monitorY, monitorWidth, monitorHeight;
     glfwGetMonitorWorkarea(primary, &monitorX, &monitorY, &monitorWidth, &monitorHeight);
     glfwSetWindowSize(window, windowWidth, windowHeight);
-    // Center the window
+    // center the window
     int posX = monitorX + (monitorWidth - windowWidth) / 2;
     int posY = monitorY + (monitorHeight - windowHeight) / 2;
     glfwSetWindowPos(window, posX, posY);
@@ -120,6 +120,7 @@ void DrivingFrenzy::loadScene() {
     storeBoundingBoxes();
     storePedestals();
 
+    // store base transform of checkpoints for rotation
     const int checkpointId = SC.InstanceIds.at(currentLevel.checkpointName);
     const int finalCheckpointId = SC.InstanceIds.at(currentLevel.finalCheckpointName);
 
@@ -130,13 +131,16 @@ void DrivingFrenzy::loadScene() {
 }
 
 void DrivingFrenzy::resetLevel() {
+    // reset car
     Pos = currentLevel.startPos;
     Yaw = currentLevel.startYaw;
 
     zoomOut = false;
 
+    // used in gameLoop to reset camera and movement
     currentLevel.initialized = false;
 
+    // reset checpoints
     const int checkpointId = SC.InstanceIds.at(currentLevel.checkpointName);
     const int finalCheckpointId = SC.InstanceIds.at(currentLevel.finalCheckpointName);
 
@@ -147,8 +151,8 @@ void DrivingFrenzy::resetLevel() {
     setCheckpointPos(currentCheckpointIdx);
 }
 
+// store car body and wheel Wms in map for later access and movement
 void DrivingFrenzy::storeCarParts() {
-    // store car body and wheel Wms in map for later access and movement
     carParts.clear();
     for (const auto &name: currentLevel.carBodyNames) {
         if (SC.InstanceIds.count(name) > 0) {
@@ -165,9 +169,9 @@ void DrivingFrenzy::storeCarParts() {
     }
 }
 
+// store pedestals and the car parts belonging to each pedestal for rotation
 void DrivingFrenzy::storePedestals() {
-    // store car body and wheel Wms in map for later access and movement
-    auto& pedestals = currentLevel.pedestals;
+    auto &pedestals = currentLevel.pedestals;
     int id = 0;
 
     for (auto &pd: pedestals) {
@@ -184,12 +188,10 @@ void DrivingFrenzy::storePedestals() {
             wheel.initial_Wm = SC.I[id]->Wm;
         }
     }
-
-
 }
 
+// calculate and store bounding boxes for all instances that partake in collision
 void DrivingFrenzy::storeBoundingBoxes() {
-    // calculate and store bounding boxes for all instances that partake in colision
     boundingBoxes.clear();
     for (auto &name: currentLevel.collisionNames) {
         const int instanceId = SC.InstanceIds[name];
@@ -203,6 +205,7 @@ void DrivingFrenzy::storeBoundingBoxes() {
 
 // update the world matrix and bounding box of the checkpoint using the current checkpoint idx
 void DrivingFrenzy::setCheckpointPos(const unsigned int checkpointIdx) {
+    // if final checkpoint is reached stop game and update highscore
     if (checkpointIdx >= currentLevel.checkpoints.size()) {
         gameTimer.pause();
         currentLevel.updateLowestTime(gameTimer.getTime());
@@ -211,20 +214,17 @@ void DrivingFrenzy::setCheckpointPos(const unsigned int checkpointIdx) {
         return;
     }
 
-    const int checkpointId = SC.InstanceIds.at(currentLevel.checkpointName);
-    const int finalCheckpointId = SC.InstanceIds.at(currentLevel.finalCheckpointName);
-
     glm::mat4 &checkpointWm = baseTransformCheckpoint;
     glm::mat4 &finalCheckpointWm = baseTransformFinalCheckpoint;
 
+    // if its the final checkpoint, set trophy model otherwise arrow model
+    // other model is hidden under map origin
     if (checkpointIdx == currentLevel.checkpoints.size() - 1) {
         finalCheckpointWm[3] = glm::vec4(currentLevel.checkpoints[checkpointIdx], 1.0f);
         checkpointWm[3] = glm::vec4(0.f, -100.f, 0.f, 1.f);
-        // baseTransformCurrentCheckpoint = finalCheckpointWm;
     } else {
         checkpointWm[3] = glm::vec4(currentLevel.checkpoints[checkpointIdx], 1.0f);
         finalCheckpointWm[3] = glm::vec4(0.f, -100.f, 0.f, 1.f);
-        // baseTransformCurrentCheckpoint = checkpointWm;
     }
 
     boundingBoxes[currentLevel.checkpointName].updateFromWorldMatrix(checkpointWm);
@@ -235,7 +235,7 @@ void DrivingFrenzy::setCheckpointPos(const unsigned int checkpointIdx) {
 void DrivingFrenzy::mainLoop() {
     // required to correctly position text box on macOS retina displays
     framebufferResized = true;
-    int w,h;
+    int w, h;
     glfwGetFramebufferSize(window, &w, &h);
     onWindowResize(w, h);
 
@@ -281,16 +281,6 @@ void DrivingFrenzy::localInit() {
                        },
                        {1, VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, VK_SHADER_STAGE_FRAGMENT_BIT, 0, 1}
                    });
-
-    DSLoverlay.init(this, {
-                        {
-                            0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_ALL_GRAPHICS,
-                            sizeof(OverlayUniformBuffer), 1
-                        },
-                        {1, VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, VK_SHADER_STAGE_FRAGMENT_BIT, 0, 1},
-                        {2, VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, VK_SHADER_STAGE_FRAGMENT_BIT, 1, 1},
-                        {3, VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, VK_SHADER_STAGE_FRAGMENT_BIT, 2, 1}
-                    });
 
     DSLoverlay.init(this, {
                         {
@@ -426,7 +416,7 @@ void DrivingFrenzy::localInit() {
     Poverlay.setPolygonMode(VK_POLYGON_MODE_FILL);
     Poverlay.setTransparency(true);
 
-    P_PBR.init(this,&VDpbr, "shaders/PBR.vert.spv", "shaders/PBR.frag.spv", {&DSLglobal, &DSLpbr});
+    P_PBR.init(this, &VDpbr, "shaders/PBR.vert.spv", "shaders/PBR.frag.spv", {&DSLglobal, &DSLpbr});
     P_PBR.setCompareOp(VK_COMPARE_OP_LESS_OR_EQUAL);
     P_PBR.setCullMode(VK_CULL_MODE_BACK_BIT);
     P_PBR.setPolygonMode(VK_POLYGON_MODE_FILL);
@@ -456,20 +446,20 @@ void DrivingFrenzy::localInit() {
                 }, 1, &VDskyBox);
 
     PRs[2].init("PBR", {
-    {
-        &P_PBR,
-        {
-            {}, // set 0 (DSLglobal) – nothing to pre-bind here
-            // set 1 (DSLpbr): bind 5 samplers — albedo, normal, metallic, roughness, ao
-            {
-                { true, 0, {} }, // albedoMap    at binding 1 (array idx empty -> first/only)
-                { true, 1, {} }, // normalMap    at binding 2
-                { true, 2, {} }, // metallicMap  at binding 3
-                { true, 3, {} }, // roughnessMap at binding 4
-            }
-        }
-    }
-}, 4, &VDpbr);
+                    {
+                        &P_PBR,
+                        {
+                            {}, // set 0 (DSLglobal)
+                            // set 1 (DSLpbr): bind 4 samplers
+                            {
+                                {true, 0, {}}, // albedoMap    at binding 1
+                                {true, 1, {}}, // normalMap    at binding 2
+                                {true, 2, {}}, // metallicMap  at binding 3
+                                {true, 3, {}}, // roughnessMap at binding 4
+                            }
+                        }
+                    }
+                }, 4, &VDpbr);
 
     MOverlay.vertices = std::vector<unsigned char>(4 * sizeof(VertexOverlay));
     VertexOverlay *V1 = (VertexOverlay *) (&(MOverlay.vertices[0]));
@@ -490,7 +480,7 @@ void DrivingFrenzy::localInit() {
     loadScene();
 
     static bool init = true;
-    // initializes the textual output
+    // initializes the text output only at startup, not on scene reload
     if (init) {
         txt.init(this, windowWidth, windowHeight);
         init = false;
@@ -499,12 +489,12 @@ void DrivingFrenzy::localInit() {
     // submits the main command buffer
     submitCommandBuffer("main", 0, populateCommandBufferAccess, this);
 
-    // Prepares for showing the FPS count
-     txt.print(1.0f, 1.0f, "FPS:", 1, "CO", false, true, true, TAL_RIGHT, TRH_RIGHT, TRV_BOTTOM,
-               glm::vec4{1.0f, 1.0f, 1.0f, 1.0f},   // Fill
-               glm::vec4{0.8f, 0.8f, 0.0f, 1.0f},   // Stroke
-               glm::vec4{0.0f, 0.0f, 0.0f, 0.0f},   // Shadow
-               g_uiScale, g_uiScale);
+    // Prepares for showing the text
+    txt.print(1.0f, 1.0f, "Highscore:", 1, "CO", false, true, true, TAL_RIGHT, TRH_RIGHT, TRV_BOTTOM,
+              glm::vec4{1.0f, 1.0f, 1.0f, 1.0f}, // Fill
+              glm::vec4{0.8f, 0.8f, 0.0f, 1.0f}, // Stroke
+              glm::vec4{0.0f, 0.0f, 0.0f, 0.0f}, // Shadow
+              g_uiScale, g_uiScale);
 }
 
 // Here you create your pipelines and Descriptor Sets!
@@ -518,6 +508,7 @@ void DrivingFrenzy::pipelinesAndDescriptorSetsInit() {
     Poverlay.create(&RP);
     P_PBR.create(&RP);
 
+    // initialize Overlay descriptor set
     const int hudId_1920 = SC.TextureIds["hud_1920"];
     const int hudId_1600 = SC.TextureIds["hud_1600"];
     const int hudId_1120 = SC.TextureIds["hud_1120"];
@@ -536,6 +527,7 @@ void DrivingFrenzy::pipelinesAndDescriptorSetsCleanup() {
     PskyBox.cleanup();
     Poverlay.cleanup();
     P_PBR.cleanup();
+
     RP.cleanup();
 
     DSOverlay.cleanup();
@@ -566,10 +558,6 @@ void DrivingFrenzy::localCleanup() {
 
     if (!sceneChanged)
         txt.localCleanup();
-
-    // for(int ian = 0; ian < N_ANIMATIONS; ian++) {
-    // 	Anim[ian].cleanup();
-    // }
 }
 
 // Here it is the creation of the command buffer:
@@ -605,10 +593,10 @@ void DrivingFrenzy::updateScene() {
 
     localCleanup();
 
-    createSwapChain(); // Recreate swapchain and get new swapChainImages
-    createImageViews(); // Image views from the new images
+    createSwapChain();
+    createImageViews();
 
-    localInit(); // Init scene-specific stuff with new swapchain
+    localInit();
     createDescriptorPool();
     pipelinesAndDescriptorSetsInit();
 }
@@ -686,29 +674,13 @@ void DrivingFrenzy::updateUniformBuffer(uint32_t currentImage) {
         }
     });
 
+    // toggle collision for showcase
     handleKey(GLFW_KEY_C, [&]() {
-        // if back to menu, reset level and set menu state according to current level
-        if (currentGameState == Playing) {
-            std::cout << "[" << Pos.x << ", " << Pos.y << ", " << Pos.z << "]," << std::endl;
-        }
-    });
-
-    handleKey(GLFW_KEY_L, [&]() {
-        // if back to menu, reset level and set menu state according to current level
         collisionActive = !collisionActive;
     });
 
-    handleKey(GLFW_KEY_K, [&]() {
-        // if back to menu, reset level and set menu state according to current level
-        framebufferResized = true;
-        int w,h;
-        glfwGetFramebufferSize(window, &w, &h);
-        onWindowResize(w, h);
-    });
-
-
+    // toggle full zoom for showcase
     handleKey(GLFW_KEY_Z, [&]() {
-        // if back to menu, reset level and set menu state according to current level
         zoomOut = !zoomOut;
         if (zoomOut) {
             CamDist = currentLevel.maxCamDist;
@@ -723,23 +695,24 @@ void DrivingFrenzy::updateUniformBuffer(uint32_t currentImage) {
         {GLFW_KEY_6, H1120},
     };
 
-    // logic for all menu keys is the same:
-    // check if game state has changed and if so, update the level
+    // logic for all size keys is the same:
+    // check if in menu and change size to corresponding values
     for (const auto &[key, sizeEnum]: keyToSize) {
         handleKey(key, [&]() {
             if (currentGameState != MenuL1 && currentGameState != MenuL2 && currentGameState != MenuL3) return;
 
             auto [width, height] = HudSizeMap.at(sizeEnum);
 
-            // Resize the window
-            // Get primary monitor work area (excluding taskbar/dock)
+            // get primary monitor work area (excluding taskbar/dock)
             GLFWmonitor *primary = glfwGetPrimaryMonitor();
 
             int monitorX, monitorY, monitorWidth, monitorHeight;
             glfwGetMonitorWorkarea(primary, &monitorX, &monitorY, &monitorWidth, &monitorHeight);
 
+            // return if screen not large enough
             if (monitorWidth < width || monitorHeight < height) return;
 
+            // set sizes, screen to be resized after OUTSIDE of drawFrame
             currentHudSize = sizeEnum;
             windowWidth = width;
             windowHeight = height;
@@ -752,11 +725,10 @@ void DrivingFrenzy::updateUniformBuffer(uint32_t currentImage) {
 
     // defines the global parameters for the uniform
     glm::mat3 R = glm::mat3(
-        glm::rotate(glm::mat4(1.0f), glm::radians(-30.0f), glm::vec3(0,1,0)) * // yaw (left)
-        glm::rotate(glm::mat4(1.0f), glm::radians( -65.0f), glm::vec3(1,0,0))   // elevation up
+        glm::rotate(glm::mat4(1.0f), glm::radians(-30.0f), glm::vec3(0, 1, 0)) *
+        glm::rotate(glm::mat4(1.0f), glm::radians(-65.0f), glm::vec3(1, 0, 0))
     );
-    glm::vec3 lightDir = glm::normalize(R * glm::vec3(0,0,1)); // TO sun
-    // shader: L = normalize(-gubo.lightDir);
+    glm::vec3 lightDir = glm::normalize(R * glm::vec3(0, 0, 1));
 
     GlobalUniformBufferObject gubo{};
 
@@ -773,12 +745,11 @@ void DrivingFrenzy::updateUniformBuffer(uint32_t currentImage) {
         ubos.mvpMat = ViewPrj * ubos.mMat;
         ubos.nMat = glm::inverse(glm::transpose(glm::mat3(ubos.mMat)));
 
-
         SC.TI[0].I[instanceId].DS[0][0]->map(currentImage, &gubo, 0); // Set 0
         SC.TI[0].I[instanceId].DS[0][1]->map(currentImage, &ubos, 0); // Set 1
     }
 
-    // phong shader
+    // PBR shader
     for (instanceId = 0; instanceId < SC.TI[2].InstanceCount; instanceId++) {
         ubos.mMat = SC.TI[2].I[instanceId].Wm;
         ubos.mvpMat = ViewPrj * ubos.mMat;
@@ -805,17 +776,13 @@ void DrivingFrenzy::updateUniformBuffer(uint32_t currentImage) {
     static float elapsedT = 0.0f;
     static int countedFrames = 0;
 
-    countedFrames++;
     elapsedT += deltaT;
     if (elapsedT > 0.1f) {
-        float Fps = (float) countedFrames / elapsedT;
-
         float oldTime = currentLevel.lowestTime;
         std::ostringstream oss;
         oss << std::fixed << std::setprecision(2);
         // oss << "X: " << Pos.x << " Y: " << Pos.y << " Z: " << Pos.z << " Yaw: " << glm::degrees(Yaw) << " FPS: " << Fps
         //         << "\n";
-
 
         {
             auto fmtTime = [](float t) -> std::string {
@@ -837,10 +804,10 @@ void DrivingFrenzy::updateUniformBuffer(uint32_t currentImage) {
 
             txt.print(1.0f, -1.0f, oss.str(), 1, "CO", false, false, g_uiScale < 1.01f,
                       TAL_RIGHT, TRH_RIGHT, TRV_TOP,
-                      glm::vec4{1.0f, 1.0f, 1.0f, 1.0f},   // Fill (white)
-                      glm::vec4{0.0f, 0.0f, 0.0f, 1.0f},   // Stroke (black)
-                      glm::vec4{0.0f, 0.0f, 0.0f, 0.0f},   // Shadow (none)
-                      g_uiScale, g_uiScale);               // scale with UI
+                      glm::vec4{1.0f, 1.0f, 1.0f, 1.0f}, // Fill (white)
+                      glm::vec4{0.0f, 0.0f, 0.0f, 1.0f}, // Stroke (black)
+                      glm::vec4{0.0f, 0.0f, 0.0f, 0.0f}, // Shadow (none)
+                      g_uiScale, g_uiScale); // scale with UI
         }
 
         elapsedT = 0.0f;
@@ -858,7 +825,7 @@ float DrivingFrenzy::GameLogic() {
     constexpr float NEAR_PLANE = 0.1f;
     constexpr float FAR_PLANE = 500.f;
 
-    // rotation and move speed of camrea
+    // rotation speed of camera
     constexpr float ROT_SPEED = glm::radians(120.0f);
 
     // constants for smooth acceleration
@@ -999,14 +966,11 @@ float DrivingFrenzy::GameLogic() {
     if (wheelRoll < 0.0f)
         wheelRoll += 2.0f * M_PI;
 
-    // Rotate camera around vehicle
+    // rotate camera around vehicle
     CamYaw += ROT_SPEED * deltaTclamp * r.y;
     CamPitch -= ROT_SPEED * deltaTclamp * r.x;
     CamRoll -= ROT_SPEED * deltaTclamp * r.z;
     CamDist -= MOVE_SPEED * deltaTclamp * m.y;
-
-    // Clamp yaw (rotation around vehicle)
-    // CamYaw = (CamYaw < 0.0f ? 0.0f : (CamYaw > 2*M_PI ? 2*M_PI : CamYaw));
 
     Yaw = std::fmod(Yaw, 2.0f * M_PI);
     if (Yaw < 0.0f)
@@ -1017,14 +981,10 @@ float DrivingFrenzy::GameLogic() {
     if (CamYaw < 0.0f) CamYaw += 2.0f * M_PI;
 
     // limit pitch angle
-    CamPitch = (CamPitch < MIN_CAM_PITCH ? MIN_CAM_PITCH : (CamPitch > MAX_CAM_PITCH) ? MAX_CAM_PITCH : CamPitch);
-
-    // limit cam roll (not necessary since roll is not used
-    CamRoll = (CamRoll < -M_PI ? -M_PI : (CamRoll > M_PI ? M_PI : CamRoll));
+    CamPitch = std::clamp(CamPitch, MIN_CAM_PITCH, MIN_CAM_PITCH);
 
     // limit cam distance
     CamDist = std::clamp(CamDist, cl.minCamDist, cl.maxCamDist);
-    // CamDist = (CamDist < MIN_CAM_DIST ? MIN_CAM_DIST : (CamDist > MAX_CAM_DIST ? MAX_CAM_DIST : CamDist));
 
     // calculate the target of the camera, set to be above the cars position
     glm::vec3 CamTarget = Pos + glm::vec3(glm::rotate(glm::mat4(1), Yaw, glm::vec3(0, 1, 0)) *
@@ -1036,10 +996,9 @@ float DrivingFrenzy::GameLogic() {
                  glm::vec4(0, 0, CamDist, 1));
 
 
-    // // dampens the camera movement
+    // dampens the camera movement
     dampedCamPos = CamPos * (1 - exp(-SMOOTH_CAM_LAMBDA * deltaTclamp)) +
                    dampedCamPos * exp(-SMOOTH_CAM_LAMBDA * deltaTclamp);
-    // dampedCamPos = CamPos;
     cameraPos = dampedCamPos;
     ViewPrj = MakeViewProjectionLookAt(cameraPos, CamTarget, glm::vec3(0, 1, 0), CamRoll, FOVy, Ar, NEAR_PLANE,
                                        FAR_PLANE);
@@ -1049,8 +1008,8 @@ float DrivingFrenzy::GameLogic() {
     glm::vec3 temp = World[3];
     temp[1] += 100;
     SC.I[SC.InstanceIds["axis"]]->Wm[3] = glm::vec4(temp, 1.f);
-    // update the world matrix of all car parts (body + wheels)
 
+    // update the world matrix of all car parts (body + wheels)
     for (const auto &name: cl.carBodyNames) {
         int id = SC.InstanceIds[name];
         // adjust Wm by initial car location and transforms
@@ -1089,7 +1048,6 @@ float DrivingFrenzy::GameLogic() {
                 setCheckpointPos(currentCheckpointIdx);
                 continue;
             }
-            // std::cout << name << std::endl;
             if (collisionActive) {
                 currentGameState = GameOver;
                 gameTimer.pause();
@@ -1137,7 +1095,8 @@ float DrivingFrenzy::GameLogic() {
 
     spin += glm::radians(deltaTclamp * 45.f);
 
-    for (const auto& pedestal : cl.pedestals) {
+    // rotate all pedestals and their car parts around the pedestal origin
+    for (const auto &pedestal: cl.pedestals) {
         auto pivot = glm::vec3(pedestal.initial_Wm[3]);
 
         glm::mat4 Pivot = MakeWorld(pivot, spin, 0.0f, 0.0f) * glm::translate(glm::mat4(1.0f), -pivot);
@@ -1145,14 +1104,14 @@ float DrivingFrenzy::GameLogic() {
         int id = SC.InstanceIds[pedestal.name];
         SC.I[id]->Wm = Pivot * pedestal.initial_Wm;
 
-        for (const auto& car_part : pedestal.car_body_parts) {
+        for (const auto &car_part: pedestal.car_body_parts) {
             id = SC.InstanceIds[car_part.name];
             SC.I[id]->Wm = Pivot * car_part.initial_Wm;
         }
 
-        for (const auto& wheel : pedestal.car_wheels) {
+        for (const auto &wheel: pedestal.car_wheels) {
             id = SC.InstanceIds[wheel.name];
-            SC.I[id]->Wm = Pivot * wheel.initial_Wm ;
+            SC.I[id]->Wm = Pivot * wheel.initial_Wm;
         }
     }
 

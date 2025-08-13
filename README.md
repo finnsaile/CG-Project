@@ -9,7 +9,6 @@ _A fast, arcade driving game built on a custom **Vulkan** renderer._
 
 
 ## Overview
----
 ### Gameplay
 Navigate a car through tight spaces, following a sequence of checkpoints that guide you across each map. Collect the trophy at the end to complete the level. Parked vehicles, railings, and assorted props require precise, careful driving. Clip any obstacle, and the level resets. Master the car handling and optimize your route to perfect your highscore.
 
@@ -25,7 +24,6 @@ Navigate a car through tight spaces, following a sequence of checkpoints that gu
 - __Smooth, player-adjustable camera__ movement.
 
 ## Maps
----
 ### 1) Parking Lot
 A compact course that demands **precise navigation** and **parking maneuvers** around varied obstacles.
 
@@ -54,17 +52,15 @@ Level **showcasing a PBR shader** with high-resolution materials. Features five 
 
 
 ## Per-Map Statistics
----
 
 | Map         | Estimated Time | Best Time | Checkpoints | Collisions | Instances |
 |-------------|----------------|-----------|-------------|------------|-----------|
 | Parking Lot | 01:10.00       | 00:43.41  | 20          | 54         | 96        |
-| City        | 04:10.00       | 03:04.28  | 137         | 620        | 940       |
+| City        | 04:10.00       | 03:01.62  | 137         | 620        | 940       |
 | Showcase    | —              | —         | —           | —          | 52        |
 
 
 ## Controls
----
 - **W / S** – Accelerate / Brake  
 - **A / D** – Steer  
 - **Space** – Speed Boost / Start / Continue  
@@ -76,7 +72,6 @@ Level **showcasing a PBR shader** with high-resolution materials. Features five 
 
 
 ## Build & Run
----
 ### Prerequisites
 - Vulkan SDK **1.3+**
 - CMake **3.20+**
