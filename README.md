@@ -55,8 +55,8 @@ Level **showcasing a PBR shader** with high-resolution materials. Features five 
 
 | Map         | Estimated Time | Best Time | Checkpoints | Collisions | Instances |
 |-------------|----------------|-----------|-------------|------------|-----------|
-| Parking Lot | 01:10.00       | 00:43.41  | 20          | 54         | 96        |
-| City        | 04:10.00       | 03:01.62  | 137         | 620        | 940       |
+| Parking Lot | 01:10.00       | 00:36.14  | 20          | 54         | 96        |
+| City        | 04:10.00       | 02:59.91  | 137         | 620        | 940       |
 | Showcase    | —              | —         | —           | —          | 52        |
 
 

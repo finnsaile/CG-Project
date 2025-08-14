@@ -981,7 +981,7 @@ float DrivingFrenzy::GameLogic() {
     if (CamYaw < 0.0f) CamYaw += 2.0f * M_PI;
 
     // limit pitch angle
-    CamPitch = std::clamp(CamPitch, MIN_CAM_PITCH, MIN_CAM_PITCH);
+    CamPitch = std::clamp(CamPitch, MIN_CAM_PITCH, MAX_CAM_PITCH);
 
     // limit cam distance
     CamDist = std::clamp(CamDist, cl.minCamDist, cl.maxCamDist);
