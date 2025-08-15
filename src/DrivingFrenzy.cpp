@@ -133,6 +133,8 @@ void DrivingFrenzy::loadScene() {
 void DrivingFrenzy::updateGhostRecording(float gameTime) {
     auto& cl = currentLevel;
 
+    if (gameTime > 1.1 * cl.lowestTime) return;
+
     float deltaT = gameTime - ghostRecordOldTime;
     ghostRecordOldTime = gameTime;
     ghostRecordAccumulator += deltaT;
@@ -217,6 +219,7 @@ void DrivingFrenzy::resetLevel() {
     setCheckpointPos(currentCheckpointIdx);
 
     resetGhostRecordingState();
+    updateGhostPlayback(0.0f);
 }
 
 // store car body and wheel Wms in map for later access and movement

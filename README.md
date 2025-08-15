@@ -14,7 +14,8 @@ Navigate a car through tight spaces, following a sequence of checkpoints that gu
 
 ### Features
 - __Three manually designed maps__, each emphasizing different driving skills.
-- __Seemles scene change__ between maps. 
+- __Seamless scene change__ between maps.
+- __Replay ghost__ of your best (lowest time) run to race against.
 - __Map-dependent cars__ tailored to each environment.
 - __Custom HUD and UI__.
 - __Adjustable resolution and window size__, with a __resolution-scaled HUD/UI__.

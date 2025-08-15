@@ -14,7 +14,6 @@ layout(binding = 0, set = 1) uniform UniformBufferObject {
 } ubo;
 
 void main() {
-    // Ignore texture, normals, lighting
-    vec3 gray = vec3(0.4); // fixed gray color
-    outColor = vec4(gray, 0.7); // 50% transparent
+    vec3 gray = vec3(0.4);
+    outColor = vec4(gray, 0.2);
 }
