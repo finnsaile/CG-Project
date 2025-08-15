@@ -21,8 +21,9 @@
   "carBodyNames" : ["mom0", "mom1", "mom2"],
   "carWheelNames" : ["mowfr0", "mowfl0", "mowbr0", "mowbl0"],
   "carFrontWheelNames" : [ "mowfr0", "mowfl0"],
+  "ghostCarBodyNames" : ["g_mom0", "g_mom1", "g_mom2"],
+  "ghostWheelNames" : ["g_mowfr0", "g_mowfl0", "g_mowbr0", "g_mowbl0"],
   "mainCarPartName" : "mom0",
-
   "checkpointName" : "arrow",
   "finalCheckpointName" : "trophy",
   "startPos" : [8.0, 0.0, 7.0],
@@ -37,5 +38,6 @@
   "maxCamDist" : 15,
   "minCamDist" : 2,
   "defaultCamDist" : 5,
-  "lowestTime" : 36.14
+  "lowestTime" : 35.46,
+  "replayFilename" : "assets/models/replays/parking_lot_replay.rpl"
 }

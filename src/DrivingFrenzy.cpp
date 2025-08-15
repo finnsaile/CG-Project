@@ -130,6 +130,72 @@ void DrivingFrenzy::loadScene() {
     resetLevel();
 }
 
+void DrivingFrenzy::updateGhostRecording(float gameTime) {
+    auto& cl = currentLevel;
+
+    float deltaT = gameTime - ghostRecordOldTime;
+    ghostRecordOldTime = gameTime;
+    ghostRecordAccumulator += deltaT;
+
+    float recordInterval = 1.f / cl.newGhostReplay.fps;
+
+    while (ghostRecordAccumulator >= recordInterval) {
+        ghostRecordAccumulator -= recordInterval;
+
+        int id = SC.InstanceIds.at(cl.mainCarPartName);
+        glm::mat4 bodyWm = SC.I[id]->Wm;
+
+        glm::mat4 wheelsWm[4];
+        for (int i = 0; i < 4; i++) {
+            id = SC.InstanceIds.at(cl.carWheelNames[i]);
+            wheelsWm[i] = SC.I[id]->Wm;
+        }
+
+        cl.newGhostReplay.record(bodyWm, wheelsWm);
+    }
+}
+
+void DrivingFrenzy::resetGhostRecordingState() {
+    ghostRecordOldTime = 0.0f;
+    ghostRecordAccumulator = 0.0f;
+    currentLevel.newGhostReplay.clear();
+}
+
+void DrivingFrenzy::updateGhostPlayback(float gameTime) {
+    int id;
+
+    if (currentLevel.ghostReplay.getFrameCount() == 0) {
+        // Move ghost body and wheels to (0, -100, 0)
+        glm::mat4 hiddenTransform = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -100.0f, 0.0f));
+
+        for (const auto& name : currentLevel.ghostCarBodyNames) {
+            id = SC.InstanceIds.at(name);
+            SC.I[id]->Wm = hiddenTransform;
+        }
+
+        for (const auto& name : currentLevel.ghostWheelNames) {
+            id = SC.InstanceIds.at(name);
+            SC.I[id]->Wm = hiddenTransform;
+        }
+
+        return;
+    }
+
+    // Normal playback
+    GhostFrame ghostFrame = currentLevel.ghostReplay.getFrameAtTime(gameTime);
+
+    for (const auto& name : currentLevel.ghostCarBodyNames) {
+        id = SC.InstanceIds.at(name);
+        SC.I[id]->Wm = ghostFrame.bodyWm * glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -0.01f, 0.0f));
+    }
+
+    for (int i = 0; i < 4; i++) {
+        std::string name = currentLevel.ghostWheelNames[i];
+        id = SC.InstanceIds.at(name);
+        SC.I[id]->Wm = ghostFrame.wheelsWm[i] * glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -0.01f, 0.0f));
+    }
+}
+
 void DrivingFrenzy::resetLevel() {
     // reset car
     Pos = currentLevel.startPos;
@@ -149,6 +215,8 @@ void DrivingFrenzy::resetLevel() {
 
     currentCheckpointIdx = 0;
     setCheckpointPos(currentCheckpointIdx);
+
+    resetGhostRecordingState();
 }
 
 // store car body and wheel Wms in map for later access and movement
@@ -211,6 +279,7 @@ void DrivingFrenzy::setCheckpointPos(const unsigned int checkpointIdx) {
         currentLevel.updateLowestTime(gameTimer.getTime());
         currentGameState = Victory;
         currentCheckpointIdx = 0;
+
         return;
     }
 
@@ -291,6 +360,13 @@ void DrivingFrenzy::localInit() {
                         {2, VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, VK_SHADER_STAGE_FRAGMENT_BIT, 1, 1},
                         {3, VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, VK_SHADER_STAGE_FRAGMENT_BIT, 2, 1}
                     });
+
+    DSLghost.init(this, {
+                       {
+                           0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_VERTEX_BIT,
+                           sizeof(UniformBufferObject), 1
+                       }
+                   });
 
     DSLpbr.init(this, {
                     {
@@ -422,8 +498,14 @@ void DrivingFrenzy::localInit() {
     P_PBR.setPolygonMode(VK_POLYGON_MODE_FILL);
     P_PBR.setTransparency(false);
 
+    Pghost.init(this, &VDphong, "shaders/Ghost.vert.spv", "shaders/Ghost.frag.spv",
+             {&DSLghost});
+    Pghost.setCompareOp(VK_COMPARE_OP_LESS_OR_EQUAL);
+    Pghost.setCullMode(VK_CULL_MODE_BACK_BIT);
+    Pghost.setPolygonMode(VK_POLYGON_MODE_FILL);
+    Pghost.setTransparency(true);
 
-    PRs.resize(3);
+    PRs.resize(4);
 
     PRs[0].init("PhongShader", {
                     {
@@ -460,6 +542,13 @@ void DrivingFrenzy::localInit() {
                         }
                     }
                 }, 4, &VDpbr);
+    PRs[3].init("GhostShader", {
+                    {
+                        &Pghost, {
+                            {}
+                        }
+                    }
+                }, 0, &VDphong);
 
     MOverlay.vertices = std::vector<unsigned char>(4 * sizeof(VertexOverlay));
     VertexOverlay *V1 = (VertexOverlay *) (&(MOverlay.vertices[0]));
@@ -507,6 +596,7 @@ void DrivingFrenzy::pipelinesAndDescriptorSetsInit() {
     PskyBox.create(&RP);
     Poverlay.create(&RP);
     P_PBR.create(&RP);
+    Pghost.create(&RP);
 
     // initialize Overlay descriptor set
     const int hudId_1920 = SC.TextureIds["hud_1920"];
@@ -527,6 +617,7 @@ void DrivingFrenzy::pipelinesAndDescriptorSetsCleanup() {
     PskyBox.cleanup();
     Poverlay.cleanup();
     P_PBR.cleanup();
+    Pghost.cleanup();
 
     RP.cleanup();
 
@@ -546,11 +637,13 @@ void DrivingFrenzy::localCleanup() {
     DSLphong.cleanup();
     DSLoverlay.cleanup();
     DSLpbr.cleanup();
+    DSLghost.cleanup();
 
     PskyBox.destroy();
     P_Phong.destroy();
     Poverlay.destroy();
     P_PBR.destroy();
+    Pghost.destroy();
 
     RP.destroy();
 
@@ -760,6 +853,15 @@ void DrivingFrenzy::updateUniformBuffer(uint32_t currentImage) {
         SC.TI[2].I[instanceId].DS[0][1]->map(currentImage, &ubos, 0); // Set 1
     }
 
+    // ghost shader
+    for (instanceId = 0; instanceId < SC.TI[3].InstanceCount; instanceId++) {
+        ubos.mMat = SC.TI[3].I[instanceId].Wm;
+        ubos.mvpMat = ViewPrj * ubos.mMat;
+        ubos.nMat = glm::inverse(glm::transpose(glm::mat3(ubos.mMat)));
+
+        SC.TI[3].I[instanceId].DS[0][0]->map(currentImage, &ubos, 0);
+    }
+
     // skybox
     SkyBoxUniformBufferObject sbubo{};
     sbubo.mvpMat = ViewPrj * glm::translate(glm::mat4(1), cameraPos) * glm::scale(glm::mat4(1), glm::vec3(100.0f));
@@ -881,7 +983,7 @@ float DrivingFrenzy::GameLogic() {
     getSixAxis(deltaT, m, r, fire);
 
     deltaTclamp = std::clamp(deltaT, 0.0001f, 0.0166f);
-
+    deltaTclamp = deltaT;
     float MOVE_SPEED = fire ? cl.moveSpeedBoost : cl.moveSpeed;
 
     if (currentGameState != Playing) {
@@ -1031,6 +1133,12 @@ float DrivingFrenzy::GameLogic() {
 
         glm::mat4 wheelTransform = carParts[name].initial_Wm * steeringRotation * wheelRotation;
         SC.I[id]->Wm = World * wheelTransform;
+    }
+
+    // ghost replay
+    if (currentGameState == Playing && currentLevel.levelId != Showcase) {
+        updateGhostRecording(gameTimer.getTime());
+        updateGhostPlayback(gameTimer.getTime());
     }
 
     // update bounding box of car and checkpoint

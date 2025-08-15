@@ -209,6 +209,8 @@
   "carBodyNames" : ["jem0", "jem1", "jem2"],
   "carWheelNames" : ["jewfr0", "jewfl0", "jewbr0", "jewbl0"],
   "carFrontWheelNames" : [ "jewfr0", "jewfl0"],
+  "ghostCarBodyNames" : ["g_jem0", "g_jem1", "g_jem2"],
+  "ghostWheelNames" : ["g_jewfr0", "g_jewfl0", "g_jewbr0", "g_jewbl0"],
   "mainCarPartName" : "jem0",
   "checkpointName" : "arrow",
   "finalCheckpointName" : "trophy",
@@ -224,5 +226,6 @@
   "maxCamDist" : 150,
   "minCamDist" : 2,
   "defaultCamDist" : 4,
-  "lowestTime" : 179.91
+  "lowestTime" : 175.66,
+  "replayFilename" : "assets/models/replays/city_replay.rpl"
 }

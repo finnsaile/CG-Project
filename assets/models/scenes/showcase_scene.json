@@ -184,6 +184,8 @@
       {"id":"ghwfl0","model":"ghwfl0","scale":[0.55,0.55,0.55],"translate":[0.7,0.3,1.38],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
       {"id":"ghwbr0","model":"ghwbr0","scale":[0.55,0.55,0.55],"translate":[-0.7,0.3,-1.18],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]},
       {"id":"ghwbl0","model":"ghwbl0","scale":[0.55,0.55,0.55],"translate":[0.7,0.3,-1.18],"texture":["ColorAtlasCustom", "DullMetalNormal", "DullMetalMetallic", "DullMetalRoughness"]}
+    ]},
+    {"technique": "GhostShader", "elements": [
     ]}
   ]
 }

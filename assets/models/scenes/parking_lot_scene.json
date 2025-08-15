@@ -524,6 +524,15 @@
       {"id": "skybox",  "model": "skybox",   "texture": ["skybox"]}
     ]},
     {"technique": "PBR", "elements": [
+    ]},
+    {"technique": "GhostShader", "elements": [
+      {"id": "g_mom0",  "model": "mom0", "scale": [0.7, 0.7, 0.7], "translate": [0, 0.5, 0], "texture": []},
+      {"id": "g_mom1",  "model": "mom1", "scale": [0.7, 0.7, 0.7], "translate": [0, 0.5, 0], "texture": []},
+      {"id": "g_mom2",  "model": "mom2", "scale": [0.7, 0.7, 0.7], "translate": [0, 0.5, 0], "texture": []},
+      {"id": "g_mowfr0",  "model": "mowfr0", "scale": [0.45, 0.45, 0.45], "translate": [-0.65, 0.15, 0.95], "texture": []},
+      {"id": "g_mowfl0",  "model": "mowfl0", "scale": [0.45, 0.45, 0.45], "translate": [0.65, 0.15, 0.95], "texture": []},
+      {"id": "g_mowbr0",  "model": "mowbr0", "scale": [0.45, 0.45, 0.45], "translate": [-0.6, 0.15, -1.2], "texture": []},
+      {"id": "g_mowbl0",  "model": "mowbl0", "scale": [0.45, 0.45, 0.45], "translate": [0.6, 0.15, -1.2], "texture": []}
     ]}
   ]
 }

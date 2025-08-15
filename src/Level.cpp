@@ -40,6 +40,11 @@ Level::Level(const std::string &filename) : filename(filename) {
     carWheelNames = jsonData.at("carWheelNames").get<std::vector<std::string> >();
     carFrontWheelNames = jsonData.at("carFrontWheelNames").get<std::vector<std::string> >();
 
+    if (jsonData.contains("ghostCarBodyNames") && jsonData.contains("ghostWheelNames")) {
+        ghostCarBodyNames = jsonData.at("ghostCarBodyNames").get<std::vector<std::string> >();
+        ghostWheelNames = jsonData.at("ghostWheelNames").get<std::vector<std::string> >();
+    }
+
     auto &posJson = jsonData.at("startPos");
     if (posJson.size() != 3) throw std::runtime_error("Invalid startPos format");
     startPos = glm::vec3(posJson[0].get<float>(), posJson[1].get<float>(), posJson[2].get<float>());
@@ -49,6 +54,11 @@ Level::Level(const std::string &filename) : filename(filename) {
         if (cp.size() != 3) throw std::runtime_error("Invalid checkpoint format");
         glm::vec3 point(cp[0].get<float>(), cp[1].get<float>(), cp[2].get<float>());
         checkpoints.push_back(point);
+    }
+
+    if (jsonData.contains("replayFilename")) {
+        replayFilename = jsonData.at("replayFilename").get<std::string>();
+        ghostReplay.loadFromFile(replayFilename);
     }
 
     if (levelId != Showcase) return;
@@ -99,5 +109,10 @@ void Level::updateLowestTime(float newTime) {
         outputFile.close();
 
         lowestTime = newTime;
+
+        newGhostReplay.saveToFile(replayFilename);
+        ghostReplay = newGhostReplay;
+
+        newGhostReplay.clear();
     }
 }

@@ -4859,6 +4859,15 @@
 			{"id": "skybox",  "model": "skybox", "texture": ["skybox"]}
 		]},
 		{"technique": "PBR", "elements": [
+		]},
+		{"technique": "GhostShader", "elements": [
+			{"id": "g_jem0",  "model": "jem0", "scale": [0.55, 0.55, 0.55], "translate": [0, 0.53, 0], "texture": []},
+			{"id": "g_jem1",  "model": "jem1", "scale": [0.55, 0.55, 0.55], "translate": [0, 0.53, 0], "texture": []},
+			{"id": "g_jem2",  "model": "jem2", "scale": [0.55, 0.55, 0.55], "translate": [0, 0.53, 0], "texture": []},
+			{"id": "g_jewfr0",  "model": "jewfr0", "scale": [0.55, 0.55, 0.55], "translate": [-0.63, 0.17, 1.18], "texture": []},
+			{"id": "g_jewfl0",  "model": "jewfl0", "scale": [0.55, 0.55, 0.55], "translate": [0.63, 0.17, 1.18], "texture": []},
+			{"id": "g_jewbr0",  "model": "jewbr0", "scale": [0.55, 0.55, 0.55], "translate": [-0.63, 0.17, -0.707], "texture": []},
+			{"id": "g_jewbl0",  "model": "jewbl0", "scale": [0.55, 0.55, 0.55], "translate": [0.63, 0.17, -0.707], "texture": []}
 		]}
 	]
 }

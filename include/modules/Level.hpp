@@ -4,6 +4,7 @@
 #include <iostream>
 #include <glm/glm.hpp>
 #include <json.hpp>
+#include "modules/GhostReplay.hpp"
 
 enum LevelEnum {
     ParkingLot = 0,
@@ -27,6 +28,8 @@ class Level {
 public:
     std::string filename;
 
+    std::string replayFilename;
+
     LevelEnum levelId;
     std::string levelName;
     std::string levelScene;
@@ -36,6 +39,8 @@ public:
     std::vector<std::string> collisionNames;
     std::vector<std::string> carBodyNames;
     std::vector<std::string> carWheelNames;
+    std::vector<std::string> ghostCarBodyNames;
+    std::vector<std::string> ghostWheelNames;
     std::vector<std::string> carFrontWheelNames;
     std::vector<glm::vec3> checkpoints;
     glm::vec3 startPos;
@@ -55,6 +60,9 @@ public:
     float defaultCamDist;
 
     double lowestTime;
+
+    GhostReplay ghostReplay;
+    GhostReplay newGhostReplay;
 
     bool initialized = false;
     Level() = default;

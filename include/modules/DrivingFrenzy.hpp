@@ -34,12 +34,12 @@ const std::unordered_map<HudSize, std::pair<unsigned int, unsigned int>> HudSize
 class DrivingFrenzy : public BaseProject {
 protected:
     // Descriptor Layouts [what will be passed to the shaders]
-    DescriptorSetLayout DSLglobal, DSLskyBox, DSLphong, DSLoverlay, DSLpbr;
+    DescriptorSetLayout DSLglobal, DSLskyBox, DSLphong, DSLoverlay, DSLpbr, DSLghost;
 
     // Vertex formants, Pipelines [Shader couples] and Render passes
     VertexDescriptor VDphong, VDskyBox, VDoverlay, VDpbr;
     RenderPass RP;
-    Pipeline PskyBox, P_Phong, Poverlay, P_PBR;
+    Pipeline PskyBox, P_Phong, Poverlay, P_PBR, Pghost;
 
     // Models, textures and Descriptors (values assigned to the uniforms)
     Scene SC;
@@ -90,6 +90,9 @@ protected:
 
     GameTimer gameTimer;
 
+    float ghostRecordOldTime = 0.0f;
+    float ghostRecordAccumulator = 0.0f;
+
     void mainLoop() override;
 
     void localInit() override;
@@ -115,6 +118,12 @@ protected:
     void updateScene();
 
     void loadScene();
+
+    void updateGhostRecording(float gameTime);
+
+    void resetGhostRecordingState();
+
+    void updateGhostPlayback(float gameTime);
 
     void resetLevel();
 
