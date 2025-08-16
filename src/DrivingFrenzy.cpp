@@ -582,9 +582,9 @@ void DrivingFrenzy::localInit() {
     submitCommandBuffer("main", 0, populateCommandBufferAccess, this);
 
     // Prepares for showing the text
-    txt.print(1.0f, 1.0f, "Highscore:", 1, "CO", false, true, true, TAL_RIGHT, TRH_RIGHT, TRV_BOTTOM,
+    txt.print(1.0f, -1.0f, "Highscore:", 1, "SS", false, true, false, TAL_RIGHT, TRH_RIGHT, TRV_TOP,
               glm::vec4{1.0f, 1.0f, 1.0f, 1.0f}, // Fill
-              glm::vec4{0.8f, 0.8f, 0.0f, 1.0f}, // Stroke
+              glm::vec4{0.8f, 0.8f, 0.0f, 0.0f}, // Stroke
               glm::vec4{0.0f, 0.0f, 0.0f, 0.0f}, // Shadow
               g_uiScale, g_uiScale);
 }
@@ -907,10 +907,10 @@ void DrivingFrenzy::updateUniformBuffer(uint32_t currentImage) {
             std::ostringstream oss;
             oss << "Highscore Timer: " << fmtTime(cur) << "/" << fmtTime(oldTime);
 
-            txt.print(1.0f, -1.0f, oss.str(), 1, "CO", false, false, g_uiScale < 1.01f,
+            txt.print(1.0f, -1.0f, oss.str(), 1, "SS", false, true, false,
                       TAL_RIGHT, TRH_RIGHT, TRV_TOP,
-                      glm::vec4{1.0f, 1.0f, 1.0f, 1.0f}, // Fill (white)
-                      glm::vec4{0.0f, 0.0f, 0.0f, 1.0f}, // Stroke (black)
+                      glm::vec4{0.0f, 0.0f, 0.0f, 1.0f}, // Fill (white)
+                      glm::vec4{0.0f, 0.0f, 0.0f, 0.0f}, // Stroke (black)
                       glm::vec4{0.0f, 0.0f, 0.0f, 0.0f}, // Shadow (none)
                       g_uiScale, g_uiScale); // scale with UI
         }

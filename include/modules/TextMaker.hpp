@@ -2541,7 +2541,6 @@ struct TextMaker {
 };
 
 
-
 #ifdef TEXTMAKER_IMPLEMENTATION 
 
 void TextMaker::measureText(std::string Text, int &fontId, int &w, int &h, int &nlines, int &totChars, std::vector<int> &linew, std::vector<std::string> &lines) {
@@ -2642,8 +2641,8 @@ void TextMaker::init(BaseProject *_BP, int sW, int sH, int so) {
 //		RP.init(BP);
 	RP.init(BP, sW, sH, -1,
 				RenderPass::getStandardAttchmentsProperties(AT_SURFACE_NOAA_DEPTH, BP));
-	RP.properties[0].loadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE;
-	RP.properties[1].loadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE;
+	RP.properties[0].loadOp = VK_ATTACHMENT_LOAD_OP_LOAD;
+	RP.properties[1].loadOp = VK_ATTACHMENT_LOAD_OP_LOAD;
 
 	T.init(BP, fnt.textureFile);
 	

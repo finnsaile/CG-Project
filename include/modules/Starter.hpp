@@ -661,7 +661,6 @@ protected:
 
 
 /**** Implementations starts here ****/
-
 #ifdef STARTER_IMPLEMENTATION
 // external functions and constants
 
